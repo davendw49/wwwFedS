@@ -7,24 +7,21 @@ public class ParsingUnit {
 
 	ArrayList<KeyMaterial> Query = new ArrayList<>();
 
-	@SuppressWarnings("unchecked")
-	public void Parse(HashMap<String, ArrayList<HashMap<String, ArrayList<String>>>> list) {
+	public void Parse(HashMap<String, HashMap<String, ArrayList<String>>> query) {
 
-		ArrayList<String> kwList = (ArrayList<String>) list.keySet();
+		ArrayList<String> kwList = new ArrayList<>();
+		kwList.addAll(query.keySet());
 		for (String kString : kwList) {
 			KeyMaterial kMaterial = new KeyMaterial();
 			kMaterial.KeyName = kString;
-			ArrayList<HashMap<String, ArrayList<String>>> tmp = list.get(kString);
+			HashMap<String, ArrayList<String>> eMap = query.get(kString);
 			ArrayList<String> cSet = new ArrayList<>();
-			HashMap<String, ArrayList<String>> eMap = new HashMap<>();
-			for (HashMap<String, ArrayList<String>> tmHashMap : tmp) {
-				ArrayList<String> eSet = (ArrayList<String>) tmHashMap.keySet();
-				cSet.add(tmHashMap.get(eSet.get(0)).get(0));
-				eMap.put(tmHashMap.get(eSet.get(0)).get(0), eSet);
-			}
+			cSet.addAll(eMap.keySet());
+
 			kMaterial.ClassSet = cSet;
 			kMaterial.EntityMapping = eMap;
 			Query.add(kMaterial);
 		}
 	}
+
 }
