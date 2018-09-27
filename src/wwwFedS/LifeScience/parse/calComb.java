@@ -26,7 +26,7 @@ public class calComb {
 				// System.out.print(inputList.get(j).get(combination.get(j)) + ", ");
 				oneQuery.add(inputList.get(j).get(combination.get(j)));
 			}
-			//System.out.println();
+			// System.out.println();
 			allQuery.add(oneQuery);
 			i++;
 			combination.set(n - 1, i);
