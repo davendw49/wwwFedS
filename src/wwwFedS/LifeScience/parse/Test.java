@@ -3,9 +3,15 @@ package wwwFedS.LifeScience.parse;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import wwwFedS.LifeScience.util.InitialHelper;
+
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		ParsingUnit pUnit = new ParsingUnit();
+		InitialHelper iHelper = new InitialHelper();
+		iHelper.init();
+		
 		HashMap<String, HashMap<String, ArrayList<String>>> query = new HashMap<>();
 
 		HashMap<String, ArrayList<String>> h1 = new HashMap<>();
@@ -33,10 +39,11 @@ public class Test {
 		query.put("asprin", h1);
 		query.put("john robert vane", h2);
 		
-		ParsingUnit pUnit = new ParsingUnit();
-		pUnit.Parse(query);
-		for (KeyMaterial kMaterial : pUnit.Query) {
+		
+		pUnit.Parse(query,iHelper);
+		System.out.println(pUnit.toString());
+		/*for (KeyMaterial kMaterial : pUnit.Query) {
 			System.out.println(kMaterial.toString());
-		}
+		}*/
 	}
 }

@@ -3,25 +3,48 @@ package wwwFedS.LifeScience.parse;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import wwwFedS.LifeScience.util.InitialHelper;
+
 public class ParsingUnit {
 
-	ArrayList<KeyMaterial> Query = new ArrayList<>();
+	public ArrayList<KeyMaterial> Query = new ArrayList<>();
+	public ArrayList<ArrayList<Integer>> SubQuery = new ArrayList<>();
 
-	public void Parse(HashMap<String, HashMap<String, ArrayList<String>>> query) {
+	public void Parse(HashMap<String, HashMap<String, ArrayList<String>>> query, InitialHelper iHelper)
+			throws Exception {
 
 		ArrayList<String> kwList = new ArrayList<>();
 		kwList.addAll(query.keySet());
+		
+		ArrayList<ArrayList<Integer>> allKey = new ArrayList<>();
 		for (String kString : kwList) {
+			ArrayList<Integer> oneKey = new ArrayList<>();
+			
 			KeyMaterial kMaterial = new KeyMaterial();
 			kMaterial.KeyName = kString;
 			HashMap<String, ArrayList<String>> eMap = query.get(kString);
 			ArrayList<String> cSet = new ArrayList<>();
 			cSet.addAll(eMap.keySet());
-
+			
+			for (String str : cSet) {
+				oneKey.add(iHelper.getClassN(str));
+			}
+			
+			allKey.add(oneKey);
 			kMaterial.ClassSet = cSet;
 			kMaterial.EntityMapping = eMap;
 			Query.add(kMaterial);
 		}
+		
+		SubQuery = new calComb().calculateCombination(allKey);
+		
 	}
+
+	@Override
+	public String toString() {
+		return "ParsingUnit [Query=" + Query + ";\nSubQuery=" + SubQuery + "]";
+	}
+
+	
 
 }
