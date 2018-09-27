@@ -22,10 +22,11 @@ public class calComb {
 			// 打印一次循环生成的组合
 			ArrayList<Integer> oneQuery = new ArrayList<>();
 			for (int j = 0; j < n; j++) {
+
 				// System.out.print(inputList.get(j).get(combination.get(j)) + ", ");
 				oneQuery.add(inputList.get(j).get(combination.get(j)));
 			}
-			// System.out.println();
+			//System.out.println();
 			allQuery.add(oneQuery);
 			i++;
 			combination.set(n - 1, i);
