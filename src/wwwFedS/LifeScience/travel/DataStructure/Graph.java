@@ -224,7 +224,7 @@ public class Graph {
 		return flag;
 	}
 
-	public SBrunch Dijkstra(int begin, int end) {
+	public SBrunch Dijkstra_result(int begin, int end) {
 		SBrunch sBrunch = new SBrunch();
 		// 初始化
 		for (int i = 0; i < vexnum; i++) {
