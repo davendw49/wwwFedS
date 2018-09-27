@@ -1,0 +1,4 @@
+http://bio2rdf.org/ns/kegg#Compound
+http://bio2rdf.org/ns/kegg#Drug
+http://bio2rdf.org/ns/kegg#Enzyme
+http://bio2rdf.org/ns/kegg#Reaction
