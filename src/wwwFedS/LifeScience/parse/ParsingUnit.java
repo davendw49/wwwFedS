@@ -9,6 +9,8 @@ public class ParsingUnit {
 
 	public ArrayList<KeyMaterial> Query = new ArrayList<>();
 	public ArrayList<ArrayList<Integer>> SubQuery = new ArrayList<>();
+	public String filterMode = "";
+	public String unionMode = "";
 
 	public void Parse(HashMap<String, HashMap<String, ArrayList<String>>> query, InitialHelper iHelper)
 			throws Exception {
@@ -35,9 +37,7 @@ public class ParsingUnit {
 			kMaterial.EntityMapping = eMap;
 			Query.add(kMaterial);
 		}
-		
-		SubQuery = new calComb().calculateCombination(allKey);
-		
+		SubQuery = new calComb().calculateCombinationInt(allKey);	
 	}
 
 	@Override

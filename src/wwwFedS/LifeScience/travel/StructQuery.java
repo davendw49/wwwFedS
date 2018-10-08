@@ -14,21 +14,6 @@ public class StructQuery {
 	public ArrayList<SGraphEdge> TheSubGraph = new ArrayList<>();
 
 	public void GenerateSubGraph(ArrayList<Integer> Keyword, InitialHelper iHelper) throws Exception {
-		int minDis = Integer.MAX_VALUE;
-		String minPath = "";
-		/*
-		 * 这里严重的浪费了时间
-		 * 
-		 * DGraph dGraph = new DGraph(iHelper.nodenum);
-		 * dGraph.createGraph(iHelper.graph); for (int index = 0; index <
-		 * iHelper.nodenum; index++) { dGraph.Traverse(index); int flag = 0; int sum =
-		 * 0; String str = ""; ArrayList<Integer> brunchlist = new ArrayList<>(); for
-		 * (int i = 0; i < Keyword.size(); i++) { int dist =
-		 * dGraph.printTarge(Keyword.get(i)).brunchValue; sum += dist; str +=
-		 * dGraph.printTarge(Keyword.get(i)).road + "\n"; brunchlist.add(dist); if (dist
-		 * == -1) flag = 1; } if (flag == 0) { if (minDis > sum) { minDis = sum; minPath
-		 * = str; } } }
-		 */
 		String str = "";
 		int sum = 0;
 		Graph graph = new Graph(iHelper.nodenum, iHelper.edgenum, iHelper.graph_value);
@@ -43,7 +28,7 @@ public class StructQuery {
 		}
 		subgraph.brunchValue = sum;
 		subgraph.road = str;
-		System.out.println(subgraph.road);
+		// System.out.println(subgraph.road);
 	}
 
 	public void done(InitialHelper iHelper, ArrayList<Integer> Keyword) throws Exception {

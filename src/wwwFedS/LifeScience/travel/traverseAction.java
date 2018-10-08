@@ -5,38 +5,17 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import wwwFedS.LifeScience.parse.ParsingUnit;
+import wwwFedS.LifeScience.parse.calComb;
 import wwwFedS.LifeScience.travel.DataStructure.SGraphEdge;
 import wwwFedS.LifeScience.util.InitialHelper;
 
 public class traverseAction {
 
-	private HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil = new HashMap<>();
-	private ArrayList<HashMap<Integer, ArrayList<String>>> queryArray = new ArrayList<>();// this is what i need
-	private ArrayList<ArrayList<String>> KeywordPoint = new ArrayList<>();
-
-	public HashMap<Integer, ArrayList<SGraphEdge>> getMultiQueryUtil() {
-		return multiQueryUtil;
-	}
-
-	public void setMultiQueryUtil(HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil) {
-		this.multiQueryUtil = multiQueryUtil;
-	}
-
-	public ArrayList<HashMap<Integer, ArrayList<String>>> getQueryArray() {
-		return queryArray;
-	}
-
-	public void setQueryArray(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray) {
-		this.queryArray = queryArray;
-	}
-
-	public ArrayList<ArrayList<String>> getKeywordPoint() {
-		return KeywordPoint;
-	}
-
-	public void setKeywordPoint(ArrayList<ArrayList<String>> keywordPoint) {
-		KeywordPoint = keywordPoint;
-	}
+	public HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil = new HashMap<>();
+	public ArrayList<HashMap<Integer, ArrayList<String>>> queryArray = new ArrayList<>();// this is what i need
+	public ArrayList<ArrayList<String>> KeywordPoint = new ArrayList<>();
+	public static String unionMode = "";
+	public static String filterMode = "";
 
 	public traverseAction() {
 		// TODO Auto-generated constructor stub
@@ -55,13 +34,14 @@ public class traverseAction {
 
 		ArrayList<ArrayList<Integer>> StartPoint = new ArrayList<>();
 		StartPoint = pUnit.SubQuery;
-		System.out.println(StartPoint.size());
+		System.out.println("the candidate query size is : " + StartPoint.size());
 		int possibleQuery = StartPoint.size();
 		StructQuery gSubgraph = new StructQuery();
 		// ArrayList<Integer> sp = new ArrayList<>();
 		for (int index = 0; index < possibleQuery; index++) {
 			System.out.println("**************************************************");
 			gSubgraph.done(iHelper, StartPoint.get(index));
+			generatePlus(StartPoint.get(index), pUnit, iHelper);
 			/**
 			 * SGraphEdge ed = new SGraphEdge(); ed.first = 220; ed.second = 1;
 			 * gSubgraph.TheSubGraph.add(ed);
@@ -98,7 +78,7 @@ public class traverseAction {
 			System.out.println("2:" + multiQueryUtil.get(2));
 			System.out.println("3:" + multiQueryUtil.get(3));
 			// ************************************************************************************************************
-
+			// 这里成功的在各个数据集中生成子图，下面需要开始查询的构建，根据点和边的信息生成sparql查询语句
 			HashMap<Integer, ArrayList<String>> querylist = new HashMap<>();
 			for (int i = 0; i < 4; i++) {
 				ArrayList<SGraphEdge> edgeset = multiQueryUtil.get(i);
@@ -106,13 +86,32 @@ public class traverseAction {
 				for (int k = 0; k < edgeset.size(); k++) {
 					ArrayList<String> preSet = new ArrayList<>();
 					ArrayList<Integer> onList = iHelper.preSetPair.get(edgeset.get(k).first).get(edgeset.get(k).second);
-
+					// 取出每条边包含的所有中间属性集合
+					// System.out.println(onList);
 					for (int p = 0; p < onList.size(); p++) {
-
+						String oneSant = "";
+						oneSant += "?" + String.valueOf(returnNodename(edgeset.get(k).first, StartPoint.get(index)));
+						oneSant += " ";
+						oneSant += iHelper.getPreR(onList.get(p));
+						oneSant += " ";
+						oneSant += "?" + String.valueOf(returnNodename(edgeset.get(k).second, StartPoint.get(index)));
+						oneSant += ". \n";
+						preSet.add(oneSant);
+						// System.out.println(oneSant);
 					}
 					multiEdge.add(preSet);
 				}
+				// System.out.println(multiEdge);
+				// 同一个数据集中进行排列组合
+				if (multiEdge.size() != 0) {
+					// System.out.println(new calComb().calculateCombinationStr(multiEdge));
+					querylist.put(i, new calComb().calculateCombinationStr(multiEdge));
+				} else {
+					querylist.put(i, new ArrayList<>());
+				}
+
 			}
+
 			int flag = 0;
 			for (int j = 0; j < 4; j++) {
 				if (querylist.get(j).isEmpty())
@@ -120,20 +119,13 @@ public class traverseAction {
 			}
 			if (flag <= 3)
 				queryArray.add(querylist);
-
-			/*
-			 * sp = StartPoint.get(index); ArrayList<String> ks = new ArrayList<>(); for
-			 * (int i=0;i<sp.size();i++) {
-			 * ks.add(kwlist.get(i).get(iHelper.getClassR(sp.get(i)))); }
-			 * KeywordPoint.add(ks);
-			 */
 		}
 
-		System.out.println("**************************************************");
-		System.out.println("test output");
-		System.out.println(queryArray.size());
-		System.out.println(KeywordPoint);
-		System.out.println("**************************************************");
+		// System.out.println("**************************************************");
+		// System.out.println("test output");
+		// System.out.println(queryArray.size());
+		// System.out.println(KeywordPoint);
+		/*System.out.println("**************************************************");
 		for (int i = 0; i < queryArray.size(); i++) {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
 			System.out.println(i + " situation: ");
@@ -142,7 +134,7 @@ public class traverseAction {
 			}
 		}
 		System.out.println("**************************************************");
-
+		System.out.println(filterMode);*/
 	}
 
 	public void clear() {
@@ -192,27 +184,76 @@ public class traverseAction {
 	}
 
 	private static void removeDuplicate(ArrayList<SGraphEdge> list) {
-		
+		// System.out.println(list);
 		ArrayList<String> tmp = new ArrayList<>();
 		for (SGraphEdge sEdge : list) {
 			String tString = String.valueOf(sEdge.first) + "," + String.valueOf(sEdge.second);
 			tmp.add(tString);
-			HashSet<String> set = new HashSet<>(tmp.size());
-			ArrayList<String> result = new ArrayList<>(tmp.size());
-			for (String str : tmp) {
-				if (set.add(str)) {
-					result.add(str);
-				}
-			}
-			tmp.clear();
-			tmp.addAll(result);
-			list.clear();
-			// System.out.println(tmp);
-			for (String string : tmp) {
-				String[] sArr = string.split(",");
-				SGraphEdge sGraphEdge = new SGraphEdge(Integer.valueOf(sArr[0]), Integer.valueOf(sArr[1]));
-				list.add(sGraphEdge);
+		}
+
+		HashSet<String> set = new HashSet<>(tmp.size());
+		ArrayList<String> result = new ArrayList<>(tmp.size());
+		for (String str : tmp) {
+			if (set.add(str)) {
+				result.add(str);
 			}
 		}
+
+		tmp.clear();
+		tmp.addAll(result);
+		list.clear();
+		// System.out.println(tmp);
+		for (String string : tmp) {
+			String[] sArr = string.split(",");
+			SGraphEdge sGraphEdge = new SGraphEdge(Integer.valueOf(sArr[0]), Integer.valueOf(sArr[1]));
+			list.add(sGraphEdge);
+		}
+	}
+
+	private static String returnNodename(int node, ArrayList<Integer> kw) {
+		int flag = -1;
+		for (Integer i : kw) {
+			if (i == node) {
+				flag = kw.indexOf(i);
+				break;
+			}
+		}
+		if (flag == -1) {
+			return "e" + String.valueOf(node);
+		} else {
+			return "k" + String.valueOf(flag);
+		}
+	}
+
+	private static void generatePlus(ArrayList<Integer> kw, ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
+		String plus = "";
+		for (int i = 0; i < kw.size(); i++) {
+			String onePlus = "FILTER(";
+			int onekw = kw.get(i);
+			// System.out.println(pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)));
+			// 获取该类的对应实体应该组成的filter和union语句
+			for (int j = 0; j < pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).size(); j++) {
+				if (j == 0)
+					onePlus += "?k" + String.valueOf(i) + "="
+							+ pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).get(j);
+				else
+					onePlus += " || ?k" + String.valueOf(i) + "="
+							+ pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).get(j);
+			}
+			onePlus += ")\n";
+			// System.out.println(onePlus);
+			plus += onePlus;
+		}
+		// return plus;
+		unionMode = plus;
+		plus = "";
+		for (int i = 0; i < kw.size(); i++) {
+			String keyword = pUnit.Query.get(i).KeyName;
+			String onePlus = "?k" + String.valueOf(i) + " search:matches ?m" + String.valueOf(i) + ". \n" + "?m"
+					+ String.valueOf(i) + " search:query \"" + keyword + "\";\n" + "search:score ?score; \n"
+					+ "search:snippet ?snippet. \n";
+			plus += onePlus;
+		}
+		filterMode = plus;
 	}
 }

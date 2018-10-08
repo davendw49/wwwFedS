@@ -1,14 +1,34 @@
-package wwwFedS.LifeScience;
+package wwwFedS.LifeScience.query;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import wwwFedS.LifeScience.parse.ParsingUnit;
-import wwwFedS.LifeScience.query.SPARQL;
 import wwwFedS.LifeScience.travel.traverseAction;
 import wwwFedS.LifeScience.util.InitialHelper;
 
-public class mainAction {
+public class SPARQL {
+
+	public HashMap<Integer, ArrayList<String>> execList = new HashMap<>();
+
+	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, String mode) {
+		// 生成合理的sparql查询语句
+		for (int i = 0; i < queryArray.size(); i++) {
+			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
+			// System.out.println(i + " situation: ");
+			for (int j = 0; j < 4; j++) {
+				ArrayList<String> oneBaseQuery = new ArrayList<>();
+				if (qlist.get(j).size() > 0) {
+					for (String str : qlist.get(j)) {
+						String tmp = "SELECT * WHERE{\n" + str + mode + "}";
+						oneBaseQuery.add(tmp);
+					}
+				}
+				execList.put(j, oneBaseQuery);
+			}
+		}
+	}
+
 	public static void main(String[] args) throws Exception {
 
 		ParsingUnit pUnit = new ParsingUnit();
@@ -48,8 +68,8 @@ public class mainAction {
 		tAction.start(pUnit, iHelper);
 		System.out.println(pUnit.toString());
 		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
-
-		for (int i = 0; i < 4; i++) {
+		
+		for (int i=0;i<4;i++) {
 			System.out.println("this is a query for database" + i + ": ");
 			ArrayList<String> tmp = sparql.execList.get(i);
 			for (String string : tmp) {
