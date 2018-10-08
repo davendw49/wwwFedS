@@ -51,8 +51,7 @@ public class traverseAction {
 		multiQueryUtil.put(3, a3);
 	}
 
-	public void start(ParsingUnit pUnit, InitialHelper iHelper)
-			throws Exception {
+	public void start(ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
 
 		ArrayList<ArrayList<Integer>> StartPoint = new ArrayList<>();
 		StartPoint = pUnit.SubQuery;
@@ -89,17 +88,16 @@ public class traverseAction {
 				// System.out.println(thisdb);
 				multiQueryUtil.get(thisdb).add(gSubgraph.TheSubGraph.get(i));
 			}
-			
 
-			for (int keyindex=0;keyindex<4;keyindex++) {
+			for (int keyindex = 0; keyindex < 4; keyindex++) {
 				removeDuplicate(multiQueryUtil.get(keyindex));
 			}
-			
+
 			System.out.println("0:" + multiQueryUtil.get(0));
 			System.out.println("1:" + multiQueryUtil.get(1));
 			System.out.println("2:" + multiQueryUtil.get(2));
 			System.out.println("3:" + multiQueryUtil.get(3));
-			// *****************************************************************************************************************************************************
+			// ************************************************************************************************************
 
 			HashMap<Integer, ArrayList<String>> querylist = new HashMap<>();
 			for (int i = 0; i < 4; i++) {
@@ -192,16 +190,29 @@ public class traverseAction {
 		tAction.start(pUnit, iHelper);
 		System.out.println(pUnit.toString());
 	}
-	
+
 	private static void removeDuplicate(ArrayList<SGraphEdge> list) {
-	    HashSet<SGraphEdge> set = new HashSet<>(list.size());
-	    ArrayList<SGraphEdge> result = new ArrayList<>(list.size());
-	    for (SGraphEdge str : list) {
-	        if (set.add(str)) {
-	            result.add(str);
-	        }
-	    }
-	    list.clear();
-	    list.addAll(result);
+		
+		ArrayList<String> tmp = new ArrayList<>();
+		for (SGraphEdge sEdge : list) {
+			String tString = String.valueOf(sEdge.first) + "," + String.valueOf(sEdge.second);
+			tmp.add(tString);
+			HashSet<String> set = new HashSet<>(tmp.size());
+			ArrayList<String> result = new ArrayList<>(tmp.size());
+			for (String str : tmp) {
+				if (set.add(str)) {
+					result.add(str);
+				}
+			}
+			tmp.clear();
+			tmp.addAll(result);
+			list.clear();
+			// System.out.println(tmp);
+			for (String string : tmp) {
+				String[] sArr = string.split(",");
+				SGraphEdge sGraphEdge = new SGraphEdge(Integer.valueOf(sArr[0]), Integer.valueOf(sArr[1]));
+				list.add(sGraphEdge);
+			}
+		}
 	}
 }
