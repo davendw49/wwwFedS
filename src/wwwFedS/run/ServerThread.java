@@ -5,8 +5,6 @@ import java.net.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.openrdf.query.algebra.Str;
-
 import wwwFedS.luceneSail.lsQuery;
 
 import wwwFedS.LifeScience.*;
@@ -47,16 +45,17 @@ public class ServerThread extends Thread {
 
 				// 查询类
 				// list:keyword,type,x
-				HashMap<String,ArrayList<HashMap<String, ArrayList<String>>>> list = new HashMap<String,ArrayList<HashMap<String, ArrayList<String>>>>();
+				HashMap<String, HashMap<String, ArrayList<String>>> list = new HashMap<>();
 
 				for (int i = 0; i < sa.length; i++) {
 					try {
 						// list.add(new lsQuery().exExecute(sa[i]));
 						
 						if (!list.containsKey(sa[i])) {
-							list.put(sa[i], new ArrayList<HashMap<String, ArrayList<String>>>());
+							list.put(sa[i], new HashMap<String, ArrayList<String>>());
 						}
-						list.get(sa[i]).add(new lsQuery().lsExecute(sa[i]));
+						new lsQuery();
+						list.put(sa[i],lsQuery.lsExecute(sa[i]));
 					
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
@@ -85,23 +84,24 @@ public class ServerThread extends Thread {
 
 				long endTime_for_fulltext = System.currentTimeMillis();
 
-				ArrayList<HashMap<Integer, ArrayList<String>>> slist;
+				HashMap<Integer, ArrayList<String>> slist;
 
 				try {
 
 					// 生成中间查询
 					
-					slist = new wwwFedS.LifeScience.mainAction().doAction(list);
+					new wwwFedS.LifeScience.mainAction();
+					slist = mainAction.doAction(list);
 
 					String result = "";
 					long endTime_for_structquery = System.currentTimeMillis();
 
 					// ִ查询最终结果
-					for (int k = 0; k < slist.size(); k++) {
+					//for (int k = 0; k < slist.size(); k++) {
 
 						for (int j = 0; j < 4; j++) {
-							for (int i = 0; i < slist.get(k).get(j).size(); i++) {
-								String qs = slist.get(k).get(j).get(i);
+							for (int i = 0; i < slist.get(j).size(); i++) {
+								String qs = slist.get(j).get(i);
 								String qs1 = qs;
 								qs1 = qs1.replace("SELECT", "");
 								qs1 = qs1.replace("*", "");
@@ -111,23 +111,25 @@ public class ServerThread extends Thread {
 								qs1 = qs1.trim();
 								if (!qs1.equals("")) {
 									if (j == 0) {
-										result = result + new lsQuery().chebiQuery(qs);
+										new lsQuery();
+										result = result + lsQuery.chebiQuery(qs);
 									}
 									if (j == 1) {
-										result = result + new lsQuery().keggQuery(qs);
+										new lsQuery();
+										result = result + lsQuery.keggQuery(qs);
 									}
 									if (j == 2) {
-										result = result + new lsQuery().drugbankQuery(qs);
+										new lsQuery();
+										result = result + lsQuery.drugbankQuery(qs);
 									}
 									if (j == 3) {
-										result = result + new lsQuery().dbpediaQuery(qs);
+										new lsQuery();
+										result = result + lsQuery.dbpediaQuery(qs);
 									}
 								}
 							}
 						}
-						if (result.length() > 600)
-							break;
-					}
+					//}
 					if (result.length() == 0) {
 						System.out.println("No final result!");
 
