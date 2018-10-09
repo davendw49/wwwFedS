@@ -68,7 +68,7 @@ public class ServerThread extends Thread {
 				out.println("keyword--type---x:");
 				out.println(list);
 
-				if (list.size() == 0) {
+				/*if (list.size() == 0) {
 					System.out.println("No final result!");
 					out.println("No final result!");
 					return;
@@ -80,7 +80,7 @@ public class ServerThread extends Thread {
 							return;
 						}
 					}
-				}
+				}*/
 
 				long endTime_for_fulltext = System.currentTimeMillis();
 

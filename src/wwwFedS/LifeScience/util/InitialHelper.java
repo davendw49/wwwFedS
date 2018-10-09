@@ -24,9 +24,9 @@ public class InitialHelper {
 	public HashMap<String, Integer> MapOfName2Id = new HashMap<>();// name->id
 	private BufferedReader bufferedReader;
 
-	//public static String basepath = "/home/daven/";
+	public static String basepath = "/home/daven/";
 	//public static String basepath = "src/";
-	public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
+	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	public void init() throws IOException {
 		FileInputStream inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema.txt"); // 绝对路径或相对路径都可以，这里是绝对路径，写入文件时演示相对路径S
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
