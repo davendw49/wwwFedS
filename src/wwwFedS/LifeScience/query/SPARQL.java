@@ -39,6 +39,7 @@ public class SPARQL {
 		for (Integer kn : kwnum) {
 			if (origin.indexOf("k"+String.valueOf(kn))!=-1) {
 				plusSPARQL+=mode.get(kn);
+				
 			}
 		}
 		return plusSPARQL;
