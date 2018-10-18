@@ -11,7 +11,7 @@ public class SPARQL {
 
 	public HashMap<Integer, ArrayList<String>> execList = new HashMap<>();
 
-	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, String mode) {
+	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, HashMap<Integer, String> mode) {
 		// 生成合理的sparql查询语句
 		for (int i = 0; i < queryArray.size(); i++) {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
@@ -20,13 +20,28 @@ public class SPARQL {
 				ArrayList<String> oneBaseQuery = new ArrayList<>();
 				if (qlist.get(j).size() > 0) {
 					for (String str : qlist.get(j)) {
-						String tmp = "SELECT * WHERE{\n" + str + mode + "}";
+						//生成附加filter或者union的sparql语句：
+						String plus = generatePlus(str, mode);
+						String tmp = "SELECT * WHERE{\n" + str + plus + "}";
 						oneBaseQuery.add(tmp);
 					}
 				}
 				execList.put(j, oneBaseQuery);
 			}
 		}
+	}
+	
+	public String generatePlus(String origin, HashMap<Integer, String> mode) {
+		ArrayList<Integer> kwnum = new ArrayList<>();
+		kwnum.addAll(mode.keySet());
+		//System.out.println(kwnum);
+		String plusSPARQL = "";
+		for (Integer kn : kwnum) {
+			if (origin.indexOf("k"+String.valueOf(kn))!=-1) {
+				plusSPARQL+=mode.get(kn);
+			}
+		}
+		return plusSPARQL;
 	}
 
 	public static void main(String[] args) throws Exception {

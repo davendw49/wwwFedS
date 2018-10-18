@@ -14,8 +14,8 @@ public class traverseAction {
 	public HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil = new HashMap<>();
 	public ArrayList<HashMap<Integer, ArrayList<String>>> queryArray = new ArrayList<>();// this is what i need
 	public ArrayList<ArrayList<String>> KeywordPoint = new ArrayList<>();
-	public static String unionMode = "";
-	public static String filterMode = "";
+	public static HashMap<Integer, String> unionMode = new HashMap<>();
+	public static HashMap<Integer, String> filterMode = new HashMap<>();
 
 	public traverseAction() {
 		// TODO Auto-generated constructor stub
@@ -228,6 +228,7 @@ public class traverseAction {
 	private static void generatePlus(ArrayList<Integer> kw, ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
 		String plus = "";
 		for (int i = 0; i < kw.size(); i++) {
+			plus = "";
 			String onePlus = "FILTER(";
 			int onekw = kw.get(i);
 			// System.out.println(pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)));
@@ -243,17 +244,21 @@ public class traverseAction {
 			onePlus += ")\n";
 			// System.out.println(onePlus);
 			plus += onePlus;
+			unionMode.put(i, plus);
 		}
 		// return plus;
-		unionMode = plus;
-		plus = "";
+		//unionMode = plus;
+		//plus = "";
 		for (int i = 0; i < kw.size(); i++) {
+			plus = "";
 			String keyword = pUnit.Query.get(i).KeyName;
 			String onePlus = "?k" + String.valueOf(i) + " search:matches ?m" + String.valueOf(i) + ". \n" + "?m"
 					+ String.valueOf(i) + " search:query \"" + keyword + "\";\n" + "search:score ?score; \n"
 					+ "search:snippet ?snippet. \n";
 			plus += onePlus;
+			filterMode.put(i, plus);
 		}
-		filterMode = plus;
+		System.out.println("unionMode:\n"+unionMode);
+		System.out.println("filterMode:\n"+filterMode);
 	}
 }
