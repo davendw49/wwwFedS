@@ -258,7 +258,7 @@ public class traverseAction {
 			plus += onePlus;
 			filterMode.put(i, plus);
 		}
-		System.out.println("unionMode:\n"+unionMode);
-		System.out.println("filterMode:\n"+filterMode);
+		//System.out.println("unionMode:\n"+unionMode);
+		//System.out.println("filterMode:\n"+filterMode);
 	}
 }
