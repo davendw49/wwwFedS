@@ -1,4 +1,4 @@
-package wwwFedS.LifeScience.util;
+﻿package wwwFedS.LifeScience.util;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -25,10 +25,10 @@ public class InitialHelper {
 	private BufferedReader bufferedReader;
 
 	public static String basepath = "/home/daven/";
-	//public static String basepath = "src/";
+	//public static String basepath = "src/wwwFedS/LifeScience/";
 	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	public void init() throws IOException {
-		FileInputStream inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema.txt"); // 绝对路径或相对路径都可以，这里是绝对路径，写入文件时演示相对路径S
+		FileInputStream inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		String str = null;
 		int start=0, end;
@@ -46,7 +46,7 @@ public class InitialHelper {
 		}
 
 		nodenum = start+1;
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_path.txt"); // 绝对路径或相对路径都可以，这里是绝对路径，写入文件时演示相对路径S
+		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_path.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
 
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		str = null;
@@ -134,7 +134,7 @@ public class InitialHelper {
 	 * GetClassChild
 	 * 
 	 * @param a
-	 * @return 返回是否存在边和存在如此方向的路径
+	 * @return 杩斿洖鏄惁瀛樺湪杈瑰拰瀛樺湪濡傛鏂瑰悜鐨勮矾寰?
 	 */
 	public boolean ifHasChild(int a) {
 		if (predicateMap.get(a).isEmpty())
@@ -156,7 +156,7 @@ public class InitialHelper {
 	 * @param className
 	 * @return
 	 * @throws IOException
-	 *             返回类的编号String->integer
+	 *             杩斿洖绫荤殑缂栧彿String->integer
 	 */
 	public int getClassN(String className) throws IOException {
 		return MapOfName2Id.get(className).intValue();
@@ -168,7 +168,7 @@ public class InitialHelper {
 	 * @param id
 	 * @return
 	 * @throws IOException
-	 *             返回类的具体名称integer->String
+	 *             杩斿洖绫荤殑鍏蜂綋鍚嶇Оinteger->String
 	 */
 	public String getClassR(int id) throws IOException {
 		return MapOfId2Name.get(id);
@@ -180,7 +180,7 @@ public class InitialHelper {
 	 * @param className
 	 * @return
 	 * @throws IOException
-	 *             返回所在的数据集
+	 *             杩斿洖鎵?鍦ㄧ殑鏁版嵁闆?
 	 */
 	public String getDNo(String className) throws IOException {
 		return className;
@@ -197,7 +197,7 @@ public class InitialHelper {
 	 * @param id
 	 * @return
 	 * @throws IOException
-	 *             获取predict的原版字符串
+	 *             鑾峰彇predict鐨勫師鐗堝瓧绗︿覆
 	 */
 	public String getPreR(int id) throws IOException {
 		return MapOfPreR.get(id);
