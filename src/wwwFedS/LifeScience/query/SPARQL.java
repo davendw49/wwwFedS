@@ -12,6 +12,7 @@ public class SPARQL {
 	public HashMap<Integer, ArrayList<String>> execList = new HashMap<>();
 
 	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, HashMap<Integer, String> mode) {
+		System.out.println("Start Query In Federated RDF System.");
 		// 生成合理的sparql查询语句
 		for (int i = 0; i < queryArray.size(); i++) {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);

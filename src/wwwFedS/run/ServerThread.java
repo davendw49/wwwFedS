@@ -65,9 +65,9 @@ public class ServerThread extends Thread {
 				System.out.println("keyword--type---x:");
 				System.out.println(list);
 
-				out.println("keyword--type---x:");
-				out.println(list);
-
+				//out.println("keyword--type---x:");
+				//out.println(list);
+				out.println("Keyword->Entity->Class are Mapping");
 				/*if (list.size() == 0) {
 					System.out.println("No final result!");
 					out.println("No final result!");
@@ -135,8 +135,8 @@ public class ServerThread extends Thread {
 
 						out.println("No final result!");
 					} else {
-						System.out.println("final result:");
-						System.out.println(result);
+						//System.out.println("final result:");
+						//System.out.println(result);
 
 						out.println("final result:");
 						out.println(result);

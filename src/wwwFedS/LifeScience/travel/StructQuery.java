@@ -28,7 +28,8 @@ public class StructQuery {
 		}
 		subgraph.brunchValue = sum;
 		subgraph.road = str;
-		// System.out.println(subgraph.road);
+		System.out.println("Subgraph Generated.");
+		
 	}
 
 	public void done(InitialHelper iHelper, ArrayList<Integer> Keyword) throws Exception {

@@ -128,6 +128,7 @@ public class InitialHelper {
 				predicateMap.get(f).add(s);
 			}
 		}
+		System.out.println("Finish Utils Initial with No Errors.");
 	}
 
 	/**

@@ -37,7 +37,8 @@ public class ParsingUnit {
 			kMaterial.EntityMapping = eMap;
 			Query.add(kMaterial);
 		}
-		SubQuery = new calComb().calculateCombinationInt(allKey);	
+		SubQuery = new calComb().calculateCombinationInt(allKey);
+		System.out.println("Finish Parse the Keywords, Our System has been told What You Want to Search.");
 	}
 
 	@Override

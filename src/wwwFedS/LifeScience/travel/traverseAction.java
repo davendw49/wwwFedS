@@ -39,7 +39,7 @@ public class traverseAction {
 		StructQuery gSubgraph = new StructQuery();
 		// ArrayList<Integer> sp = new ArrayList<>();
 		for (int index = 0; index < possibleQuery; index++) {
-			System.out.println("**************************************************");
+			System.out.print(index + "***");
 			gSubgraph.done(iHelper, StartPoint.get(index));
 			generatePlus(StartPoint.get(index), pUnit, iHelper);
 			/**
@@ -77,6 +77,7 @@ public class traverseAction {
 			System.out.println("1:" + multiQueryUtil.get(1));
 			System.out.println("2:" + multiQueryUtil.get(2));
 			System.out.println("3:" + multiQueryUtil.get(3));
+			System.out.println("Structural Query:finished");
 			// ************************************************************************************************************
 			// 这里成功的在各个数据集中生成子图，下面需要开始查询的构建，根据点和边的信息生成sparql查询语句
 			HashMap<Integer, ArrayList<String>> querylist = new HashMap<>();
@@ -109,6 +110,7 @@ public class traverseAction {
 				} else {
 					querylist.put(i, new ArrayList<>());
 				}
+				
 
 			}
 
@@ -135,6 +137,7 @@ public class traverseAction {
 		}
 		System.out.println("**************************************************");
 		System.out.println(filterMode);*/
+		System.out.println("SPARQL Query:Established.");
 	}
 
 	public void clear() {
@@ -246,6 +249,7 @@ public class traverseAction {
 			plus += onePlus;
 			unionMode.put(i, plus);
 		}
+		System.out.println("unionMode:finished.");
 		// return plus;
 		//unionMode = plus;
 		//plus = "";
@@ -260,5 +264,6 @@ public class traverseAction {
 		}
 		//System.out.println("unionMode:\n"+unionMode);
 		//System.out.println("filterMode:\n"+filterMode);
+		System.out.println("filterMode:finished.");
 	}
 }
