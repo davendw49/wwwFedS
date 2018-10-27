@@ -24,7 +24,8 @@ public class InitialHelper {
 	public HashMap<String, Integer> MapOfName2Id = new HashMap<>();// name->id
 	private BufferedReader bufferedReader;
 
-	public static String basepath = "/home/daven/";
+	//public static String basepath = "/home/daven/";
+	public static String basepath = "/home/FedS_system/";
 	//public static String basepath = "src/wwwFedS/LifeScience/";
 	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	public void init() throws IOException {

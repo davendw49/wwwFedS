@@ -72,7 +72,7 @@ public class mainAction {
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
 		// System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, traverseAction.filterMode);
+		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
 
 		/*for (int i = 0; i < 4; i++) {
 			System.out.println("this is a query for database" + i + ": ");
