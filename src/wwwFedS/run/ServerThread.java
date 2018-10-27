@@ -62,8 +62,8 @@ public class ServerThread extends Thread {
 						e.printStackTrace();
 					}
 				}
-				System.out.println("keyword--type---x:");
-				System.out.println(list);
+				System.out.println("keyword--type---x finished");
+				//System.out.println(list);
 
 				//out.println("keyword--type---x:");
 				//out.println(list);

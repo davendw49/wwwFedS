@@ -121,9 +121,9 @@ public class lsQuery {
 				if(snippet.contains(kw.toLowerCase()))
 				{
 					
-					System.out.println("found match: ");
+					//System.out.println("found match: ");
 					for (Binding binding : bindings) {
-						System.out.println(" "+binding.getName()+": "+binding.getValue());
+						//System.out.println(" "+binding.getName()+": "+binding.getValue());
 					//}
 					
 					//for (Binding binding : bindings) {
@@ -171,9 +171,9 @@ public class lsQuery {
 				if(snippet.contains(kw.toLowerCase()))
 				{
 					
-					System.out.println("found match: ");
+					//System.out.println("found match: ");
 					for (Binding binding : bindings) {
-						System.out.println(" "+binding.getName()+": "+binding.getValue());
+						//System.out.println(" "+binding.getName()+": "+binding.getValue());
 					//}
 					
 					//for (Binding binding : bindings) {
@@ -219,9 +219,9 @@ public class lsQuery {
 				if(snippet.contains(kw.toLowerCase()))
 				{
 					
-					System.out.println("found match: ");
+					//System.out.println("found match: ");
 					for (Binding binding : bindings) {
-						System.out.println(" "+binding.getName()+": "+binding.getValue());
+						//System.out.println(" "+binding.getName()+": "+binding.getValue());
 					//}
 					
 					//for (Binding binding : bindings) {
@@ -268,9 +268,9 @@ public class lsQuery {
 				if(snippet.contains(kw.toLowerCase()))
 				{
 					
-					System.out.println("found match: ");
+					//System.out.println("found match: ");
 					for (Binding binding : bindings) {
-						System.out.println(" "+binding.getName()+": "+binding.getValue());
+						//System.out.println(" "+binding.getName()+": "+binding.getValue());
 					//}
 					
 					//for (Binding binding : bindings) {
@@ -619,9 +619,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -663,9 +663,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -705,9 +705,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -747,9 +747,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -789,9 +789,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -831,9 +831,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -873,9 +873,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -915,9 +915,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
@@ -957,9 +957,9 @@ public class lsQuery {
 			lastResult=lastResult+"result: "+result.hasNext()+"\n";
 			while (result.hasNext()){
 				BindingSet bindings = result.next();
-				System.out.println("found match: ");
+				//System.out.println("found match: ");
 				for (Binding binding : bindings) {
-					System.out.println(" "+binding.getName()+": "+binding.getValue());
+					//System.out.println(" "+binding.getName()+": "+binding.getValue());
 		
 					lastResult=lastResult+" "+binding.getName().toString()+": "+binding.getValue().toString()+"\n";
 				}
