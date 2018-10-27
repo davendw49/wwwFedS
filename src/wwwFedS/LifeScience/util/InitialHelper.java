@@ -190,7 +190,7 @@ public class InitialHelper {
 	}
 
 	public int getDN(int id) throws IOException {
-		return MapOfId2Num.get(id);
+		return MapOfId2Num.get(id); 
 	}
 
 	/**
