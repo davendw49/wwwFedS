@@ -96,7 +96,7 @@ public class ServerThread extends Thread {
 					String result = "";
 					long endTime_for_structquery = System.currentTimeMillis();
 
-					// ִ查询最终结果
+					//查询最终结果
 					//for (int k = 0; k < slist.size(); k++) {
 
 						for (int j = 0; j < 4; j++) {
