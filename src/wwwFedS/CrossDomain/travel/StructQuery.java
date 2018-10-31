@@ -2,10 +2,12 @@ package wwwFedS.CrossDomain.travel;
 
 import java.util.ArrayList;
 
-import wwwFedS.LifeScience.travel.DataStructure.Graph;
-import wwwFedS.LifeScience.travel.DataStructure.SBrunch;
-import wwwFedS.LifeScience.travel.DataStructure.SGraphEdge;
-import wwwFedS.LifeScience.util.InitialHelper;
+import wwwFedS.CrossDomain.travel.DataStructure.Graph;
+import wwwFedS.CrossDomain.travel.DataStructure.SBrunch;
+import wwwFedS.CrossDomain.travel.DataStructure.SGraphEdge;
+import wwwFedS.CrossDomain.util.InitialHelper;
+
+
 
 public class StructQuery {
 

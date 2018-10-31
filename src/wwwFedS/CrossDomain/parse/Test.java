@@ -3,7 +3,7 @@ package wwwFedS.CrossDomain.parse;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import wwwFedS.LifeScience.util.InitialHelper;
+import wwwFedS.CrossDomain.util.InitialHelper;
 
 public class Test {
 

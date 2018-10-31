@@ -11,28 +11,38 @@ public class SPARQL {
 
 	public HashMap<Integer, ArrayList<String>> execList = new HashMap<>();
 
-	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, HashMap<Integer, String> mode) {
+	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray, String modeName) {
+		//System.out.println(plusArray);
 		System.out.println("Start Query In Federated RDF System.");
 		// 生成合理的sparql查询语句
+		
+		execList.put(0, new ArrayList<>());
+		execList.put(1, new ArrayList<>());
+		execList.put(2, new ArrayList<>());
+		execList.put(3, new ArrayList<>());
+		
+		if (queryArray.size() == plusArray.size()) System.out.println("number is correct, sparql query is under making");
+		
 		for (int i = 0; i < queryArray.size(); i++) {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
 			// System.out.println(i + " situation: ");
 			for (int j = 0; j < 4; j++) {
-				ArrayList<String> oneBaseQuery = new ArrayList<>();
+				
 				if (qlist.get(j).size() > 0) {
 					for (String str : qlist.get(j)) {
 						//生成附加filter或者union的sparql语句：
-						String plus = generatePlus(str, mode);
+						String plus = generatePlus(str, plusArray.get(i), modeName);
 						String tmp = "SELECT * WHERE{\n" + str + plus + "}";
-						oneBaseQuery.add(tmp);
+						if (!plus.equals("")) execList.get(j).add(tmp);
 					}
 				}
-				execList.put(j, oneBaseQuery);
+				//execList.put(j, oneBaseQuery);
 			}
 		}
 	}
 	
-	public String generatePlus(String origin, HashMap<Integer, String> mode) {
+	public String generatePlus(String origin, HashMap<String, HashMap<Integer, String>> modePlus, String modeName) {
+		HashMap<Integer, String> mode = modePlus.get(modeName);
 		ArrayList<Integer> kwnum = new ArrayList<>();
 		kwnum.addAll(mode.keySet());
 		//System.out.println(kwnum);
@@ -83,7 +93,7 @@ public class SPARQL {
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
 		System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
+		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
 		
 		for (int i=0;i<4;i++) {
 			System.out.println("this is a query for database" + i + ": ");

@@ -5,6 +5,8 @@ import java.net.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer;
+
 import wwwFedS.luceneSail.lsQuery;
 
 import wwwFedS.LifeScience.*;
@@ -13,12 +15,25 @@ import wwwFedS.LifeScience.*;
 public class ServerThread extends Thread {
 
 	Socket s = null;
+	//public static String basepath = "/home/daven/";
+	public static String basepath = "/home/FedS_system/";
+	//public static String basepath = "src/wwwFedS/LifeScience/";
+	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 
 	public ServerThread(Socket s1) {
 		s = s1;
 	}
 
 	public void run() {
+		
+		
+		/*FileInputStream inputStream = new FileInputStream(basepath + "dict_a/keyword_is_class.txt");
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+		String str = null;
+		while ((str = bufferedReader.readLine()) != null) {
+			String strArr[] = str.split("%");
+		}*/
+		
 		try {
 			InputStream is = s.getInputStream();
 			InputStreamReader isr = new InputStreamReader(is);
@@ -48,6 +63,11 @@ public class ServerThread extends Thread {
 				HashMap<String, HashMap<String, ArrayList<String>>> list = new HashMap<>();
 
 				for (int i = 0; i < sa.length; i++) {
+					
+					
+					//if (sa)
+					
+					
 					try {
 						// list.add(new lsQuery().exExecute(sa[i]));
 						
@@ -63,7 +83,9 @@ public class ServerThread extends Thread {
 					}
 				}
 				System.out.println("keyword--type---x finished");
-				//System.out.println(list);
+				System.out.println(list.keySet());
+				System.out.println("**************\n*************************\n******************\n***************");
+				System.out.println(list.values());
 
 				//out.println("keyword--type---x:");
 				//out.println(list);
@@ -100,6 +122,8 @@ public class ServerThread extends Thread {
 					//for (int k = 0; k < slist.size(); k++) {
 
 						for (int j = 0; j < 4; j++) {
+							System.out.println(j + "slist.get(j).size(): " + slist.get(j).size());
+							//System.out.println(slist.get(j));
 							for (int i = 0; i < slist.get(j).size(); i++) {
 								String qs = slist.get(j).get(i);
 								String qs1 = qs;

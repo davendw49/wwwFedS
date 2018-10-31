@@ -3,10 +3,11 @@ package wwwFedS.CrossDomain;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import wwwFedS.LifeScience.parse.ParsingUnit;
-import wwwFedS.LifeScience.query.SPARQL;
-import wwwFedS.LifeScience.travel.traverseAction;
-import wwwFedS.LifeScience.util.InitialHelper;
+import wwwFedS.CrossDomain.parse.ParsingUnit;
+import wwwFedS.CrossDomain.query.SPARQL;
+import wwwFedS.CrossDomain.travel.traverseAction;
+import wwwFedS.CrossDomain.util.InitialHelper;
+
 
 public class mainAction {
 	public static void main(String[] args) throws Exception {
@@ -47,7 +48,7 @@ public class mainAction {
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
 		System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
+		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
 
 		for (int i = 0; i < 4; i++) {
 			System.out.println("this is a query for database" + i + ": ");
@@ -72,7 +73,7 @@ public class mainAction {
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
 		// System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
+		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
 
 		/*for (int i = 0; i < 4; i++) {
 			System.out.println("this is a query for database" + i + ": ");

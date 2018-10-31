@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
+
 import wwwFedS.LifeScience.parse.ParsingUnit;
 import wwwFedS.LifeScience.parse.calComb;
 import wwwFedS.LifeScience.travel.DataStructure.SGraphEdge;
@@ -12,10 +13,12 @@ import wwwFedS.LifeScience.util.InitialHelper;
 public class traverseAction {
 
 	public HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil = new HashMap<>();
+	
 	public ArrayList<HashMap<Integer, ArrayList<String>>> queryArray = new ArrayList<>();// this is what i need
+	public ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray = new ArrayList<>();// this is what we want to plus
+	
 	public ArrayList<ArrayList<String>> KeywordPoint = new ArrayList<>();
-	public static HashMap<Integer, String> unionMode = new HashMap<>();
-	public static HashMap<Integer, String> filterMode = new HashMap<>();
+	
 
 	public traverseAction() {
 		// TODO Auto-generated constructor stub
@@ -40,8 +43,14 @@ public class traverseAction {
 		// ArrayList<Integer> sp = new ArrayList<>();
 		for (int index = 0; index < possibleQuery; index++) {
 			System.out.print(index + "***");
+			
+			/**
+			 * this keyword list plus query 
+			 */
+			
 			gSubgraph.done(iHelper, StartPoint.get(index));
-			generatePlus(StartPoint.get(index), pUnit, iHelper);
+			HashMap<String, HashMap<Integer, String>> onePlus = generatePlus(StartPoint.get(index), pUnit, iHelper);
+			
 			/**
 			 * SGraphEdge ed = new SGraphEdge(); ed.first = 220; ed.second = 1;
 			 * gSubgraph.TheSubGraph.add(ed);
@@ -119,8 +128,11 @@ public class traverseAction {
 				if (querylist.get(j).isEmpty())
 					flag++;
 			}
-			if (flag <= 3)
+			if (flag <= 2) {
 				queryArray.add(querylist);
+				plusArray.add(onePlus);
+			}
+				
 		}
 
 		// System.out.println("**************************************************");
@@ -228,7 +240,9 @@ public class traverseAction {
 		}
 	}
 
-	private static void generatePlus(ArrayList<Integer> kw, ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
+	private HashMap<String, HashMap<Integer, String>> generatePlus(ArrayList<Integer> kw, ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
+		HashMap<Integer, String> unionMode = new HashMap<>();
+		HashMap<Integer, String> filterMode = new HashMap<>();
 		String plus = "";
 		for (int i = 0; i < kw.size(); i++) {
 			plus = "";
@@ -265,5 +279,11 @@ public class traverseAction {
 		//System.out.println("unionMode:\n"+unionMode);
 		//System.out.println("filterMode:\n"+filterMode);
 		System.out.println("filterMode:finished.");
+		
+		HashMap<String, HashMap<Integer, String>> onePlus = new HashMap<>();
+		onePlus.put("unionMode", unionMode);
+		onePlus.put("filterMode", filterMode);
+		
+		return onePlus;
 	}
 }

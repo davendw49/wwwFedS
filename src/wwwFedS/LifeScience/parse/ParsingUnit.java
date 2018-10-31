@@ -7,7 +7,7 @@ import wwwFedS.LifeScience.util.InitialHelper;
 
 public class ParsingUnit {
 
-	public ArrayList<KeyMaterial> Query = new ArrayList<>();
+	public HashMap<Integer, KeyMaterial> Query = new HashMap<>();
 	public ArrayList<ArrayList<Integer>> SubQuery = new ArrayList<>();
 	public String filterMode = "";
 	public String unionMode = "";
@@ -35,8 +35,9 @@ public class ParsingUnit {
 			allKey.add(oneKey);
 			kMaterial.ClassSet = cSet;
 			kMaterial.EntityMapping = eMap;
-			Query.add(kMaterial);
+			Query.put(kwList.indexOf(kString), kMaterial);
 		}
+		System.out.println(Query);
 		SubQuery = new calComb().calculateCombinationInt(allKey);
 		System.out.println("Finish Parse the Keywords, Our System has been told What You Want to Search.");
 	}

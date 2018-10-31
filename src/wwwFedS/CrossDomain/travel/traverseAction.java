@@ -4,15 +4,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import wwwFedS.LifeScience.parse.ParsingUnit;
-import wwwFedS.LifeScience.parse.calComb;
-import wwwFedS.LifeScience.travel.DataStructure.SGraphEdge;
-import wwwFedS.LifeScience.util.InitialHelper;
+import wwwFedS.CrossDomain.parse.ParsingUnit;
+import wwwFedS.CrossDomain.parse.calComb;
+import wwwFedS.CrossDomain.travel.DataStructure.SGraphEdge;
+import wwwFedS.CrossDomain.util.InitialHelper;
+
 
 public class traverseAction {
 
 	public HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil = new HashMap<>();
+	
 	public ArrayList<HashMap<Integer, ArrayList<String>>> queryArray = new ArrayList<>();// this is what i need
+	public ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray = new ArrayList<>();// this is what we want to plus
+	
 	public ArrayList<ArrayList<String>> KeywordPoint = new ArrayList<>();
 	public static HashMap<Integer, String> unionMode = new HashMap<>();
 	public static HashMap<Integer, String> filterMode = new HashMap<>();
@@ -23,15 +27,11 @@ public class traverseAction {
 		ArrayList<SGraphEdge> a1 = new ArrayList<>();
 		ArrayList<SGraphEdge> a2 = new ArrayList<>();
 		ArrayList<SGraphEdge> a3 = new ArrayList<>();
-		ArrayList<SGraphEdge> a4 = new ArrayList<>();
-		ArrayList<SGraphEdge> a5 = new ArrayList<>();
 
 		multiQueryUtil.put(0, a0);
 		multiQueryUtil.put(1, a1);
 		multiQueryUtil.put(2, a2);
 		multiQueryUtil.put(3, a3);
-		multiQueryUtil.put(4, a4);
-		multiQueryUtil.put(5, a5);
 	}
 
 	public void start(ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
@@ -46,6 +46,16 @@ public class traverseAction {
 			System.out.print(index + "***");
 			gSubgraph.done(iHelper, StartPoint.get(index));
 			generatePlus(StartPoint.get(index), pUnit, iHelper);
+			
+			/**
+			 * this keyword list plus query 
+			 */
+			HashMap<String, HashMap<Integer, String>> onePlus = new HashMap<>();
+			onePlus.put("unionMode", unionMode);
+			onePlus.put("filterMode", filterMode);
+			
+			
+			
 			/**
 			 * SGraphEdge ed = new SGraphEdge(); ed.first = 220; ed.second = 1;
 			 * gSubgraph.TheSubGraph.add(ed);
@@ -73,7 +83,7 @@ public class traverseAction {
 				multiQueryUtil.get(thisdb).add(gSubgraph.TheSubGraph.get(i));
 			}
 
-			for (int keyindex = 0; keyindex < 6; keyindex++) {
+			for (int keyindex = 0; keyindex < 4; keyindex++) {
 				removeDuplicate(multiQueryUtil.get(keyindex));
 			}
 
@@ -81,13 +91,11 @@ public class traverseAction {
 			System.out.println("1:" + multiQueryUtil.get(1));
 			System.out.println("2:" + multiQueryUtil.get(2));
 			System.out.println("3:" + multiQueryUtil.get(3));
-			System.out.println("4:" + multiQueryUtil.get(4));
-			System.out.println("5:" + multiQueryUtil.get(5));
 			System.out.println("Structural Query:finished");
 			// ************************************************************************************************************
-			//这里成功的在各个数据集中生成子图，下面需要开始查询的构建，根据点和边的信息生成sparql查询语句
+			// 这里成功的在各个数据集中生成子图，下面需要开始查询的构建，根据点和边的信息生成sparql查询语句
 			HashMap<Integer, ArrayList<String>> querylist = new HashMap<>();
-			for (int i = 0; i < 6; i++) {
+			for (int i = 0; i < 4; i++) {
 				ArrayList<SGraphEdge> edgeset = multiQueryUtil.get(i);
 				ArrayList<ArrayList<String>> multiEdge = new ArrayList<>();
 				for (int k = 0; k < edgeset.size(); k++) {
@@ -121,12 +129,15 @@ public class traverseAction {
 			}
 
 			int flag = 0;
-			for (int j = 0; j < 6; j++) {
+			for (int j = 0; j < 4; j++) {
 				if (querylist.get(j).isEmpty())
 					flag++;
 			}
-			if (flag <= 3)
+			if (flag <= 2) {
 				queryArray.add(querylist);
+				plusArray.add(onePlus);
+			}
+				
 		}
 
 		// System.out.println("**************************************************");
@@ -137,7 +148,7 @@ public class traverseAction {
 		for (int i = 0; i < queryArray.size(); i++) {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
 			System.out.println(i + " situation: ");
-			for (int j = 0; j < 6; j++) {
+			for (int j = 0; j < 4; j++) {
 				System.out.println(qlist.get(j));
 			}
 		}

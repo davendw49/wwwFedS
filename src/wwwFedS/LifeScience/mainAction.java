@@ -47,7 +47,7 @@ public class mainAction {
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
 		System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
+		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
 
 		for (int i = 0; i < 4; i++) {
 			System.out.println("this is a query for database" + i + ": ");
@@ -71,8 +71,8 @@ public class mainAction {
 
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
-		// System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, traverseAction.unionMode);
+		System.out.println(pUnit.toString());
+		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
 
 		/*for (int i = 0; i < 4; i++) {
 			System.out.println("this is a query for database" + i + ": ");
