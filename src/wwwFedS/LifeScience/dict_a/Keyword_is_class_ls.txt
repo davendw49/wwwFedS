@@ -1,0 +1,261 @@
+Compound%<http://bio2rdf.org/ns/chebi#Compound>
+Ontology%<http://www.w3.org/2002/07/owl#Ontology>
+Activity%<http://dbpedia.org/ontology/Activity>
+Class%<http://www.w3.org/2002/07/owl#Class>
+Thing%<http://www.w3.org/2002/07/owl#Thing>
+Actor%<http://dbpedia.org/ontology/Actor>
+Artist%<http://dbpedia.org/ontology/Artist>
+Administrative Region%<http://dbpedia.org/ontology/AdministrativeRegion>
+Populated Place%<http://dbpedia.org/ontology/PopulatedPlace>
+Adult Actor%<http://dbpedia.org/ontology/AdultActor>
+Aircraft%<http://dbpedia.org/ontology/Aircraft>
+Mean Of Transportation%<http://dbpedia.org/ontology/MeanOfTransportation>
+Airline%<http://dbpedia.org/ontology/Airline>
+Company%<http://dbpedia.org/ontology/Company>
+Airport%<http://dbpedia.org/ontology/Airport>
+Building%<http://dbpedia.org/ontology/Building>
+Album%<http://dbpedia.org/ontology/Album>
+Musical Work%<http://dbpedia.org/ontology/MusicalWork>
+Ambassador%<http://dbpedia.org/ontology/Ambassador>
+Person%<http://dbpedia.org/ontology/Person>
+American Football League%<http://dbpedia.org/ontology/AmericanFootballLeague>
+Sports League%<http://dbpedia.org/ontology/SportsLeague>
+American Football Player%<http://dbpedia.org/ontology/AmericanFootballPlayer>
+Gridiron Football Player%<http://dbpedia.org/ontology/GridironFootballPlayer>
+American Football Team%<http://dbpedia.org/ontology/AmericanFootballTeam>
+Sports Team%<http://dbpedia.org/ontology/SportsTeam>
+Amphibian%<http://dbpedia.org/ontology/Amphibian>
+Animal%<http://dbpedia.org/ontology/Animal>
+Anatomical Structure%<http://dbpedia.org/ontology/AnatomicalStructure>
+Eukaryote%<http://dbpedia.org/ontology/Eukaryote>
+Arachnid%<http://dbpedia.org/ontology/Arachnid>
+Archaea%<http://dbpedia.org/ontology/Archaea>
+Species%<http://dbpedia.org/ontology/Species>
+Architect%<http://dbpedia.org/ontology/Architect>
+Artery%<http://dbpedia.org/ontology/Artery>
+Astronaut%<http://dbpedia.org/ontology/Astronaut>
+Datatype Property%<http://www.w3.org/2002/07/owl#DatatypeProperty>
+Athlete%<http://dbpedia.org/ontology/Athlete>
+Australian Football League%<http://dbpedia.org/ontology/AustralianFootballLeague>
+Auto Racing League%<http://dbpedia.org/ontology/AutoRacingLeague>
+Automobile%<http://dbpedia.org/ontology/Automobile>
+Automobile Engine%<http://dbpedia.org/ontology/AutomobileEngine>
+Device%<http://dbpedia.org/ontology/Device>
+Award%<http://dbpedia.org/ontology/Award>
+Bacteria%<http://dbpedia.org/ontology/Bacteria>
+Badminton Player%<http://dbpedia.org/ontology/BadmintonPlayer>
+Band%<http://dbpedia.org/ontology/Band>
+Organisation%<http://dbpedia.org/ontology/Organisation>
+Baseball League%<http://dbpedia.org/ontology/BaseballLeague>
+Baseball Player%<http://dbpedia.org/ontology/BaseballPlayer>
+Basketball League%<http://dbpedia.org/ontology/BasketballLeague>
+Basketball Player%<http://dbpedia.org/ontology/BasketballPlayer>
+Beverage%<http://dbpedia.org/ontology/Beverage>
+Bird%<http://dbpedia.org/ontology/Bird>
+Body Of Water%<http://dbpedia.org/ontology/BodyOfWater>
+Place%<http://dbpedia.org/ontology/Place>
+Bone%<http://dbpedia.org/ontology/Bone>
+Book%<http://dbpedia.org/ontology/Book>
+Work%<http://dbpedia.org/ontology/Work>
+Boxer%<http://dbpedia.org/ontology/Boxer>
+Brain%<http://dbpedia.org/ontology/Brain>
+Bridge%<http://dbpedia.org/ontology/Bridge>
+British Royalty%<http://dbpedia.org/ontology/BritishRoyalty>
+Broadcast%<http://dbpedia.org/ontology/Broadcast>
+Canadian Football League%<http://dbpedia.org/ontology/CanadianFootballLeague>
+Canadian Football Team%<http://dbpedia.org/ontology/CanadianFootballTeam>
+Canal%<http://dbpedia.org/ontology/Canal>
+Stream%<http://dbpedia.org/ontology/Stream>
+Cardinal%<http://dbpedia.org/ontology/Cardinal>
+Cleric%<http://dbpedia.org/ontology/Cleric>
+Cave%<http://dbpedia.org/ontology/Cave>
+Chancellor%<http://dbpedia.org/ontology/Chancellor>
+Politician%<http://dbpedia.org/ontology/Politician>
+Chemical Compound%<http://dbpedia.org/ontology/ChemicalCompound>
+Christian Bishop%<http://dbpedia.org/ontology/ChristianBishop>
+City%<http://dbpedia.org/ontology/City>
+Settlement%<http://dbpedia.org/ontology/Settlement>
+Club Moss%<http://dbpedia.org/ontology/ClubMoss>
+Plant%<http://dbpedia.org/ontology/Plant>
+College%<http://dbpedia.org/ontology/College>
+Educational Institution%<http://dbpedia.org/ontology/EducationalInstitution>
+College Coach%<http://dbpedia.org/ontology/CollegeCoach>
+Colour%<http://dbpedia.org/ontology/Colour>
+Comedian%<http://dbpedia.org/ontology/Comedian>
+Comics Character%<http://dbpedia.org/ontology/ComicsCharacter>
+Fictional Character%<http://dbpedia.org/ontology/FictionalCharacter>
+Comics Creator%<http://dbpedia.org/ontology/ComicsCreator>
+Congressman%<http://dbpedia.org/ontology/Congressman>
+Conifer%<http://dbpedia.org/ontology/Conifer>
+Continent%<http://dbpedia.org/ontology/Continent>
+Convention%<http://dbpedia.org/ontology/Convention>
+Event%<http://dbpedia.org/ontology/Event>
+Country%<http://dbpedia.org/ontology/Country>
+Cricket League%<http://dbpedia.org/ontology/CricketLeague>
+Cricketer%<http://dbpedia.org/ontology/Cricketer>
+Criminal%<http://dbpedia.org/ontology/Criminal>
+Crustacean%<http://dbpedia.org/ontology/Crustacean>
+Currency%<http://dbpedia.org/ontology/Currency>
+Cycad%<http://dbpedia.org/ontology/Cycad>
+Cyclist%<http://dbpedia.org/ontology/Cyclist>
+Disease%<http://dbpedia.org/ontology/Disease>
+Drug%<http://dbpedia.org/ontology/Drug>
+Embryology%<http://dbpedia.org/ontology/Embryology>
+Ethnic Group%<http://dbpedia.org/ontology/EthnicGroup>
+Eurovision Song Contest Entry%<http://dbpedia.org/ontology/EurovisionSongContestEntry>
+Song%<http://dbpedia.org/ontology/Song>
+Fern%<http://dbpedia.org/ontology/Fern>
+Field Hockey League%<http://dbpedia.org/ontology/FieldHockeyLeague>
+Figure Skater%<http://dbpedia.org/ontology/FigureSkater>
+Film%<http://dbpedia.org/ontology/Film>
+Film Festival%<http://dbpedia.org/ontology/FilmFestival>
+Fish%<http://dbpedia.org/ontology/Fish>
+Flowering Plant%<http://dbpedia.org/ontology/FloweringPlant>
+Formula One Racer%<http://dbpedia.org/ontology/FormulaOneRacer>
+Fungus%<http://dbpedia.org/ontology/Fungus>
+Gaelic Games Player%<http://dbpedia.org/ontology/GaelicGamesPlayer>
+Game%<http://dbpedia.org/ontology/Game>
+Ginkgo%<http://dbpedia.org/ontology/Ginkgo>
+Gnetophytes%<http://dbpedia.org/ontology/Gnetophytes>
+Governor%<http://dbpedia.org/ontology/Governor>
+Grand Prix%<http://dbpedia.org/ontology/GrandPrix>
+Sports Event%<http://dbpedia.org/ontology/SportsEvent>
+Grape%<http://dbpedia.org/ontology/Grape>
+Green Alga%<http://dbpedia.org/ontology/GreenAlga>
+Handball League%<http://dbpedia.org/ontology/HandballLeague>
+Historic Place%<http://dbpedia.org/ontology/HistoricPlace>
+Hockey Team%<http://dbpedia.org/ontology/HockeyTeam>
+Hospital%<http://dbpedia.org/ontology/Hospital>
+Ice Hockey League%<http://dbpedia.org/ontology/IceHockeyLeague>
+Ice Hockey Player%<http://dbpedia.org/ontology/IceHockeyPlayer>
+Infrastructure%<http://dbpedia.org/ontology/Infrastructure>
+Inline Hockey League%<http://dbpedia.org/ontology/InlineHockeyLeague>
+Insect%<http://dbpedia.org/ontology/Insect>
+Island%<http://dbpedia.org/ontology/Island>
+Journalist%<http://dbpedia.org/ontology/Journalist>
+Judge%<http://dbpedia.org/ontology/Judge>
+Lacrosse League%<http://dbpedia.org/ontology/LacrosseLeague>
+Lake%<http://dbpedia.org/ontology/Lake>
+Language%<http://dbpedia.org/ontology/Language>
+Launch Pad%<http://dbpedia.org/ontology/LaunchPad>
+Legislature%<http://dbpedia.org/ontology/Legislature>
+Lighthouse%<http://dbpedia.org/ontology/Lighthouse>
+Lunar Crater%<http://dbpedia.org/ontology/LunarCrater>
+Lymph%<http://dbpedia.org/ontology/Lymph>
+Magazine%<http://dbpedia.org/ontology/Magazine>
+Mammal%<http://dbpedia.org/ontology/Mammal>
+Mayor%<http://dbpedia.org/ontology/Mayor>
+Member Of Parliament%<http://dbpedia.org/ontology/MemberOfParliament>
+Military Conflict%<http://dbpedia.org/ontology/MilitaryConflict>
+Military Person%<http://dbpedia.org/ontology/MilitaryPerson>
+Military Unit%<http://dbpedia.org/ontology/MilitaryUnit>
+Mixed Martial Arts Event%<http://dbpedia.org/ontology/MixedMartialArtsEvent>
+Mixed Martial Arts League%<http://dbpedia.org/ontology/MixedMartialArtsLeague>
+Model%<http://dbpedia.org/ontology/Model>
+Mollusca%<http://dbpedia.org/ontology/Mollusca>
+Monarch%<http://dbpedia.org/ontology/Monarch>
+Monument%<http://dbpedia.org/ontology/Monument>
+Moss%<http://dbpedia.org/ontology/Moss>
+Motorcycle Racing League%<http://dbpedia.org/ontology/MotorcycleRacingLeague>
+Mountain%<http://dbpedia.org/ontology/Mountain>
+Mountain Range%<http://dbpedia.org/ontology/MountainRange>
+Muscle%<http://dbpedia.org/ontology/Muscle>
+Music Festival%<http://dbpedia.org/ontology/MusicFestival>
+Music Genre%<http://dbpedia.org/ontology/MusicGenre>
+Musical%<http://dbpedia.org/ontology/Musical>
+Musical Artist%<http://dbpedia.org/ontology/MusicalArtist>
+Nascar Driver%<http://dbpedia.org/ontology/NascarDriver>
+National Collegiate Athletic Association Athlete%<http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete>
+Nerve%<http://dbpedia.org/ontology/Nerve>
+Newspaper%<http://dbpedia.org/ontology/Newspaper>
+Non- Profit Organisation%<http://dbpedia.org/ontology/Non-ProfitOrganisation>
+Office Holder%<http://dbpedia.org/ontology/OfficeHolder>
+Olympic Result%<http://dbpedia.org/ontology/OlympicResult>
+Olympics%<http://dbpedia.org/ontology/Olympics>
+Park%<http://dbpedia.org/ontology/Park>
+Person Function%<http://dbpedia.org/ontology/PersonFunction>
+Philosopher%<http://dbpedia.org/ontology/Philosopher>
+Planet%<http://dbpedia.org/ontology/Planet>
+Playboy Playmate%<http://dbpedia.org/ontology/PlayboyPlaymate>
+Poker Player%<http://dbpedia.org/ontology/PokerPlayer>
+Polo League%<http://dbpedia.org/ontology/PoloLeague>
+Pope%<http://dbpedia.org/ontology/Pope>
+President%<http://dbpedia.org/ontology/President>
+Prime Minister%<http://dbpedia.org/ontology/PrimeMinister>
+Protected Area%<http://dbpedia.org/ontology/ProtectedArea>
+Protein%<http://dbpedia.org/ontology/Protein>
+Race%<http://dbpedia.org/ontology/Race>
+Radio Station%<http://dbpedia.org/ontology/RadioStation>
+Record Label%<http://dbpedia.org/ontology/RecordLabel>
+Reptile%<http://dbpedia.org/ontology/Reptile>
+River%<http://dbpedia.org/ontology/River>
+Road%<http://dbpedia.org/ontology/Road>
+Rocket%<http://dbpedia.org/ontology/Rocket>
+Rugby League%<http://dbpedia.org/ontology/RugbyLeague>
+Rugby Player%<http://dbpedia.org/ontology/RugbyPlayer>
+Saint%<http://dbpedia.org/ontology/Saint>
+Sales%<http://dbpedia.org/ontology/Sales>
+School%<http://dbpedia.org/ontology/School>
+Scientist%<http://dbpedia.org/ontology/Scientist>
+Senator%<http://dbpedia.org/ontology/Senator>
+Ship%<http://dbpedia.org/ontology/Ship>
+Shopping Mall%<http://dbpedia.org/ontology/ShoppingMall>
+Single%<http://dbpedia.org/ontology/Single>
+Site Of Special Scientific Interest%<http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>
+Ski Area%<http://dbpedia.org/ontology/SkiArea>
+Skyscraper%<http://dbpedia.org/ontology/Skyscraper>
+Soccer Club%<http://dbpedia.org/ontology/SoccerClub>
+Soccer League%<http://dbpedia.org/ontology/SoccerLeague>
+Soccer Manager%<http://dbpedia.org/ontology/SoccerManager>
+Soccer Player%<http://dbpedia.org/ontology/SoccerPlayer>
+Softball League%<http://dbpedia.org/ontology/SoftballLeague>
+Software%<http://dbpedia.org/ontology/Software>
+Space Mission%<http://dbpedia.org/ontology/SpaceMission>
+Space Shuttle%<http://dbpedia.org/ontology/SpaceShuttle>
+Space Station%<http://dbpedia.org/ontology/SpaceStation>
+Spacecraft%<http://dbpedia.org/ontology/Spacecraft>
+Speedway League%<http://dbpedia.org/ontology/SpeedwayLeague>
+Sport%<http://dbpedia.org/ontology/Sport>
+Stadium%<http://dbpedia.org/ontology/Stadium>
+Station%<http://dbpedia.org/ontology/Station>
+Supreme Court Of The United States Case%<http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>
+Television Episode%<http://dbpedia.org/ontology/TelevisionEpisode>
+Television Show%<http://dbpedia.org/ontology/TelevisionShow>
+Tennis League%<http://dbpedia.org/ontology/TennisLeague>
+Tennis Player%<http://dbpedia.org/ontology/TennisPlayer>
+Town%<http://dbpedia.org/ontology/Town>
+Trade Union%<http://dbpedia.org/ontology/TradeUnion>
+University%<http://dbpedia.org/ontology/University>
+Valley%<http://dbpedia.org/ontology/Valley>
+Vein%<http://dbpedia.org/ontology/Vein>
+Video Game%<http://dbpedia.org/ontology/VideoGame>
+Videogames League%<http://dbpedia.org/ontology/VideogamesLeague>
+Village%<http://dbpedia.org/ontology/Village>
+Voice Actor%<http://dbpedia.org/ontology/VoiceActor>
+Volleyball League%<http://dbpedia.org/ontology/VolleyballLeague>
+Weapon%<http://dbpedia.org/ontology/Weapon>
+Website%<http://dbpedia.org/ontology/Website>
+Wine Region%<http://dbpedia.org/ontology/WineRegion>
+Womens Tennis Association Tournament%<http://dbpedia.org/ontology/WomensTennisAssociationTournament>
+World Heritage Site%<http://dbpedia.org/ontology/WorldHeritageSite>
+Wrestler%<http://dbpedia.org/ontology/Wrestler>
+Wrestling Event%<http://dbpedia.org/ontology/WrestlingEvent>
+Writer%<http://dbpedia.org/ontology/Writer>
+Year In Spaceflight%<http://dbpedia.org/ontology/YearInSpaceflight>
+Object Property%<http://www.w3.org/2002/07/owl#ObjectProperty>
+Functional Property%<http://www.w3.org/2002/07/owl#FunctionalProperty>
+Feature%<http://www.opengis.net/gml/_Feature>
+Concept%<http://www.w3.org/2004/02/skos/core#Concept>
+Person%<http://xmlns.com/foaf/0.1/Person>
+Property%<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>
+drug interactions%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drug_interactions>
+Class%<http://www.w3.org/2000/01/rdf-schema#Class>
+drugs%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugs>
+enzymes%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/enzymes>
+references%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/references>
+targets%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/targets>
+Offer%<http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/Offer>
+Compound%<http://bio2rdf.org/ns/kegg#Compound>
+Drug%<http://bio2rdf.org/ns/kegg#Drug>
+Enzyme%<http://bio2rdf.org/ns/kegg#Enzyme>
+Reaction%<http://bio2rdf.org/ns/kegg#Reaction>
