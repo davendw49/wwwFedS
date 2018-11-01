@@ -500,6 +500,8 @@ public class lsQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
+		
 		TupleQuery query;
 		try {
 
@@ -539,6 +541,9 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
+		
 
 		TupleQuery query;
 		try {
@@ -579,6 +584,8 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
 
 		TupleQuery query;
 		try {
@@ -619,6 +626,8 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
 
 		TupleQuery query;
 		try {
@@ -659,6 +668,8 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
 
 		TupleQuery query;
 		try {
@@ -700,6 +711,8 @@ public class lsQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
+		
 		TupleQuery query;
 		try {
 
@@ -739,6 +752,8 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
 
 		TupleQuery query;
 		try {
@@ -779,6 +794,8 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
 
 		TupleQuery query;
 		try {
@@ -819,6 +836,8 @@ public class lsQuery {
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
+		
+		if (queryString.length()>15000) return lastResult + "result: false \n"; 
 
 		TupleQuery query;
 		try {

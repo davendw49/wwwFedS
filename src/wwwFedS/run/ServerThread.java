@@ -15,24 +15,24 @@ import wwwFedS.LifeScience.*;
 public class ServerThread extends Thread {
 
 	Socket s = null;
+	
+	////*****************************************************************************************************************//
 	// public static String basepath = "/home/daven/";
 	// public static String basepath = "/home/FedS_system/";
-	public static String basepath = "src/wwwFedS/LifeScience/";
-	// public static String basepath =
-	// "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
+	//public static String basepath = "src/wwwFedS/LifeScience/";
+	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	//HashMap<String, String> keyword_is_class = new HashMap<>();
 	//HashMap<String, String> keyword_is_property = new HashMap<>();
+	////*****************************************************************************************************************//
 
 	public ServerThread(Socket s1) {
 		s = s1;
 	}
 
-	//public ServerThread() {
-
-	//}
+	
 
 	public void run() {
-
+		//*****************************************************************************************************************//
 		/*ArrayList<String> classArray = new ArrayList<>();
 		ArrayList<String> propertyArray = new ArrayList<>();
 		try {
@@ -45,6 +45,7 @@ public class ServerThread extends Thread {
 		}
 
 		classArray.addAll(keyword_is_class.keySet());*/
+		//*****************************************************************************************************************//
 
 		try {
 			InputStream is = s.getInputStream();
@@ -75,7 +76,7 @@ public class ServerThread extends Thread {
 				HashMap<String, HashMap<String, ArrayList<String>>> list = new HashMap<>();
 
 				for (int i = 0; i < sa.length; i++) {
-
+					//*****************************************************************************************************************//
 					/*if (classArray.contains(sa[i].toLowerCase())) {
 						HashMap<String, ArrayList<String>> classFormMap = new HashMap<>();
 						
@@ -86,7 +87,7 @@ public class ServerThread extends Thread {
 					} else if (propertyArray.contains(sa[i].toLowerCase())) {
 						
 						try {
-							/*
+							
 							if (!list.containsKey(sa[i])) {
 								list.put(sa[i], new HashMap<String, ArrayList<String>>());
 							}
@@ -100,6 +101,7 @@ public class ServerThread extends Thread {
 						}
 						
 					}*/
+					//*****************************************************************************************************************//
 					//else {
 
 						try {
@@ -118,9 +120,9 @@ public class ServerThread extends Thread {
 					//}
 				}
 				System.out.println("keyword--type---x finished");
-				System.out.println(list.keySet());
+				//System.out.println(list.keySet());
 				System.out.println("**************\n*************************\n******************\n***************");
-				System.out.println(list.values());
+				//System.out.println(list.values());
 
 				// out.println("keyword--type---x:");
 				// out.println(list);
@@ -151,7 +153,7 @@ public class ServerThread extends Thread {
 					// for (int k = 0; k < slist.size(); k++) {
 
 					for (int j = 0; j < 4; j++) {
-						System.out.println(j + "slist.get(j).size(): " + slist.get(j).size());
+						System.out.println(j + " slist.get(j).size(): " + slist.get(j).size());
 						// System.out.println(slist.get(j));
 						for (int i = 0; i < slist.get(j).size(); i++) {
 							String qs = slist.get(j).get(i);
@@ -278,8 +280,13 @@ public class ServerThread extends Thread {
 	}
 
 	}
+	
+	//*****************************************************************************************************************//
+	/*public ServerThread() {
 
-	/*public void init() throws IOException {
+	}
+	
+	public void init() throws IOException {
 		/**
 		 * read the info of class_is_keyword mapping of life_science and cross_domain
 		 
@@ -305,4 +312,5 @@ public class ServerThread extends Thread {
 		sThread.init();
 		System.out.println(sThread.keyword_is_class);
 	}*/
+	//*****************************************************************************************************************//
 }
