@@ -5,6 +5,8 @@ import java.net.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.springframework.context.annotation.Bean;
+
 import com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer;
 
 import wwwFedS.luceneSail.lsQuery;
@@ -15,24 +17,28 @@ import wwwFedS.LifeScience.*;
 public class ServerThread extends Thread {
 
 	Socket s = null;
-	
-	////*****************************************************************************************************************//
+
+	//// *****************************************************************************************************************//
 	// public static String basepath = "/home/daven/";
 	// public static String basepath = "/home/FedS_system/";
 	//public static String basepath = "src/wwwFedS/LifeScience/";
-	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
+	// public static String basepath =
+	// "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	//HashMap<String, String> keyword_is_class = new HashMap<>();
 	//HashMap<String, String> keyword_is_property = new HashMap<>();
-	////*****************************************************************************************************************//
+	//// *****************************************************************************************************************//
+
+	/*
+	 * time calculate
+	 */
+	public HashMap<Integer, ArrayList<Long>> timeCollection = new HashMap<>();
 
 	public ServerThread(Socket s1) {
 		s = s1;
 	}
 
-	
-
 	public void run() {
-		//*****************************************************************************************************************//
+		// *****************************************************************************************************************//
 		/*ArrayList<String> classArray = new ArrayList<>();
 		ArrayList<String> propertyArray = new ArrayList<>();
 		try {
@@ -45,7 +51,7 @@ public class ServerThread extends Thread {
 		}
 
 		classArray.addAll(keyword_is_class.keySet());*/
-		//*****************************************************************************************************************//
+		// *****************************************************************************************************************//
 
 		try {
 			InputStream is = s.getInputStream();
@@ -76,32 +82,32 @@ public class ServerThread extends Thread {
 				HashMap<String, HashMap<String, ArrayList<String>>> list = new HashMap<>();
 
 				for (int i = 0; i < sa.length; i++) {
-					//*****************************************************************************************************************//
+					// *****************************************************************************************************************//
 					/*if (classArray.contains(sa[i].toLowerCase())) {
 						HashMap<String, ArrayList<String>> classFormMap = new HashMap<>();
-						
+
 						classFormMap.put(keyword_is_class.get(sa[i].toLowerCase()), new ArrayList<>());
 						classFormMap.get(keyword_is_class.get(sa[i].toLowerCase())).add("class");
 						list.put(sa[i], classFormMap);
-						
+
 					} else if (propertyArray.contains(sa[i].toLowerCase())) {
-						
+
 						try {
-							
+
 							if (!list.containsKey(sa[i])) {
 								list.put(sa[i], new HashMap<String, ArrayList<String>>());
 							}
 							new lsQuery();
 							list.put(sa[i], lsQuery.lsExecute(sa[i]));
-							//需要写一些东西
+							// 需要写一些东西
 
 						} catch (Exception e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-						
+
 					}*/
-					//*****************************************************************************************************************//
+					// *****************************************************************************************************************//
 					//else {
 
 						try {
@@ -120,9 +126,9 @@ public class ServerThread extends Thread {
 					//}
 				}
 				System.out.println("keyword--type---x finished");
-				//System.out.println(list.keySet());
+				// System.out.println(list.keySet());
 				System.out.println("**************\n*************************\n******************\n***************");
-				//System.out.println(list.values());
+				// System.out.println(list.values());
 
 				// out.println("keyword--type---x:");
 				// out.println(list);
@@ -153,6 +159,7 @@ public class ServerThread extends Thread {
 					// for (int k = 0; k < slist.size(); k++) {
 
 					for (int j = 0; j < 4; j++) {
+						timeCollection.put(j, new ArrayList<>());
 						System.out.println(j + " slist.get(j).size(): " + slist.get(j).size());
 						// System.out.println(slist.get(j));
 						for (int i = 0; i < slist.get(j).size(); i++) {
@@ -166,20 +173,32 @@ public class ServerThread extends Thread {
 							qs1 = qs1.trim();
 							if (!qs1.equals("")) {
 								if (j == 0) {
+									long chebi_start_time = System.currentTimeMillis();
 									new lsQuery();
 									result = result + lsQuery.chebiQuery(qs);
+									long chebi_end_time = System.currentTimeMillis();
+									timeCollection.get(0).add(chebi_end_time - chebi_start_time);
 								}
 								if (j == 1) {
+									long kegg_start_time = System.currentTimeMillis();
 									new lsQuery();
 									result = result + lsQuery.keggQuery(qs);
+									long kegg_end_time = System.currentTimeMillis();
+									timeCollection.get(1).add(kegg_end_time - kegg_start_time);
 								}
 								if (j == 2) {
+									long drugbank_start_time = System.currentTimeMillis();
 									new lsQuery();
 									result = result + lsQuery.drugbankQuery(qs);
+									long drugbank_end_time = System.currentTimeMillis();
+									timeCollection.get(2).add(drugbank_end_time - drugbank_start_time);
 								}
 								if (j == 3) {
+									long dbpedia_start_time = System.currentTimeMillis();
 									new lsQuery();
 									result = result + lsQuery.dbpediaQuery(qs);
+									long dbpedia_end_time = System.currentTimeMillis();
+									timeCollection.get(3).add(dbpedia_end_time - dbpedia_start_time);
 								}
 							}
 						}
@@ -206,6 +225,15 @@ public class ServerThread extends Thread {
 					out.println("fisrt ls: " + (endTime_for_fulltext - startTime) + "ms");
 					out.println("traversing: " + (endTime_for_structquery - endTime_for_fulltext) + "ms");
 					out.println("final: " + (endTime_for_sparql - endTime_for_structquery) + "ms");
+					
+					for (int num=0;num<4;num++) {
+						long time_repository=0;
+						for (long time_one : timeCollection.get(num)) {
+							time_repository+=time_one;
+						}
+						System.out.println(num + "'s times: " + time_repository/timeCollection.size() + "ms");
+					}
+
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -213,83 +241,86 @@ public class ServerThread extends Thread {
 
 			}
 
-	/*
-	 * //CrossDomain else if(str.contains("cm")) { String s=br.readLine();
-	 * 
-	 * String[] sa=s.split(";");
-	 * 
-	 * 
-	 * //利用luceneSail进行查询
-	 * 
-	 * //查询结果集 ArrayList<HashMap<String,String>> list=new
-	 * ArrayList<HashMap<String,String>>();
-	 * 
-	 * for(int i=0;i<sa.length;i++) { try { list.add(new
-	 * lsQuery().cmExecute(sa[i])); } catch (Exception e) { // TODO Auto-generated
-	 * catch block e.printStackTrace(); } }
-	 * 
-	 * System.out.println("type---x:"); System.out.println(list);
-	 * 
-	 * out.println("type---x:"); out.println(list);
-	 * 
-	 * if(list.size()==0) { System.out.println("No final result!");
-	 * out.println("No final result!"); return; } else { for(int
-	 * i=0;i<list.size();i++) { if(list.get(i).isEmpty()) {
-	 * System.out.println("No final result!"); out.println("No final result!");
-	 * return; } } }
-	 * 
-	 * //生成最后查询
-	 * 
-	 * ArrayList<HashMap<Integer, ArrayList<String>>> slist;
-	 * 
-	 * try {
-	 * 
-	 * slist = new CrossDomin.mainAction().FedS_Action(list); String result="";
-	 * //执行最后的查询 for(int k=0;k<slist.size();k++) { for(int j=0;j<6;j++) { for(int
-	 * i=0;i<slist.get(k).get(j).size();i++) { if(j==0) { result=result+new
-	 * lsQuery().geonamesQuery(slist.get(k).get(j).get(i)); } if(j==1) {
-	 * result=result+new lsQuery().jamendoQuery(slist.get(k).get(j).get(i)); }
-	 * if(j==2) { result=result+new lsQuery().nytQuery(slist.get(k).get(j).get(i));
-	 * } if(j==3) { result=result+new
-	 * lsQuery().swdfoodQuery(slist.get(k).get(j).get(i)); } if(j==4) {
-	 * result=result+new lsQuery().linkedmdbQuery(slist.get(k).get(j).get(i)); }
-	 * if(j==5) { result=result+new
-	 * lsQuery().dbpediaQuery(slist.get(k).get(j).get(i)); } } } }
-	 * if(result.length()==0) { System.out.println("No final result!");
-	 * out.println("No final result!"); } else {
-	 * System.out.println("final result:"); System.out.println(result);
-	 * 
-	 * out.println("final result:"); out.println(result); }
-	 * 
-	 * 
-	 * } catch (IOException e) { // TODO Auto-generated catch block
-	 * e.printStackTrace(); } }
-	 */
+			/*
+			 * //CrossDomain else if(str.contains("cm")) { String s=br.readLine();
+			 * 
+			 * String[] sa=s.split(";");
+			 * 
+			 * 
+			 * //利用luceneSail进行查询
+			 * 
+			 * //查询结果集 ArrayList<HashMap<String,String>> list=new
+			 * ArrayList<HashMap<String,String>>();
+			 * 
+			 * for(int i=0;i<sa.length;i++) { try { list.add(new
+			 * lsQuery().cmExecute(sa[i])); } catch (Exception e) { // TODO Auto-generated
+			 * catch block e.printStackTrace(); } }
+			 * 
+			 * System.out.println("type---x:"); System.out.println(list);
+			 * 
+			 * out.println("type---x:"); out.println(list);
+			 * 
+			 * if(list.size()==0) { System.out.println("No final result!");
+			 * out.println("No final result!"); return; } else { for(int
+			 * i=0;i<list.size();i++) { if(list.get(i).isEmpty()) {
+			 * System.out.println("No final result!"); out.println("No final result!");
+			 * return; } } }
+			 * 
+			 * //生成最后查询
+			 * 
+			 * ArrayList<HashMap<Integer, ArrayList<String>>> slist;
+			 * 
+			 * try {
+			 * 
+			 * slist = new CrossDomin.mainAction().FedS_Action(list); String result="";
+			 * //执行最后的查询 for(int k=0;k<slist.size();k++) { for(int j=0;j<6;j++) { for(int
+			 * i=0;i<slist.get(k).get(j).size();i++) { if(j==0) { result=result+new
+			 * lsQuery().geonamesQuery(slist.get(k).get(j).get(i)); } if(j==1) {
+			 * result=result+new lsQuery().jamendoQuery(slist.get(k).get(j).get(i)); }
+			 * if(j==2) { result=result+new lsQuery().nytQuery(slist.get(k).get(j).get(i));
+			 * } if(j==3) { result=result+new
+			 * lsQuery().swdfoodQuery(slist.get(k).get(j).get(i)); } if(j==4) {
+			 * result=result+new lsQuery().linkedmdbQuery(slist.get(k).get(j).get(i)); }
+			 * if(j==5) { result=result+new
+			 * lsQuery().dbpediaQuery(slist.get(k).get(j).get(i)); } } } }
+			 * if(result.length()==0) { System.out.println("No final result!");
+			 * out.println("No final result!"); } else {
+			 * System.out.println("final result:"); System.out.println(result);
+			 * 
+			 * out.println("final result:"); out.println(result); }
+			 * 
+			 * 
+			 * } catch (IOException e) { // TODO Auto-generated catch block
+			 * e.printStackTrace(); } }
+			 */
 
-	else
+			else
 
-	{
-		return;
+			{
+				return;
+			}
+
+			os.close();
+			out.close();
+			is.close();
+			isr.close();
+			br.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
-	os.close();out.close();is.close();isr.close();br.close();}catch(
-	IOException e)
-	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-
-	}
-	
-	//*****************************************************************************************************************//
+	// *****************************************************************************************************************//
 	/*public ServerThread() {
 
 	}
-	
+
 	public void init() throws IOException {
-		/**
+		*
 		 * read the info of class_is_keyword mapping of life_science and cross_domain
-		 
+		
 		FileInputStream inputStream = new FileInputStream(basepath + "dict_a/Keyword_is_class_ls.txt");
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		String str = null;
@@ -299,18 +330,19 @@ public class ServerThread extends Thread {
 		}
 
 		FileInputStream inputStream1 = new FileInputStream(basepath + "dict_a/Keyword_is_property_ls.txt");
-		BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(inputStream));
+		BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(inputStream1));
 		String str1 = null;
-		while ((str1 = bufferedReader.readLine()) != null) {
+		while ((str1 = bufferedReader1.readLine()) != null) {
 			String[] stringArr = str1.split("%");
-			keyword_is_class.put(stringArr[0].toLowerCase(), stringArr[1]);
+			keyword_is_property.put(stringArr[0].toLowerCase(), stringArr[1]);
 		}
 	}
 
 	public static void main(String[] args) throws IOException {
 		ServerThread sThread = new ServerThread();
 		sThread.init();
-		System.out.println(sThread.keyword_is_class);
-	}*/
-	//*****************************************************************************************************************//
+		//System.out.println(sThread.keyword_is_class);
+		System.out.println(sThread.keyword_is_property);
+	} */
+	// *****************************************************************************************************************//
 }

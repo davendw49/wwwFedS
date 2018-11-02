@@ -26,12 +26,43 @@ public class lsQuery {
 	public static String toQuery(String kw) {
 		String keyword = kw;
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n"
-				+ "SELECT ?t ?snippet ?x WHERE { \n" + "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t. \n"
-				+ "?x search:matches ?m. \n" + "?m search:query \"" + keyword + "\";\n" + "search:score ?score; \n"
+				+ "SELECT DISTINCT ?t ?snippet ?x WHERE { \n" 
+				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t. \n"
+				+ "?x search:matches ?m. \n" 
+				+ "?m search:query \"" 
+				+ keyword + "\";\n" 
+				+ "search:score ?score; \n"
 				+ "search:snippet ?snippet. " + "}";
 		return queryString;
 	}
-	// 对life science的第一次查询
+	
+	public static String propertyQuery(String property) {
+		
+		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n"
+				+ "SELECT DISTINCT ?t1 ?t2 WHERE { \n"
+				+ "?x " + property + " ?y. \n"
+				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. \n"
+				+ "?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t2. \n"
+				+ "}";
+		return queryString;
+	}
+	
+	public static String classQuery(String className) {
+		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n"
+				+ "SELECT DISTINCT ?x WHERE { \n"
+				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> " + className + ". \n"
+				+ "}";
+		return queryString;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+		
 	public static HashMap<String, ArrayList<String>> lsExecute(String kw) {
 
 		HashMap<String, ArrayList<String>> sMap = new HashMap<String, ArrayList<String>>();
@@ -82,7 +113,7 @@ public class lsQuery {
 					if (!sMap.containsKey(type)) {
 						sMap.put(type, new ArrayList<>());
 					}
-					sMap.get(type).add(x);
+					if (!sMap.get(type).contains(x)) sMap.get(type).add(x);
 				}
 
 			}
@@ -125,7 +156,7 @@ public class lsQuery {
 					if (!sMap.containsKey(type)) {
 						sMap.put(type, new ArrayList<>());
 					}
-					sMap.get(type).add(x);
+					if (!sMap.get(type).contains(x)) sMap.get(type).add(x);
 				}
 
 			}
@@ -169,7 +200,7 @@ public class lsQuery {
 					if (!sMap.containsKey(type)) {
 						sMap.put(type, new ArrayList<>());
 					}
-					sMap.get(type).add(x);
+					if (!sMap.get(type).contains(x)) sMap.get(type).add(x);
 				}
 
 			}
@@ -213,7 +244,7 @@ public class lsQuery {
 					if (!sMap.containsKey(type)) {
 						sMap.put(type, new ArrayList<>());
 					}
-					sMap.get(type).add(x);
+					if (!sMap.get(type).contains(x)) sMap.get(type).add(x);
 				}
 
 			}
@@ -228,6 +259,10 @@ public class lsQuery {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
+		
+		
 		return sMap;
 
 	}

@@ -1,0 +1,1231 @@
+formula%<http://bio2rdf.org/ns/bio2rdf#formula>
+iupac Name%<http://bio2rdf.org/ns/chebi#iupacName>
+is conjugate base of%<http://bio2rdf.org/ns/chebi#is_conjugate_base_of>
+x Referenced By%<http://bio2rdf.org/ns/chebi#xReferencedBy>
+is a%<http://bio2rdf.org/ns/chebi#is_a>
+image%<http://bio2rdf.org/ns/bio2rdf#image>
+comment%<http://www.w3.org/2000/01/rdf-schema#comment>
+is substituent group from%<http://bio2rdf.org/ns/chebi#is_substituent_group_from>
+title%<http://purl.org/dc/elements/1.1/title>
+Status%<http://bio2rdf.org/ns/chebi#Status>
+label%<http://www.w3.org/2000/01/rdf-schema#label>
+url%<http://bio2rdf.org/ns/bio2rdf#url>
+modified%<http://purl.org/dc/elements/1.1/modified>
+type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+inchi%<http://bio2rdf.org/ns/bio2rdf#inchi>
+synonym%<http://bio2rdf.org/ns/bio2rdf#synonym>
+has part%<http://bio2rdf.org/ns/chebi#has_part>
+is conjugate acid of%<http://bio2rdf.org/ns/chebi#is_conjugate_acid_of>
+has role%<http://bio2rdf.org/ns/chebi#has_role>
+is tautomer of%<http://bio2rdf.org/ns/chebi#is_tautomer_of>
+is enantiomer of%<http://bio2rdf.org/ns/chebi#is_enantiomer_of>
+see Also%<http://www.w3.org/2000/01/rdf-schema#seeAlso>
+x Ref%<http://bio2rdf.org/ns/bio2rdf#xRef>
+x Source%<http://bio2rdf.org/ns/chebi#xSource>
+smiles%<http://bio2rdf.org/ns/bio2rdf#smiles>
+identifier%<http://purl.org/dc/elements/1.1/identifier>
+has functional parent%<http://bio2rdf.org/ns/chebi#has_functional_parent>
+has parent hydride%<http://bio2rdf.org/ns/chebi#has_parent_hydride>
+monarch%<http://dbpedia.org/ontology/monarch>
+beatified Date%<http://dbpedia.org/ontology/beatifiedDate>
+bafta Award%<http://dbpedia.org/ontology/baftaAward>
+dissolution Year%<http://dbpedia.org/ontology/dissolutionYear>
+lyrics%<http://dbpedia.org/ontology/lyrics>
+source Country%<http://dbpedia.org/ontology/sourceCountry>
+postal Code%<http://dbpedia.org/ontology/postalCode>
+introduction Date%<http://dbpedia.org/ontology/introductionDate>
+administrative District%<http://dbpedia.org/ontology/administrativeDistrict>
+phylum%<http://dbpedia.org/ontology/phylum>
+structural System%<http://dbpedia.org/ontology/structuralSystem>
+total Travellers%<http://dbpedia.org/ontology/totalTravellers>
+home Stadium%<http://dbpedia.org/ontology/homeStadium>
+satellites Deployed%<http://dbpedia.org/ontology/satellitesDeployed>
+denomination%<http://dbpedia.org/ontology/denomination>
+associated Band%<http://dbpedia.org/ontology/associatedBand>
+part Of Wine Region%<http://dbpedia.org/ontology/partOfWineRegion>
+former Choreographer%<http://dbpedia.org/ontology/formerChoreographer>
+failed Launches%<http://dbpedia.org/ontology/failedLaunches>
+dissolution Date%<http://dbpedia.org/ontology/dissolutionDate>
+track Number%<http://dbpedia.org/ontology/trackNumber>
+billed%<http://dbpedia.org/ontology/billed>
+artery%<http://dbpedia.org/ontology/artery>
+category%<http://dbpedia.org/ontology/category>
+isbn%<http://dbpedia.org/ontology/isbn>
+mean Temperature%<http://dbpedia.org/ontology/meanTemperature>
+golden Raspberry Award%<http://dbpedia.org/ontology/goldenRaspberryAward>
+brain Info Number%<http://dbpedia.org/ontology/brainInfoNumber>
+number Of Islands%<http://dbpedia.org/ontology/numberOfIslands>
+station%<http://dbpedia.org/ontology/station>
+league%<http://dbpedia.org/ontology/league>
+closed%<http://dbpedia.org/ontology/closed>
+story Editor%<http://dbpedia.org/ontology/storyEditor>
+previous Work%<http://dbpedia.org/ontology/previousWork>
+model%<http://dbpedia.org/ontology/model>
+known For%<http://dbpedia.org/ontology/knownFor>
+distance%<http://dbpedia.org/ontology/distance>
+emedicine Subject%<http://dbpedia.org/ontology/emedicineSubject>
+start Year Of Insertion%<http://dbpedia.org/ontology/startYearOfInsertion>
+source Place%<http://dbpedia.org/ontology/sourcePlace>
+company%<http://dbpedia.org/ontology/company>
+population Metro%<http://dbpedia.org/ontology/populationMetro>
+promotion%<http://dbpedia.org/ontology/promotion>
+introduced%<http://dbpedia.org/ontology/introduced>
+code%<http://dbpedia.org/ontology/code>
+career Prize Money%<http://dbpedia.org/ontology/careerPrizeMoney>
+geologic Period%<http://dbpedia.org/ontology/geologicPeriod>
+cmyk Coordinate Cyanic%<http://dbpedia.org/ontology/cmykCoordinateCyanic>
+revenue%<http://dbpedia.org/ontology/revenue>
+highest Building In Year%<http://dbpedia.org/ontology/highestBuildingInYear>
+internationally%<http://dbpedia.org/ontology/internationally>
+pref Label%<http://www.w3.org/2004/02/skos/core#prefLabel>
+share%<http://dbpedia.org/ontology/share>
+birth Name%<http://dbpedia.org/ontology/birthName>
+doctoral Student%<http://dbpedia.org/ontology/doctoralStudent>
+left Tributary%<http://dbpedia.org/ontology/leftTributary>
+using Country%<http://dbpedia.org/ontology/usingCountry>
+right Tributary%<http://dbpedia.org/ontology/rightTributary>
+redline%<http://dbpedia.org/ontology/redline>
+school%<http://dbpedia.org/ontology/school>
+aircraft Transport%<http://dbpedia.org/ontology/aircraftTransport>
+running Mate%<http://dbpedia.org/ontology/runningMate>
+width%<http://dbpedia.org/ontology/width>
+type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+imdb Id%<http://dbpedia.org/ontology/imdbId>
+minimum Elevation%<http://dbpedia.org/ontology/minimumElevation>
+lowest Position%<http://dbpedia.org/ontology/lowestPosition>
+national Ranking%<http://dbpedia.org/ontology/nationalRanking>
+same As%<http://www.w3.org/2002/07/owl#sameAs>
+ceeb%<http://dbpedia.org/ontology/ceeb>
+salary%<http://dbpedia.org/ontology/salary>
+ending Theme%<http://dbpedia.org/ontology/endingTheme>
+organ System%<http://dbpedia.org/ontology/organSystem>
+narrator%<http://dbpedia.org/ontology/narrator>
+nearest City%<http://dbpedia.org/ontology/nearestCity>
+college%<http://dbpedia.org/ontology/college>
+completion Date%<http://dbpedia.org/ontology/completionDate>
+previous Editor%<http://dbpedia.org/ontology/previousEditor>
+speaker%<http://dbpedia.org/ontology/speaker>
+birth Year%<http://dbpedia.org/ontology/birthYear>
+prospect Team%<http://dbpedia.org/ontology/prospectTeam>
+identification Symbol%<http://dbpedia.org/ontology/identificationSymbol>
+start Year Of Sales%<http://dbpedia.org/ontology/startYearOfSales>
+drugbank%<http://dbpedia.org/ontology/drugbank>
+management%<http://dbpedia.org/ontology/management>
+second Team%<http://dbpedia.org/ontology/secondTeam>
+type%<http://dbpedia.org/ontology/type>
+previous Infrastructure%<http://dbpedia.org/ontology/previousInfrastructure>
+shore Length%<http://dbpedia.org/ontology/shoreLength>
+former Callsign%<http://dbpedia.org/ontology/formerCallsign>
+foundation Person%<http://dbpedia.org/ontology/foundationPerson>
+average Speed%<http://dbpedia.org/ontology/averageSpeed>
+label%<http://www.w3.org/2000/01/rdf-schema#label>
+significant Project%<http://dbpedia.org/ontology/significantProject>
+leader%<http://dbpedia.org/ontology/leader>
+founding Person%<http://dbpedia.org/ontology/foundingPerson>
+nerve%<http://dbpedia.org/ontology/nerve>
+notable Wine%<http://dbpedia.org/ontology/notableWine>
+mean Radius%<http://dbpedia.org/ontology/meanRadius>
+metropolitan Borough%<http://dbpedia.org/ontology/metropolitanBorough>
+location Country%<http://dbpedia.org/ontology/locationCountry>
+relation%<http://dbpedia.org/ontology/relation>
+beltway City%<http://dbpedia.org/ontology/beltwayCity>
+next Mission%<http://dbpedia.org/ontology/nextMission>
+summer Appearances%<http://dbpedia.org/ontology/summerAppearances>
+draft Year%<http://dbpedia.org/ontology/draftYear>
+orbital Period%<http://dbpedia.org/ontology/orbitalPeriod>
+landingvehicle%<http://dbpedia.org/ontology/landingvehicle>
+icd10%<http://dbpedia.org/ontology/icd10>
+nominee%<http://dbpedia.org/ontology/nominee>
+port1 Docking Date%<http://dbpedia.org/ontology/port1DockingDate>
+mouth Place%<http://dbpedia.org/ontology/mouthPlace>
+derivative%<http://dbpedia.org/ontology/derivative>
+prime Minister%<http://dbpedia.org/ontology/primeMinister>
+death%<http://dbpedia.org/property/death>
+subregion%<http://dbpedia.org/ontology/subregion>
+last Flight End Date%<http://dbpedia.org/ontology/lastFlightEndDate>
+maximum Temperature%<http://dbpedia.org/ontology/maximumTemperature>
+notable Idea%<http://dbpedia.org/ontology/notableIdea>
+river Branch Of%<http://dbpedia.org/ontology/riverBranchOf>
+game Engine%<http://dbpedia.org/ontology/gameEngine>
+original End Point%<http://dbpedia.org/ontology/originalEndPoint>
+publicly Accessible%<http://dbpedia.org/ontology/publiclyAccessible>
+long%<http://www.w3.org/2003/01/geo/wgs84_pos#long>
+draft%<http://dbpedia.org/ontology/draft>
+awards%<http://dbpedia.org/ontology/awards>
+manager%<http://dbpedia.org/ontology/manager>
+anthem%<http://dbpedia.org/ontology/anthem>
+government Elevation%<http://dbpedia.org/ontology/governmentElevation>
+ethnicity%<http://dbpedia.org/ontology/ethnicity>
+colours%<http://dbpedia.org/ontology/colours>
+municipality%<http://dbpedia.org/ontology/municipality>
+person%<http://dbpedia.org/ontology/person>
+end Year Of Sales%<http://dbpedia.org/ontology/endYearOfSales>
+causalties%<http://dbpedia.org/ontology/causalties>
+ratio%<http://dbpedia.org/ontology/ratio>
+architectural Style%<http://dbpedia.org/ontology/architecturalStyle>
+opponent%<http://dbpedia.org/ontology/opponent>
+third Commander%<http://dbpedia.org/ontology/thirdCommander>
+highway System%<http://dbpedia.org/ontology/highwaySystem>
+birth Date%<http://dbpedia.org/ontology/birthDate>
+time Zone%<http://dbpedia.org/ontology/timeZone>
+alumni%<http://dbpedia.org/ontology/alumni>
+latest Release Version%<http://dbpedia.org/ontology/latestReleaseVersion>
+statistic Year%<http://dbpedia.org/ontology/statisticYear>
+distributing Company%<http://dbpedia.org/ontology/distributingCompany>
+domain%<http://www.w3.org/2000/01/rdf-schema#domain>
+cylinder Bore%<http://dbpedia.org/ontology/cylinderBore>
+associated Musical Artist%<http://dbpedia.org/ontology/associatedMusicalArtist>
+following Event%<http://dbpedia.org/ontology/followingEvent>
+service Start Year%<http://dbpedia.org/ontology/serviceStartYear>
+named After%<http://dbpedia.org/ontology/namedAfter>
+based On%<http://dbpedia.org/ontology/basedOn>
+undrafted Year%<http://dbpedia.org/ontology/undraftedYear>
+elevation%<http://dbpedia.org/ontology/elevation>
+trainer%<http://dbpedia.org/ontology/trainer>
+fc Runs%<http://dbpedia.org/ontology/fcRuns>
+committee%<http://dbpedia.org/ontology/committee>
+opening Theme%<http://dbpedia.org/ontology/openingTheme>
+program Cost%<http://dbpedia.org/ontology/programCost>
+station Visit Duration%<http://dbpedia.org/ontology/stationVisitDuration>
+pdb%<http://dbpedia.org/ontology/pdb>
+largest City%<http://dbpedia.org/ontology/largestCity>
+borough%<http://dbpedia.org/ontology/borough>
+media Type%<http://dbpedia.org/ontology/mediaType>
+age Range%<http://dbpedia.org/ontology/ageRange>
+crew Member%<http://dbpedia.org/ontology/crewMember>
+team%<http://dbpedia.org/ontology/team>
+president%<http://dbpedia.org/ontology/president>
+movement%<http://dbpedia.org/ontology/movement>
+daylight Saving Time Zone%<http://dbpedia.org/ontology/daylightSavingTimeZone>
+hometown%<http://dbpedia.org/ontology/hometown>
+fuel Type%<http://dbpedia.org/ontology/fuelType>
+river Branch%<http://dbpedia.org/ontology/riverBranch>
+musical Band%<http://dbpedia.org/ontology/musicalBand>
+governor%<http://dbpedia.org/ontology/governor>
+other Party%<http://dbpedia.org/ontology/otherParty>
+extinction Year%<http://dbpedia.org/ontology/extinctionYear>
+conservation Status%<http://dbpedia.org/ontology/conservationStatus>
+royal Anthem%<http://dbpedia.org/ontology/royalAnthem>
+lunar Orbit Time%<http://dbpedia.org/ontology/lunarOrbitTime>
+ascent%<http://dbpedia.org/ontology/ascent>
+cmyk Coordinate Black%<http://dbpedia.org/ontology/cmykCoordinateBlack>
+founding Year%<http://dbpedia.org/ontology/foundingYear>
+vice President%<http://dbpedia.org/ontology/vicePresident>
+demolition Date%<http://dbpedia.org/ontology/demolitionDate>
+family%<http://dbpedia.org/ontology/family>
+aircraft Electronic%<http://dbpedia.org/ontology/aircraftElectronic>
+governor General%<http://dbpedia.org/ontology/governorGeneral>
+association Of Local Government%<http://dbpedia.org/ontology/associationOfLocalGovernment>
+flag Bearer%<http://dbpedia.org/ontology/flagBearer>
+dcc%<http://dbpedia.org/ontology/dcc>
+periapsis%<http://dbpedia.org/ontology/periapsis>
+third Driver%<http://dbpedia.org/ontology/thirdDriver>
+fastest Driver Team%<http://dbpedia.org/ontology/fastestDriverTeam>
+religion%<http://dbpedia.org/ontology/religion>
+leader Name%<http://dbpedia.org/ontology/leaderName>
+national Olympic Committee%<http://dbpedia.org/ontology/nationalOlympicCommittee>
+aircraft Fighter%<http://dbpedia.org/ontology/aircraftFighter>
+emmy Award%<http://dbpedia.org/ontology/emmyAward>
+first Win%<http://dbpedia.org/ontology/firstWin>
+associated Act%<http://dbpedia.org/ontology/associatedAct>
+ec Number%<http://dbpedia.org/ontology/ecNumber>
+tenant%<http://dbpedia.org/ontology/tenant>
+main Interest%<http://dbpedia.org/ontology/mainInterest>
+date%<http://dbpedia.org/ontology/date>
+current Record%<http://dbpedia.org/ontology/currentRecord>
+nobel Laureates%<http://dbpedia.org/ontology/nobelLaureates>
+aircraft Helicopter Cargo%<http://dbpedia.org/ontology/aircraftHelicopterCargo>
+games%<http://dbpedia.org/ontology/games>
+aircraft Patrol%<http://dbpedia.org/ontology/aircraftPatrol>
+country Origin%<http://dbpedia.org/ontology/countryOrigin>
+foundation Organisation%<http://dbpedia.org/ontology/foundationOrganisation>
+relative%<http://dbpedia.org/ontology/relative>
+parent Company%<http://dbpedia.org/ontology/parentCompany>
+podiums%<http://dbpedia.org/ontology/podiums>
+network%<http://dbpedia.org/ontology/network>
+organisation%<http://dbpedia.org/ontology/organisation>
+position%<http://dbpedia.org/ontology/position>
+icdo%<http://dbpedia.org/ontology/icdo>
+total Population%<http://dbpedia.org/ontology/totalPopulation>
+diameter%<http://dbpedia.org/ontology/diameter>
+aircraft Trainer%<http://dbpedia.org/ontology/aircraftTrainer>
+championships%<http://dbpedia.org/ontology/championships>
+field%<http://dbpedia.org/ontology/field>
+visitors Per Year%<http://dbpedia.org/ontology/visitorsPerYear>
+ariel Award%<http://dbpedia.org/ontology/arielAward>
+fc%<http://dbpedia.org/ontology/fc>
+previous Mission%<http://dbpedia.org/ontology/previousMission>
+language%<http://dbpedia.org/ontology/language>
+wha Draft Team%<http://dbpedia.org/ontology/whaDraftTeam>
+booster%<http://dbpedia.org/ontology/booster>
+vehicle%<http://dbpedia.org/ontology/vehicle>
+diseasesdb%<http://dbpedia.org/ontology/diseasesdb>
+chancellor%<http://dbpedia.org/ontology/chancellor>
+rgb Coordinate Red%<http://dbpedia.org/ontology/rgbCoordinateRed>
+geology%<http://dbpedia.org/ontology/geology>
+occupation%<http://dbpedia.org/ontology/occupation>
+operating Income%<http://dbpedia.org/ontology/operatingIncome>
+parish%<http://dbpedia.org/ontology/parish>
+mainspan%<http://dbpedia.org/ontology/mainspan>
+distributing Label%<http://dbpedia.org/ontology/distributingLabel>
+current Season%<http://dbpedia.org/ontology/currentSeason>
+amgid%<http://dbpedia.org/ontology/amgid>
+river Mouth%<http://dbpedia.org/ontology/riverMouth>
+suborbital Flights%<http://dbpedia.org/ontology/suborbitalFlights>
+wine Region%<http://dbpedia.org/ontology/wineRegion>
+dorlands Prefix%<http://dbpedia.org/ontology/dorlandsPrefix>
+mayor%<http://dbpedia.org/ontology/mayor>
+vice Principal%<http://dbpedia.org/ontology/vicePrincipal>
+docked Time%<http://dbpedia.org/ontology/dockedTime>
+death Date%<http://dbpedia.org/ontology/deathDate>
+statistic Value%<http://dbpedia.org/ontology/statisticValue>
+service%<http://dbpedia.org/ontology/service>
+vice Prime Minister%<http://dbpedia.org/ontology/vicePrimeMinister>
+number Of Wineries%<http://dbpedia.org/ontology/numberOfWineries>
+language Type%<http://dbpedia.org/ontology/languageType>
+wavelength%<http://dbpedia.org/ontology/wavelength>
+original Start Point%<http://dbpedia.org/ontology/originalStartPoint>
+production End Year%<http://dbpedia.org/ontology/productionEndYear>
+wheelbase%<http://dbpedia.org/ontology/wheelbase>
+automobile Platform%<http://dbpedia.org/ontology/automobilePlatform>
+heir%<http://dbpedia.org/ontology/heir>
+source Confluence Region%<http://dbpedia.org/ontology/sourceConfluenceRegion>
+lat%<http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+current Partner%<http://dbpedia.org/ontology/currentPartner>
+volume%<http://dbpedia.org/ontology/volume>
+building End Date%<http://dbpedia.org/ontology/buildingEndDate>
+author%<http://dbpedia.org/ontology/author>
+drains To%<http://dbpedia.org/ontology/drainsTo>
+body Discovered%<http://dbpedia.org/ontology/bodyDiscovered>
+patron%<http://dbpedia.org/ontology/patron>
+music Composer%<http://dbpedia.org/ontology/musicComposer>
+role%<http://dbpedia.org/ontology/role>
+iata Location Identifier%<http://dbpedia.org/ontology/iataLocationIdentifier>
+time In Space%<http://dbpedia.org/ontology/timeInSpace>
+area Metro%<http://dbpedia.org/ontology/areaMetro>
+child%<http://dbpedia.org/ontology/child>
+date Of Abandonment%<http://dbpedia.org/ontology/dateOfAbandonment>
+first Launch Rocket%<http://dbpedia.org/ontology/firstLaunchRocket>
+dean%<http://dbpedia.org/ontology/dean>
+place Of Origin%<http://dbpedia.org/ontology/placeOfOrigin>
+military Unit%<http://dbpedia.org/ontology/militaryUnit>
+spacecraft%<http://dbpedia.org/ontology/spacecraft>
+last Flight%<http://dbpedia.org/ontology/lastFlight>
+domain%<http://dbpedia.org/ontology/domain>
+lunar Sample Mass%<http://dbpedia.org/ontology/lunarSampleMass>
+record Date%<http://dbpedia.org/ontology/recordDate>
+athletics%<http://dbpedia.org/ontology/athletics>
+selection%<http://dbpedia.org/ontology/selection>
+pole Driver%<http://dbpedia.org/ontology/poleDriver>
+region%<http://dbpedia.org/ontology/region>
+birth Place%<http://dbpedia.org/property/birthPlace>
+highest Mountain%<http://dbpedia.org/ontology/highestMountain>
+source Position%<http://dbpedia.org/ontology/sourcePosition>
+last Flight Start Date%<http://dbpedia.org/ontology/lastFlightStartDate>
+developer%<http://dbpedia.org/ontology/developer>
+coach%<http://dbpedia.org/ontology/coach>
+sub Class Of%<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+designer%<http://dbpedia.org/ontology/designer>
+custodian%<http://dbpedia.org/ontology/custodian>
+iupac Name%<http://dbpedia.org/ontology/iupacName>
+album%<http://dbpedia.org/ontology/album>
+former Partner%<http://dbpedia.org/ontology/formerPartner>
+education%<http://dbpedia.org/ontology/education>
+draft Team%<http://dbpedia.org/ontology/draftTeam>
+writer%<http://dbpedia.org/ontology/writer>
+vein%<http://dbpedia.org/ontology/vein>
+chairperson%<http://dbpedia.org/ontology/chairperson>
+death Year%<http://dbpedia.org/ontology/deathYear>
+source Region%<http://dbpedia.org/ontology/sourceRegion>
+inflow%<http://dbpedia.org/ontology/inflow>
+head%<http://dbpedia.org/ontology/head>
+distance Laps%<http://dbpedia.org/ontology/distanceLaps>
+brand%<http://dbpedia.org/ontology/brand>
+building%<http://dbpedia.org/ontology/building>
+computing Input%<http://dbpedia.org/ontology/computingInput>
+regional Language%<http://dbpedia.org/ontology/regionalLanguage>
+alliance%<http://dbpedia.org/ontology/alliance>
+a Side%<http://dbpedia.org/ontology/aSide>
+population Urban%<http://dbpedia.org/ontology/populationUrban>
+original Maximum Boat Length%<http://dbpedia.org/ontology/originalMaximumBoatLength>
+closing Film%<http://dbpedia.org/ontology/closingFilm>
+pages%<http://dbpedia.org/ontology/pages>
+birth%<http://dbpedia.org/property/birth>
+ship Displacement%<http://dbpedia.org/ontology/shipDisplacement>
+population Density%<http://dbpedia.org/ontology/populationDensity>
+executive Producer%<http://dbpedia.org/ontology/executiveProducer>
+espn Id%<http://dbpedia.org/ontology/espnId>
+runtime%<http://dbpedia.org/ontology/runtime>
+battle%<http://dbpedia.org/ontology/battle>
+lowest State%<http://dbpedia.org/ontology/lowestState>
+conservation Status System%<http://dbpedia.org/ontology/conservationStatusSystem>
+abbreviation%<http://dbpedia.org/ontology/abbreviation>
+creative Director%<http://dbpedia.org/ontology/creativeDirector>
+manager Title%<http://dbpedia.org/ontology/managerTitle>
+varietals%<http://dbpedia.org/ontology/varietals>
+pubchem%<http://dbpedia.org/ontology/pubchem>
+comment%<http://www.w3.org/2000/01/rdf-schema#comment>
+country%<http://dbpedia.org/ontology/country>
+lowest Mountain%<http://dbpedia.org/ontology/lowestMountain>
+presenter%<http://dbpedia.org/ontology/presenter>
+depiction%<http://xmlns.com/foaf/0.1/depiction>
+leader Function%<http://dbpedia.org/ontology/leaderFunction>
+notable Work%<http://dbpedia.org/ontology/notableWork>
+birth Place%<http://dbpedia.org/ontology/birthPlace>
+transmission%<http://dbpedia.org/ontology/transmission>
+portfolio%<http://dbpedia.org/ontology/portfolio>
+third Team%<http://dbpedia.org/ontology/thirdTeam>
+date Use%<http://dbpedia.org/ontology/dateUse>
+associated Rocket%<http://dbpedia.org/ontology/associatedRocket>
+comparable%<http://dbpedia.org/ontology/comparable>
+capital Elevation%<http://dbpedia.org/ontology/capitalElevation>
+number Of Sports%<http://dbpedia.org/ontology/numberOfSports>
+principal Engineer%<http://dbpedia.org/ontology/principalEngineer>
+variant Of%<http://dbpedia.org/ontology/variantOf>
+power Output%<http://dbpedia.org/ontology/powerOutput>
+crown Dependency%<http://dbpedia.org/ontology/crownDependency>
+precursor%<http://dbpedia.org/ontology/precursor>
+manufacturer%<http://dbpedia.org/ontology/manufacturer>
+tuition%<http://dbpedia.org/ontology/tuition>
+retired Rocket%<http://dbpedia.org/ontology/retiredRocket>
+school Code%<http://dbpedia.org/ontology/schoolCode>
+twin City%<http://dbpedia.org/ontology/twinCity>
+connotation%<http://dbpedia.org/ontology/connotation>
+notes%<http://dbpedia.org/ontology/notes>
+branch To%<http://dbpedia.org/ontology/branchTo>
+board%<http://dbpedia.org/ontology/board>
+chairman%<http://dbpedia.org/ontology/chairman>
+distance To Belfast%<http://dbpedia.org/ontology/distanceToBelfast>
+destination%<http://dbpedia.org/ontology/destination>
+configuration%<http://dbpedia.org/ontology/configuration>
+meaning%<http://dbpedia.org/ontology/meaning>
+us Sales%<http://dbpedia.org/ontology/usSales>
+requirement%<http://dbpedia.org/ontology/requirement>
+city Type%<http://dbpedia.org/ontology/cityType>
+guest%<http://dbpedia.org/ontology/guest>
+lower Age%<http://dbpedia.org/ontology/lowerAge>
+end Date%<http://dbpedia.org/ontology/endDate>
+part Of%<http://dbpedia.org/ontology/partOf>
+current Domicile%<http://dbpedia.org/ontology/currentDomicile>
+feast Day%<http://dbpedia.org/ontology/feastDay>
+ground%<http://dbpedia.org/ontology/ground>
+headquarters%<http://dbpedia.org/ontology/headquarters>
+assets%<http://dbpedia.org/ontology/assets>
+piston Stroke%<http://dbpedia.org/ontology/pistonStroke>
+golden Calf Award%<http://dbpedia.org/ontology/goldenCalfAward>
+product%<http://dbpedia.org/ontology/product>
+number Of Orbits%<http://dbpedia.org/ontology/numberOfOrbits>
+area%<http://dbpedia.org/ontology/area>
+county%<http://dbpedia.org/ontology/county>
+order In Office%<http://dbpedia.org/ontology/orderInOffice>
+number Of Volunteers%<http://dbpedia.org/ontology/numberOfVolunteers>
+national Team%<http://dbpedia.org/ontology/nationalTeam>
+spouse%<http://dbpedia.org/ontology/spouse>
+partner%<http://dbpedia.org/ontology/partner>
+file Size%<http://dbpedia.org/ontology/fileSize>
+significant Design%<http://dbpedia.org/ontology/significantDesign>
+school Number%<http://dbpedia.org/ontology/schoolNumber>
+division%<http://dbpedia.org/ontology/division>
+note%<http://dbpedia.org/ontology/note>
+torque Output%<http://dbpedia.org/ontology/torqueOutput>
+general Manager%<http://dbpedia.org/ontology/generalManager>
+musical Artist%<http://dbpedia.org/ontology/musicalArtist>
+intercommunality%<http://dbpedia.org/ontology/intercommunality>
+release Date%<http://dbpedia.org/ontology/releaseDate>
+computing Media%<http://dbpedia.org/ontology/computingMedia>
+area Water%<http://dbpedia.org/ontology/areaWater>
+government%<http://dbpedia.org/ontology/government>
+growing Grape%<http://dbpedia.org/ontology/growingGrape>
+editing%<http://dbpedia.org/ontology/editing>
+career Points%<http://dbpedia.org/ontology/careerPoints>
+fuel Capacity%<http://dbpedia.org/ontology/fuelCapacity>
+production Start Date%<http://dbpedia.org/ontology/productionStartDate>
+management Mountain%<http://dbpedia.org/ontology/managementMountain>
+lunar Eva Time%<http://dbpedia.org/ontology/lunarEvaTime>
+rector%<http://dbpedia.org/ontology/rector>
+subdivisions%<http://dbpedia.org/ontology/subdivisions>
+band%<http://dbpedia.org/ontology/band>
+founding Date%<http://dbpedia.org/ontology/foundingDate>
+location Identifier%<http://dbpedia.org/ontology/locationIdentifier>
+head Label%<http://dbpedia.org/ontology/headLabel>
+place%<http://dbpedia.org/ontology/place>
+class%<http://dbpedia.org/ontology/class>
+beatified Place%<http://dbpedia.org/ontology/beatifiedPlace>
+military Branch%<http://dbpedia.org/ontology/militaryBranch>
+area Code%<http://dbpedia.org/ontology/areaCode>
+chairman Title%<http://dbpedia.org/ontology/chairmanTitle>
+minimum Discharge%<http://dbpedia.org/ontology/minimumDischarge>
+music By%<http://dbpedia.org/ontology/musicBy>
+states%<http://dbpedia.org/ontology/states>
+port2 Undocking Date%<http://dbpedia.org/ontology/port2UndockingDate>
+lunar Module%<http://dbpedia.org/ontology/lunarModule>
+deputy%<http://dbpedia.org/ontology/deputy>
+mesh Number%<http://dbpedia.org/ontology/meshNumber>
+maximum Boat Beam%<http://dbpedia.org/ontology/maximumBoatBeam>
+distance Traveled%<http://dbpedia.org/ontology/distanceTraveled>
+number Of Participating Nations%<http://dbpedia.org/ontology/numberOfParticipatingNations>
+profession%<http://dbpedia.org/ontology/profession>
+suppredded Date%<http://dbpedia.org/ontology/suppreddedDate>
+mouth Country%<http://dbpedia.org/ontology/mouthCountry>
+staff%<http://dbpedia.org/ontology/staff>
+rebuilding Date%<http://dbpedia.org/ontology/rebuildingDate>
+opening Date%<http://dbpedia.org/ontology/openingDate>
+drains From%<http://dbpedia.org/ontology/drainsFrom>
+citizenship%<http://dbpedia.org/ontology/citizenship>
+composer%<http://dbpedia.org/ontology/composer>
+location%<http://dbpedia.org/ontology/location>
+coached Team%<http://dbpedia.org/ontology/coachedTeam>
+number Of Bronze Medals Won%<http://dbpedia.org/ontology/numberOfBronzeMedalsWon>
+headteacher%<http://dbpedia.org/ontology/headteacher>
+architect%<http://dbpedia.org/ontology/architect>
+film Fare Award%<http://dbpedia.org/ontology/filmFareAward>
+year%<http://dbpedia.org/ontology/year>
+training%<http://dbpedia.org/ontology/training>
+bar Pass Rate%<http://dbpedia.org/ontology/barPassRate>
+poles%<http://dbpedia.org/ontology/poles>
+sister Newspaper%<http://dbpedia.org/ontology/sisterNewspaper>
+aircraft Helicopter Observation%<http://dbpedia.org/ontology/aircraftHelicopterObservation>
+demonym%<http://dbpedia.org/ontology/demonym>
+cospar Id%<http://dbpedia.org/ontology/cosparId>
+sixth Form Students%<http://dbpedia.org/ontology/sixthFormStudents>
+given Name%<http://xmlns.com/foaf/0.1/givenName>
+shoots%<http://dbpedia.org/ontology/shoots>
+successful Launches%<http://dbpedia.org/ontology/successfulLaunches>
+port1 Docked Time%<http://dbpedia.org/ontology/port1DockedTime>
+instrument%<http://dbpedia.org/ontology/instrument>
+translator%<http://dbpedia.org/ontology/translator>
+current Status%<http://dbpedia.org/ontology/currentStatus>
+orbital Inclination%<http://dbpedia.org/ontology/orbitalInclination>
+house%<http://dbpedia.org/ontology/house>
+mass%<http://dbpedia.org/ontology/mass>
+number Of Silver Medals Won%<http://dbpedia.org/ontology/numberOfSilverMedalsWon>
+hall Of Fame%<http://dbpedia.org/ontology/hallOfFame>
+american Comedy Award%<http://dbpedia.org/ontology/americanComedyAward>
+supplemental Draft Round%<http://dbpedia.org/ontology/supplementalDraftRound>
+canonized Date%<http://dbpedia.org/ontology/canonizedDate>
+disbanded%<http://dbpedia.org/ontology/disbanded>
+material%<http://dbpedia.org/ontology/material>
+networth%<http://dbpedia.org/ontology/networth>
+number Of Postgraduate Students%<http://dbpedia.org/ontology/numberOfPostgraduateStudents>
+highest Position%<http://dbpedia.org/ontology/highestPosition>
+second Commander%<http://dbpedia.org/ontology/secondCommander>
+computing Platform%<http://dbpedia.org/ontology/computingPlatform>
+music Subgenre%<http://dbpedia.org/ontology/musicSubgenre>
+aircraft Bomber%<http://dbpedia.org/ontology/aircraftBomber>
+innervates%<http://dbpedia.org/ontology/innervates>
+right Child%<http://dbpedia.org/ontology/rightChild>
+body Style%<http://dbpedia.org/ontology/bodyStyle>
+first Flight Start Date%<http://dbpedia.org/ontology/firstFlightStartDate>
+last Win%<http://dbpedia.org/ontology/lastWin>
+source Confluence State%<http://dbpedia.org/ontology/sourceConfluenceState>
+winter Appearances%<http://dbpedia.org/ontology/winterAppearances>
+cpu%<http://dbpedia.org/ontology/cpu>
+port2 Docking Date%<http://dbpedia.org/ontology/port2DockingDate>
+subtitle%<http://dbpedia.org/ontology/subtitle>
+distance To Charing Cross%<http://dbpedia.org/ontology/distanceToCharingCross>
+genre%<http://dbpedia.org/ontology/genre>
+function End Date%<http://dbpedia.org/ontology/functionEndDate>
+pseudonym%<http://dbpedia.org/ontology/pseudonym>
+source Mountain%<http://dbpedia.org/ontology/sourceMountain>
+fees%<http://dbpedia.org/ontology/fees>
+discharge Average%<http://dbpedia.org/ontology/dischargeAverage>
+episode Number%<http://dbpedia.org/ontology/episodeNumber>
+left Child%<http://dbpedia.org/ontology/leftChild>
+beatified By%<http://dbpedia.org/ontology/beatifiedBy>
+tournament Record%<http://dbpedia.org/ontology/tournamentRecord>
+nuts Region%<http://dbpedia.org/ontology/nutsRegion>
+superintendent%<http://dbpedia.org/ontology/superintendent>
+former Name%<http://dbpedia.org/ontology/formerName>
+active Years End Year%<http://dbpedia.org/ontology/activeYearsEndYear>
+person Function%<http://dbpedia.org/ontology/personFunction>
+location City%<http://dbpedia.org/ontology/locationCity>
+spacewalk Begin%<http://dbpedia.org/ontology/spacewalkBegin>
+title%<http://dbpedia.org/ontology/title>
+longtype%<http://dbpedia.org/ontology/longtype>
+sheading%<http://dbpedia.org/ontology/sheading>
+first Winner%<http://dbpedia.org/ontology/firstWinner>
+background%<http://dbpedia.org/ontology/background>
+launch Date%<http://dbpedia.org/ontology/launchDate>
+last Launch Date%<http://dbpedia.org/ontology/lastLaunchDate>
+lunar Surface Time%<http://dbpedia.org/ontology/lunarSurfaceTime>
+notable Commander%<http://dbpedia.org/ontology/notableCommander>
+managing Editor%<http://dbpedia.org/ontology/managingEditor>
+meeting Building%<http://dbpedia.org/ontology/meetingBuilding>
+wars%<http://dbpedia.org/ontology/wars>
+management Position%<http://dbpedia.org/ontology/managementPosition>
+upper Age%<http://dbpedia.org/ontology/upperAge>
+issn%<http://dbpedia.org/ontology/issn>
+total Launches%<http://dbpedia.org/ontology/totalLaunches>
+management Elevation%<http://dbpedia.org/ontology/managementElevation>
+faculty Size%<http://dbpedia.org/ontology/facultySize>
+style%<http://dbpedia.org/ontology/style>
+range%<http://www.w3.org/2000/01/rdf-schema#range>
+iss Dockings%<http://dbpedia.org/ontology/issDockings>
+highest State%<http://dbpedia.org/ontology/highestState>
+medlineplus%<http://dbpedia.org/ontology/medlineplus>
+record Label%<http://dbpedia.org/ontology/recordLabel>
+lower Earth Orbit Payload%<http://dbpedia.org/ontology/lowerEarthOrbitPayload>
+branch From%<http://dbpedia.org/ontology/branchFrom>
+layout%<http://dbpedia.org/ontology/layout>
+afi Award%<http://dbpedia.org/ontology/afiAward>
+death Place%<http://dbpedia.org/property/deathPlace>
+similar%<http://dbpedia.org/ontology/similar>
+team Owner%<http://dbpedia.org/ontology/teamOwner>
+editor Title%<http://dbpedia.org/ontology/editorTitle>
+thumbnail%<http://xmlns.com/foaf/0.1/thumbnail>
+plant%<http://dbpedia.org/ontology/plant>
+valvetrain%<http://dbpedia.org/ontology/valvetrain>
+first Driver%<http://dbpedia.org/ontology/firstDriver>
+first Game%<http://dbpedia.org/ontology/firstGame>
+illustrator%<http://dbpedia.org/ontology/illustrator>
+surname%<http://xmlns.com/foaf/0.1/surname>
+cover Artist%<http://dbpedia.org/ontology/coverArtist>
+voice%<http://dbpedia.org/ontology/voice>
+discharge%<http://dbpedia.org/ontology/discharge>
+number Of Undergraduate Students%<http://dbpedia.org/ontology/numberOfUndergraduateStudents>
+lymph%<http://dbpedia.org/ontology/lymph>
+percentage Of Area Water%<http://dbpedia.org/ontology/percentageOfAreaWater>
+color%<http://dbpedia.org/ontology/color>
+statistic Label%<http://dbpedia.org/ontology/statisticLabel>
+territory%<http://dbpedia.org/ontology/territory>
+twin Country%<http://dbpedia.org/ontology/twinCountry>
+garrison%<http://dbpedia.org/ontology/garrison>
+watershed%<http://dbpedia.org/ontology/watershed>
+nationality%<http://dbpedia.org/ontology/nationality>
+editor%<http://dbpedia.org/ontology/editor>
+faa Location Identifier%<http://dbpedia.org/ontology/faaLocationIdentifier>
+nssdc Id%<http://dbpedia.org/ontology/nssdcId>
+wha Draft%<http://dbpedia.org/ontology/whaDraft>
+resolution%<http://dbpedia.org/ontology/resolution>
+cmyk Coordinate Yellow%<http://dbpedia.org/ontology/cmykCoordinateYellow>
+screen Actors Guild Award%<http://dbpedia.org/ontology/screenActorsGuildAward>
+broader%<http://www.w3.org/2004/02/skos/core#broader>
+function Start Year%<http://dbpedia.org/ontology/functionStartYear>
+vice Chancellor%<http://dbpedia.org/ontology/viceChancellor>
+manager Club%<http://dbpedia.org/ontology/managerClub>
+mouth Mountain%<http://dbpedia.org/ontology/mouthMountain>
+region Served%<http://dbpedia.org/ontology/regionServed>
+depth%<http://dbpedia.org/ontology/depth>
+version Info%<http://www.w3.org/2002/07/owl#versionInfo>
+federal State%<http://dbpedia.org/ontology/federalState>
+debut%<http://dbpedia.org/ontology/debut>
+aircraft Recon%<http://dbpedia.org/ontology/aircraftRecon>
+supplies%<http://dbpedia.org/ontology/supplies>
+fastest Driver%<http://dbpedia.org/ontology/fastestDriver>
+bowl Record%<http://dbpedia.org/ontology/bowlRecord>
+population Place%<http://dbpedia.org/ontology/populationPlace>
+variant%<http://dbpedia.org/ontology/variant>
+ship Draft%<http://dbpedia.org/ontology/shipDraft>
+animal%<http://dbpedia.org/ontology/animal>
+resting Place Position%<http://dbpedia.org/ontology/restingPlacePosition>
+head Alloy%<http://dbpedia.org/ontology/headAlloy>
+outflow%<http://dbpedia.org/ontology/outflow>
+fourth Commander%<http://dbpedia.org/ontology/fourthCommander>
+callsign Meaning%<http://dbpedia.org/ontology/callsignMeaning>
+pole Driver Team%<http://dbpedia.org/ontology/poleDriverTeam>
+voice Type%<http://dbpedia.org/ontology/voiceType>
+death Place%<http://dbpedia.org/ontology/deathPlace>
+subsidiary%<http://dbpedia.org/ontology/subsidiary>
+facility Id%<http://dbpedia.org/ontology/facilityId>
+maiden Flight%<http://dbpedia.org/ontology/maidenFlight>
+railway Platforms%<http://dbpedia.org/ontology/railwayPlatforms>
+most Winner%<http://dbpedia.org/ontology/mostWinner>
+area Of Search%<http://dbpedia.org/ontology/areaOfSearch>
+number%<http://dbpedia.org/ontology/number>
+final Flight%<http://dbpedia.org/ontology/finalFlight>
+parent%<http://dbpedia.org/ontology/parent>
+offered Classes%<http://dbpedia.org/ontology/offeredClasses>
+trustee%<http://dbpedia.org/ontology/trustee>
+music Fusion Genre%<http://dbpedia.org/ontology/musicFusionGenre>
+displacement%<http://dbpedia.org/ontology/displacement>
+venerated In%<http://dbpedia.org/ontology/veneratedIn>
+family Name%<http://xmlns.com/foaf/0.1/familyName>
+film%<http://dbpedia.org/ontology/film>
+call Sign%<http://dbpedia.org/ontology/callSign>
+port2%<http://dbpedia.org/ontology/port2>
+affiliation%<http://dbpedia.org/ontology/affiliation>
+crosses%<http://dbpedia.org/ontology/crosses>
+academic Advisor%<http://dbpedia.org/ontology/academicAdvisor>
+ethnic Groups In Year%<http://dbpedia.org/ontology/ethnicGroupsInYear>
+lounge%<http://dbpedia.org/ontology/lounge>
+date Act%<http://dbpedia.org/ontology/dateAct>
+country With First Astronaut%<http://dbpedia.org/ontology/countryWithFirstAstronaut>
+choreographer%<http://dbpedia.org/ontology/choreographer>
+launch Pad%<http://dbpedia.org/ontology/launchPad>
+government Position%<http://dbpedia.org/ontology/governmentPosition>
+rocket Function%<http://dbpedia.org/ontology/rocketFunction>
+source%<http://dbpedia.org/ontology/source>
+orogeny%<http://dbpedia.org/ontology/orogeny>
+military Rank%<http://dbpedia.org/ontology/militaryRank>
+crew%<http://dbpedia.org/ontology/crew>
+subject%<http://dbpedia.org/ontology/subject>
+former Team%<http://dbpedia.org/ontology/formerTeam>
+rights%<http://purl.org/dc/elements/1.1/rights>
+operator%<http://dbpedia.org/ontology/operator>
+frazioni%<http://dbpedia.org/ontology/frazioni>
+temperature%<http://dbpedia.org/ontology/temperature>
+port1%<http://dbpedia.org/ontology/port1>
+draft Pick%<http://dbpedia.org/ontology/draftPick>
+season%<http://dbpedia.org/ontology/season>
+team Name%<http://dbpedia.org/ontology/teamName>
+genus%<http://dbpedia.org/ontology/genus>
+related Mean Of Transportation%<http://dbpedia.org/ontology/relatedMeanOfTransportation>
+budget%<http://dbpedia.org/ontology/budget>
+compression Ratio%<http://dbpedia.org/ontology/compressionRatio>
+number Of Employees%<http://dbpedia.org/ontology/numberOfEmployees>
+description%<http://purl.org/dc/elements/1.1/description>
+owning Company%<http://dbpedia.org/ontology/owningCompany>
+award%<http://dbpedia.org/ontology/award>
+net Income%<http://dbpedia.org/ontology/netIncome>
+access%<http://dbpedia.org/ontology/access>
+frequency%<http://dbpedia.org/ontology/frequency>
+ship Beam%<http://dbpedia.org/ontology/shipBeam>
+death Cause%<http://dbpedia.org/ontology/deathCause>
+active Years Start Year%<http://dbpedia.org/ontology/activeYearsStartYear>
+density%<http://dbpedia.org/ontology/density>
+cas Number%<http://dbpedia.org/ontology/casNumber>
+discovered%<http://dbpedia.org/ontology/discovered>
+rgb Coordinate Green%<http://dbpedia.org/ontology/rgbCoordinateGreen>
+assembly%<http://dbpedia.org/ontology/assembly>
+gray Page%<http://dbpedia.org/ontology/grayPage>
+name%<http://xmlns.com/foaf/0.1/name>
+number Of Visitors%<http://dbpedia.org/ontology/numberOfVisitors>
+order%<http://dbpedia.org/ontology/order>
+architectual Bureau%<http://dbpedia.org/ontology/architectualBureau>
+number Of Pads%<http://dbpedia.org/ontology/numberOfPads>
+equipment%<http://dbpedia.org/ontology/equipment>
+march%<http://dbpedia.org/ontology/march>
+equity%<http://dbpedia.org/ontology/equity>
+arrondissement%<http://dbpedia.org/ontology/arrondissement>
+chaplain%<http://dbpedia.org/ontology/chaplain>
+ascent Date%<http://dbpedia.org/ontology/ascentDate>
+hub Airport%<http://dbpedia.org/ontology/hubAirport>
+last Launch Rocket%<http://dbpedia.org/ontology/lastLaunchRocket>
+id%<http://dbpedia.org/ontology/id>
+floor Count%<http://dbpedia.org/ontology/floorCount>
+influenced%<http://dbpedia.org/ontology/influenced>
+retired Date%<http://dbpedia.org/ontology/retiredDate>
+circulation%<http://dbpedia.org/ontology/circulation>
+detection Method%<http://dbpedia.org/ontology/detectionMethod>
+mother%<http://dbpedia.org/ontology/mother>
+gross Domestic Product%<http://dbpedia.org/ontology/grossDomesticProduct>
+record Place%<http://dbpedia.org/ontology/recordPlace>
+campus Size%<http://dbpedia.org/ontology/campusSize>
+distance To London%<http://dbpedia.org/ontology/distanceToLondon>
+largest Win%<http://dbpedia.org/ontology/largestWin>
+sport%<http://dbpedia.org/ontology/sport>
+sales%<http://dbpedia.org/ontology/sales>
+station Eva Duration%<http://dbpedia.org/ontology/stationEvaDuration>
+subsequent Work%<http://dbpedia.org/ontology/subsequentWork>
+state Of Origin%<http://dbpedia.org/ontology/stateOfOrigin>
+number Of Staff%<http://dbpedia.org/ontology/numberOfStaff>
+design Company%<http://dbpedia.org/ontology/designCompany>
+missions%<http://dbpedia.org/ontology/missions>
+season Number%<http://dbpedia.org/ontology/seasonNumber>
+atc Suffix%<http://dbpedia.org/ontology/atcSuffix>
+givenname%<http://xmlns.com/foaf/0.1/givenname>
+orbits%<http://dbpedia.org/ontology/orbits>
+mascot%<http://dbpedia.org/ontology/mascot>
+aircraft Helicopter Attack%<http://dbpedia.org/ontology/aircraftHelicopterAttack>
+residence%<http://dbpedia.org/ontology/residence>
+british Comedy Awards%<http://dbpedia.org/ontology/britishComedyAwards>
+united States National Bridge Id%<http://dbpedia.org/ontology/unitedStatesNationalBridgeId>
+mission Duration%<http://dbpedia.org/ontology/missionDuration>
+active Years End Date%<http://dbpedia.org/ontology/activeYearsEndDate>
+contractor%<http://dbpedia.org/ontology/contractor>
+currency%<http://dbpedia.org/ontology/currency>
+significant Building%<http://dbpedia.org/ontology/significantBuilding>
+meeting City%<http://dbpedia.org/ontology/meetingCity>
+predecessor%<http://dbpedia.org/ontology/predecessor>
+height%<http://dbpedia.org/ontology/height>
+maximum Discharge%<http://dbpedia.org/ontology/maximumDischarge>
+icao Location Identifier%<http://dbpedia.org/ontology/icaoLocationIdentifier>
+other%<http://dbpedia.org/ontology/other>
+inclination%<http://dbpedia.org/ontology/inclination>
+formation Year%<http://dbpedia.org/ontology/formationYear>
+orbital Flights%<http://dbpedia.org/ontology/orbitalFlights>
+number Of Seasons%<http://dbpedia.org/ontology/numberOfSeasons>
+function End Year%<http://dbpedia.org/ontology/functionEndYear>
+omim%<http://dbpedia.org/ontology/omim>
+closing Date%<http://dbpedia.org/ontology/closingDate>
+number Of Graduate Students%<http://dbpedia.org/ontology/numberOfGraduateStudents>
+publication Date%<http://dbpedia.org/ontology/publicationDate>
+active Years Start Date%<http://dbpedia.org/ontology/activeYearsStartDate>
+office%<http://dbpedia.org/ontology/office>
+model End Year%<http://dbpedia.org/ontology/modelEndYear>
+last Race%<http://dbpedia.org/ontology/lastRace>
+club%<http://dbpedia.org/ontology/club>
+model Start Year%<http://dbpedia.org/ontology/modelStartYear>
+atc Prefix%<http://dbpedia.org/ontology/atcPrefix>
+asset Under Management%<http://dbpedia.org/ontology/assetUnderManagement>
+hsv Coordinate Value%<http://dbpedia.org/ontology/hsvCoordinateValue>
+member Of Parliament%<http://dbpedia.org/ontology/memberOfParliament>
+subject%<http://www.w3.org/2004/02/skos/core#subject>
+source Confluence Elevation%<http://dbpedia.org/ontology/sourceConfluenceElevation>
+cas Supplemental%<http://dbpedia.org/ontology/casSupplemental>
+rocket Stages%<http://dbpedia.org/ontology/rocketStages>
+atc Supplemental%<http://dbpedia.org/ontology/atcSupplemental>
+principal%<http://dbpedia.org/ontology/principal>
+gemini Award%<http://dbpedia.org/ontology/geminiAward>
+major Island%<http://dbpedia.org/ontology/majorIsland>
+iucn Category%<http://dbpedia.org/ontology/iucnCategory>
+parent Organisation%<http://dbpedia.org/ontology/parentOrganisation>
+strength%<http://dbpedia.org/ontology/strength>
+ceo%<http://dbpedia.org/ontology/ceo>
+laurence Olivier Award%<http://dbpedia.org/ontology/laurenceOlivierAward>
+election Date%<http://dbpedia.org/ontology/electionDate>
+ranking%<http://dbpedia.org/ontology/ranking>
+cinematography%<http://dbpedia.org/ontology/cinematography>
+campus Type%<http://dbpedia.org/ontology/campusType>
+b Side%<http://dbpedia.org/ontology/bSide>
+leader Party%<http://dbpedia.org/ontology/leaderParty>
+classes%<http://dbpedia.org/ontology/classes>
+regime%<http://dbpedia.org/ontology/regime>
+address%<http://dbpedia.org/ontology/address>
+naacp Image Award%<http://dbpedia.org/ontology/naacpImageAward>
+sister College%<http://dbpedia.org/ontology/sisterCollege>
+photographer%<http://dbpedia.org/ontology/photographer>
+resting Place%<http://dbpedia.org/ontology/restingPlace>
+certification Date%<http://dbpedia.org/ontology/certificationDate>
+maiden Flight Rocket%<http://dbpedia.org/ontology/maidenFlightRocket>
+mir Dockings%<http://dbpedia.org/ontology/mirDockings>
+entrezgene%<http://dbpedia.org/ontology/entrezgene>
+campus%<http://dbpedia.org/ontology/campus>
+era%<http://dbpedia.org/ontology/era>
+key Person%<http://dbpedia.org/ontology/keyPerson>
+apoapsis%<http://dbpedia.org/ontology/apoapsis>
+aircraft Helicopter%<http://dbpedia.org/ontology/aircraftHelicopter>
+is Part Of%<http://dbpedia.org/ontology/isPartOf>
+point%<http://www.georss.org/georss/point>
+cost%<http://dbpedia.org/ontology/cost>
+starring%<http://dbpedia.org/ontology/starring>
+function Start Date%<http://dbpedia.org/ontology/functionStartDate>
+specialist%<http://dbpedia.org/ontology/specialist>
+first Driver Team%<http://dbpedia.org/ontology/firstDriverTeam>
+lowest Place%<http://dbpedia.org/ontology/lowestPlace>
+launch%<http://dbpedia.org/ontology/launch>
+spacewalk End%<http://dbpedia.org/ontology/spacewalkEnd>
+population As Of%<http://dbpedia.org/ontology/populationAsOf>
+largest Settlement%<http://dbpedia.org/ontology/largestSettlement>
+party%<http://dbpedia.org/ontology/party>
+binomial Authority%<http://dbpedia.org/ontology/binomialAuthority>
+torch Bearer%<http://dbpedia.org/ontology/torchBearer>
+slogan%<http://dbpedia.org/ontology/slogan>
+joint Community%<http://dbpedia.org/ontology/jointCommunity>
+kingdom%<http://dbpedia.org/ontology/kingdom>
+sister Station%<http://dbpedia.org/ontology/sisterStation>
+first Flight End Date%<http://dbpedia.org/ontology/firstFlightEndDate>
+lowest Region%<http://dbpedia.org/ontology/lowestRegion>
+visitors Total%<http://dbpedia.org/ontology/visitorsTotal>
+crews%<http://dbpedia.org/ontology/crews>
+number Of Gold Medals Won%<http://dbpedia.org/ontology/numberOfGoldMedalsWon>
+arm%<http://dbpedia.org/ontology/arm>
+range%<http://dbpedia.org/ontology/range>
+employer%<http://dbpedia.org/ontology/employer>
+major Shrine%<http://dbpedia.org/ontology/majorShrine>
+area Urban%<http://dbpedia.org/ontology/areaUrban>
+date Completed%<http://dbpedia.org/ontology/dateCompleted>
+associate Editor%<http://dbpedia.org/ontology/associateEditor>
+mouth Position%<http://dbpedia.org/ontology/mouthPosition>
+emedicine Topic%<http://dbpedia.org/ontology/emedicineTopic>
+hsv Coordinate Hue%<http://dbpedia.org/ontology/hsvCoordinateHue>
+engineer%<http://dbpedia.org/ontology/engineer>
+tony Award%<http://dbpedia.org/ontology/tonyAward>
+rural Municipality%<http://dbpedia.org/ontology/ruralMunicipality>
+management Place%<http://dbpedia.org/ontology/managementPlace>
+cesar Award%<http://dbpedia.org/ontology/cesarAward>
+block Alloy%<http://dbpedia.org/ontology/blockAlloy>
+owner%<http://dbpedia.org/ontology/owner>
+archipelago%<http://dbpedia.org/ontology/archipelago>
+place Of Burial%<http://dbpedia.org/ontology/placeOfBurial>
+free Flight Time%<http://dbpedia.org/ontology/freeFlightTime>
+has Junction With%<http://dbpedia.org/ontology/hasJunctionWith>
+province%<http://dbpedia.org/ontology/province>
+anniversary%<http://dbpedia.org/ontology/anniversary>
+main Organ%<http://dbpedia.org/ontology/mainOrgan>
+creator%<http://dbpedia.org/ontology/creator>
+incumbent%<http://dbpedia.org/ontology/incumbent>
+department%<http://dbpedia.org/ontology/department>
+day%<http://dbpedia.org/ontology/day>
+coaching Team%<http://dbpedia.org/ontology/coachingTeam>
+council Area%<http://dbpedia.org/ontology/councilArea>
+average Class Size%<http://dbpedia.org/ontology/averageClassSize>
+added%<http://dbpedia.org/ontology/added>
+canonized Place%<http://dbpedia.org/ontology/canonizedPlace>
+production End Date%<http://dbpedia.org/ontology/productionEndDate>
+minimum Temperature%<http://dbpedia.org/ontology/minimumTemperature>
+unitary Authority%<http://dbpedia.org/ontology/unitaryAuthority>
+aircraft Helicopter Multirole%<http://dbpedia.org/ontology/aircraftHelicopterMultirole>
+director%<http://dbpedia.org/ontology/director>
+lcc%<http://dbpedia.org/ontology/lcc>
+production%<http://dbpedia.org/ontology/production>
+past Member%<http://dbpedia.org/ontology/pastMember>
+thumbnail%<http://dbpedia.org/ontology/thumbnail>
+capacity%<http://dbpedia.org/ontology/capacity>
+second Driver%<http://dbpedia.org/ontology/secondDriver>
+former Highschool%<http://dbpedia.org/ontology/formerHighschool>
+headquarter%<http://dbpedia.org/ontology/headquarter>
+service Number%<http://dbpedia.org/ontology/serviceNumber>
+national Origin%<http://dbpedia.org/ontology/nationalOrigin>
+testaverage%<http://dbpedia.org/ontology/testaverage>
+course%<http://dbpedia.org/ontology/course>
+grammy Award%<http://dbpedia.org/ontology/grammyAward>
+length%<http://dbpedia.org/ontology/length>
+golden Globe Award%<http://dbpedia.org/ontology/goldenGlobeAward>
+seniority%<http://dbpedia.org/ontology/seniority>
+saint%<http://dbpedia.org/ontology/saint>
+ethnic Group%<http://dbpedia.org/ontology/ethnicGroup>
+dissolved%<http://dbpedia.org/ontology/dissolved>
+landing Date%<http://dbpedia.org/ontology/landingDate>
+membership%<http://dbpedia.org/ontology/membership>
+subsequent Infrastructure%<http://dbpedia.org/ontology/subsequentInfrastructure>
+aircraft Helicopter Utility%<http://dbpedia.org/ontology/aircraftHelicopterUtility>
+maximum Boat Length%<http://dbpedia.org/ontology/maximumBoatLength>
+majority Leader%<http://dbpedia.org/ontology/majorityLeader>
+honours%<http://dbpedia.org/ontology/honours>
+date Construction%<http://dbpedia.org/ontology/dateConstruction>
+battle Honours%<http://dbpedia.org/ontology/battleHonours>
+number Of Members%<http://dbpedia.org/ontology/numberOfMembers>
+prominence%<http://dbpedia.org/ontology/prominence>
+decay%<http://dbpedia.org/ontology/decay>
+bed Count%<http://dbpedia.org/ontology/bedCount>
+debut Team%<http://dbpedia.org/ontology/debutTeam>
+broadcast Area%<http://dbpedia.org/ontology/broadcastArea>
+owning Organisation%<http://dbpedia.org/ontology/owningOrganisation>
+distance To Edinburgh%<http://dbpedia.org/ontology/distanceToEdinburgh>
+combatant%<http://dbpedia.org/ontology/combatant>
+number Of Competitors%<http://dbpedia.org/ontology/numberOfCompetitors>
+goya Award%<http://dbpedia.org/ontology/goyaAward>
+alias%<http://dbpedia.org/ontology/alias>
+refseq%<http://dbpedia.org/ontology/refseq>
+certification%<http://dbpedia.org/ontology/certification>
+top Speed%<http://dbpedia.org/ontology/topSpeed>
+rgb Coordinate Blue%<http://dbpedia.org/ontology/rgbCoordinateBlue>
+fate%<http://dbpedia.org/ontology/fate>
+youth Club%<http://dbpedia.org/ontology/youthClub>
+rocket%<http://dbpedia.org/ontology/rocket>
+discoverer%<http://dbpedia.org/ontology/discoverer>
+series%<http://dbpedia.org/ontology/series>
+administrative Collectivity%<http://dbpedia.org/ontology/administrativeCollectivity>
+doctoral Advisor%<http://dbpedia.org/ontology/doctoralAdvisor>
+original Maximum Boat Beam%<http://dbpedia.org/ontology/originalMaximumBoatBeam>
+tv Com Id%<http://dbpedia.org/ontology/tvComId>
+team Size%<http://dbpedia.org/ontology/teamSize>
+person Name%<http://dbpedia.org/ontology/personName>
+review%<http://dbpedia.org/ontology/review>
+number Of Doctoral Students%<http://dbpedia.org/ontology/numberOfDoctoralStudents>
+number Built%<http://dbpedia.org/ontology/numberBuilt>
+show Judge%<http://dbpedia.org/ontology/showJudge>
+source Confluence%<http://dbpedia.org/ontology/sourceConfluence>
+source Confluence Position%<http://dbpedia.org/ontology/sourceConfluencePosition>
+crew Size%<http://dbpedia.org/ontology/crewSize>
+ifta Award%<http://dbpedia.org/ontology/iftaAward>
+formation Date%<http://dbpedia.org/ontology/formationDate>
+uniprot%<http://dbpedia.org/ontology/uniprot>
+worst Defeat%<http://dbpedia.org/ontology/worstDefeat>
+commander%<http://dbpedia.org/ontology/commander>
+part%<http://dbpedia.org/ontology/part>
+national Film Award%<http://dbpedia.org/ontology/nationalFilmAward>
+fastest Lap%<http://dbpedia.org/ontology/fastestLap>
+located In Area%<http://dbpedia.org/ontology/locatedInArea>
+acceleration%<http://dbpedia.org/ontology/acceleration>
+plays%<http://dbpedia.org/ontology/plays>
+unit Cost%<http://dbpedia.org/ontology/unitCost>
+capital Position%<http://dbpedia.org/ontology/capitalPosition>
+provost%<http://dbpedia.org/ontology/provost>
+population Metro Density%<http://dbpedia.org/ontology/populationMetroDensity>
+principal Area%<http://dbpedia.org/ontology/principalArea>
+foundation Place%<http://dbpedia.org/ontology/foundationPlace>
+industry%<http://dbpedia.org/ontology/industry>
+supplemental Draft Year%<http://dbpedia.org/ontology/supplementalDraftYear>
+rank In Final Medal Count%<http://dbpedia.org/ontology/rankInFinalMedalCount>
+date Of Burial%<http://dbpedia.org/ontology/dateOfBurial>
+dorlands Suffix%<http://dbpedia.org/ontology/dorlandsSuffix>
+contract Award%<http://dbpedia.org/ontology/contractAward>
+coaching Record%<http://dbpedia.org/ontology/coachingRecord>
+fansgroup%<http://dbpedia.org/ontology/fansgroup>
+wine Produced%<http://dbpedia.org/ontology/wineProduced>
+distance To Douglas%<http://dbpedia.org/ontology/distanceToDouglas>
+result%<http://dbpedia.org/ontology/result>
+locus Supplementary Data%<http://dbpedia.org/ontology/locusSupplementaryData>
+number Of Participating Athletes%<http://dbpedia.org/ontology/numberOfParticipatingAthletes>
+highest Region%<http://dbpedia.org/ontology/highestRegion>
+binomial%<http://dbpedia.org/ontology/binomial>
+source Confluence Place%<http://dbpedia.org/ontology/sourceConfluencePlace>
+species%<http://dbpedia.org/ontology/species>
+successor%<http://dbpedia.org/ontology/successor>
+hsv Coordinate Saturation%<http://dbpedia.org/ontology/hsvCoordinateSaturation>
+notable Student%<http://dbpedia.org/ontology/notableStudent>
+port2 Docked Time%<http://dbpedia.org/ontology/port2DockedTime>
+extinction Date%<http://dbpedia.org/ontology/extinctionDate>
+automobile Model%<http://dbpedia.org/ontology/automobileModel>
+olivier Award%<http://dbpedia.org/ontology/olivierAward>
+destruction Date%<http://dbpedia.org/ontology/destructionDate>
+overall Record%<http://dbpedia.org/ontology/overallRecord>
+channel%<http://dbpedia.org/ontology/channel>
+end Year Of Insertion%<http://dbpedia.org/ontology/endYearOfInsertion>
+number Of Episodes%<http://dbpedia.org/ontology/numberOfEpisodes>
+command Structure%<http://dbpedia.org/ontology/commandStructure>
+first Flight%<http://dbpedia.org/ontology/firstFlight>
+mesh Name%<http://dbpedia.org/ontology/meshName>
+source Confluence Mountain%<http://dbpedia.org/ontology/sourceConfluenceMountain>
+percentage Of Area Water Round%<http://dbpedia.org/ontology/percentageOfAreaWaterRound>
+purpose%<http://dbpedia.org/ontology/purpose>
+area Of Catchment%<http://dbpedia.org/ontology/areaOfCatchment>
+mission%<http://dbpedia.org/ontology/mission>
+distance To Dublin%<http://dbpedia.org/ontology/distanceToDublin>
+status%<http://dbpedia.org/ontology/status>
+associate%<http://dbpedia.org/ontology/associate>
+nick%<http://xmlns.com/foaf/0.1/nick>
+production Start Year%<http://dbpedia.org/ontology/productionStartYear>
+oclc%<http://dbpedia.org/ontology/oclc>
+icd9%<http://dbpedia.org/ontology/icd9>
+aircraft Helicopter Transport%<http://dbpedia.org/ontology/aircraftHelicopterTransport>
+first Launch Date%<http://dbpedia.org/ontology/firstLaunchDate>
+end Point%<http://dbpedia.org/ontology/endPoint>
+component%<http://dbpedia.org/ontology/component>
+government Type%<http://dbpedia.org/ontology/governmentType>
+former Coach%<http://dbpedia.org/ontology/formerCoach>
+number Of Entrances%<http://dbpedia.org/ontology/numberOfEntrances>
+launchvehicle%<http://dbpedia.org/ontology/launchvehicle>
+format%<http://dbpedia.org/ontology/format>
+previous Event%<http://dbpedia.org/ontology/previousEvent>
+appointer%<http://dbpedia.org/ontology/appointer>
+cmyk Coordinate Magenta%<http://dbpedia.org/ontology/cmykCoordinateMagenta>
+hgncid%<http://dbpedia.org/ontology/hgncid>
+philosophical School%<http://dbpedia.org/ontology/philosophicalSchool>
+canonized By%<http://dbpedia.org/ontology/canonizedBy>
+resides%<http://dbpedia.org/ontology/resides>
+island%<http://dbpedia.org/ontology/island>
+border%<http://dbpedia.org/ontology/border>
+launches%<http://dbpedia.org/ontology/launches>
+lieutenancy Area%<http://dbpedia.org/ontology/lieutenancyArea>
+distance To Cardiff%<http://dbpedia.org/ontology/distanceToCardiff>
+alma Mater%<http://dbpedia.org/ontology/almaMater>
+floor Area%<http://dbpedia.org/ontology/floorArea>
+motto%<http://dbpedia.org/ontology/motto>
+brain Info Type%<http://dbpedia.org/ontology/brainInfoType>
+engine%<http://dbpedia.org/ontology/engine>
+surface Area%<http://dbpedia.org/ontology/surfaceArea>
+highschool%<http://dbpedia.org/ontology/highschool>
+current Member%<http://dbpedia.org/ontology/currentMember>
+symbol%<http://dbpedia.org/ontology/symbol>
+area Total%<http://dbpedia.org/ontology/areaTotal>
+lieutenant%<http://dbpedia.org/ontology/lieutenant>
+river%<http://dbpedia.org/ontology/river>
+building Start Date%<http://dbpedia.org/ontology/buildingStartDate>
+draft Round%<http://dbpedia.org/ontology/draftRound>
+fuel System%<http://dbpedia.org/ontology/fuelSystem>
+first Race%<http://dbpedia.org/ontology/firstRace>
+endowment%<http://dbpedia.org/ontology/endowment>
+opening Film%<http://dbpedia.org/ontology/openingFilm>
+mouth Region%<http://dbpedia.org/ontology/mouthRegion>
+oversight%<http://dbpedia.org/ontology/oversight>
+launch Site%<http://dbpedia.org/ontology/launchSite>
+last Position%<http://dbpedia.org/ontology/lastPosition>
+gray Subject%<http://dbpedia.org/ontology/graySubject>
+start Point%<http://dbpedia.org/ontology/startPoint>
+maximum Elevation%<http://dbpedia.org/ontology/maximumElevation>
+interest%<http://dbpedia.org/ontology/interest>
+academy Award%<http://dbpedia.org/ontology/academyAward>
+compiler%<http://dbpedia.org/ontology/compiler>
+port1 Undocking Date%<http://dbpedia.org/ontology/port1UndockingDate>
+biome%<http://dbpedia.org/ontology/biome>
+source Elevation%<http://dbpedia.org/ontology/sourceElevation>
+oil System%<http://dbpedia.org/ontology/oilSystem>
+stylistic Origin%<http://dbpedia.org/ontology/stylisticOrigin>
+chief Editor%<http://dbpedia.org/ontology/chiefEditor>
+military Command%<http://dbpedia.org/ontology/militaryCommand>
+district%<http://dbpedia.org/ontology/district>
+co2 Emission%<http://dbpedia.org/ontology/co2Emission>
+target Airport%<http://dbpedia.org/ontology/targetAirport>
+command Module%<http://dbpedia.org/ontology/commandModule>
+officer In Charge%<http://dbpedia.org/ontology/officerInCharge>
+partial Failed Launches%<http://dbpedia.org/ontology/partialFailedLaunches>
+rival%<http://dbpedia.org/ontology/rival>
+election Majority%<http://dbpedia.org/ontology/electionMajority>
+number Of Vineyards%<http://dbpedia.org/ontology/numberOfVineyards>
+synonym%<http://dbpedia.org/ontology/synonym>
+number Of Students%<http://dbpedia.org/ontology/numberOfStudents>
+artist%<http://dbpedia.org/ontology/artist>
+number Of Officials%<http://dbpedia.org/ontology/numberOfOfficials>
+publisher%<http://dbpedia.org/ontology/publisher>
+origin%<http://dbpedia.org/ontology/origin>
+prospect League%<http://dbpedia.org/ontology/prospectLeague>
+number Of Films%<http://dbpedia.org/ontology/numberOfFilms>
+start Date%<http://dbpedia.org/ontology/startDate>
+weight%<http://dbpedia.org/ontology/weight>
+aircraft Interceptor%<http://dbpedia.org/ontology/aircraftInterceptor>
+producer%<http://dbpedia.org/ontology/producer>
+license%<http://dbpedia.org/ontology/license>
+mouth Elevation%<http://dbpedia.org/ontology/mouthElevation>
+service End Year%<http://dbpedia.org/ontology/serviceEndYear>
+influenced By%<http://dbpedia.org/ontology/influencedBy>
+clubs Record Goalscorer%<http://dbpedia.org/ontology/clubsRecordGoalscorer>
+cooling System%<http://dbpedia.org/ontology/coolingSystem>
+state%<http://dbpedia.org/ontology/state>
+leader Title%<http://dbpedia.org/ontology/leaderTitle>
+distributor%<http://dbpedia.org/ontology/distributor>
+lowest%<http://dbpedia.org/ontology/lowest>
+sport Governing Body%<http://dbpedia.org/ontology/sportGoverningBody>
+capital%<http://dbpedia.org/ontology/capital>
+ceremonial County%<http://dbpedia.org/ontology/ceremonialCounty>
+service Module%<http://dbpedia.org/ontology/serviceModule>
+area Land%<http://dbpedia.org/ontology/areaLand>
+chromosome%<http://dbpedia.org/ontology/chromosome>
+races%<http://dbpedia.org/ontology/races>
+highest Place%<http://dbpedia.org/ontology/highestPlace>
+military Unit Size%<http://dbpedia.org/ontology/militaryUnitSize>
+wins%<http://dbpedia.org/ontology/wins>
+father%<http://dbpedia.org/ontology/father>
+city%<http://dbpedia.org/ontology/city>
+aircraft Attack%<http://dbpedia.org/ontology/aircraftAttack>
+population Total%<http://dbpedia.org/ontology/populationTotal>
+air Date%<http://dbpedia.org/ontology/airDate>
+mesh Id%<http://dbpedia.org/ontology/meshId>
+unknown Outcomes%<http://dbpedia.org/ontology/unknownOutcomes>
+gross%<http://dbpedia.org/ontology/gross>
+related%<http://dbpedia.org/ontology/related>
+frozen%<http://dbpedia.org/ontology/frozen>
+population Urban Density%<http://dbpedia.org/ontology/populationUrbanDensity>
+recent Winner%<http://dbpedia.org/ontology/recentWinner>
+generic Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genericName>
+pdb Id Page%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbIdPage>
+food Interaction%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/foodInteraction>
+molecular Weight Average%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/molecularWeightAverage>
+pharmgkb Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pharmgkbId>
+genbank Id Protein Page%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genbankIdProteinPage>
+half Life%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/halfLife>
+affected Organism%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/affectedOrganism>
+go Classification Function%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/goClassificationFunction>
+toxicity%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/toxicity>
+secondary Accession Number%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/secondaryAccessionNumber>
+atc Code%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/atcCode>
+predicted Logs%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/predictedLogs>
+synonym%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/synonym>
+genbank Id Gene Page%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genbankIdGenePage>
+dpd Drug Id Number%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/dpdDrugIdNumber>
+absorption%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/absorption>
+hgnc Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncId>
+inchi Key%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/inchiKey>
+equivalent Property%<http://www.w3.org/2002/07/owl#equivalentProperty>
+cas Registry Number%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/casRegistryNumber>
+pdb Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbId>
+pdb Experimental Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbExperimentalId>
+go Classification Process%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/goClassificationProcess>
+inchi Identifier%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/inchiIdentifier>
+description%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/description>
+lims Drug Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/limsDrugId>
+fda Label Files%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/fdaLabelFiles>
+target%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/target>
+pharmacology%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pharmacology>
+hgnc Id Page%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hgncIdPage>
+branded Drug%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandedDrug>
+smiles String Isomeric%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/smilesStringIsomeric>
+general Function%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/generalFunction>
+experimental Logs%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/experimentalLogs>
+go Classification Component%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/goClassificationComponent>
+theoretical Pi%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/theoreticalPi>
+chebi Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chebiId>
+rxlist Link%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/rxlistLink>
+genbank Id Gene%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genbankIdGene>
+pubchem Substance Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pubchemSubstanceId>
+state%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/state>
+mass Spec File%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/massSpecFile>
+type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+brand Mixture%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandMixture>
+contraindication Insert%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/contraindicationInsert>
+possible Disease Target%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/possibleDiseaseTarget>
+signal%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/signal>
+drug Reference%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugReference>
+same As%<http://www.w3.org/2002/07/owl#sameAs>
+text%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/text>
+structure%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/structure>
+protein Binding%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/proteinBinding>
+melting Point%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/meltingPoint>
+predicted Logp Hydrophobicity%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/predictedLogpHydrophobicity>
+locus%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/locus>
+molecular Weight Mono%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/molecularWeightMono>
+experimental Logp Hydrophobicity%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/experimentalLogpHydrophobicity>
+update Date%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/updateDate>
+pka Isoelectric Point%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pkaIsoelectricPoint>
+interaction Insert%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/interactionInsert>
+pubchem Compound Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pubchemCompoundId>
+synthesis Reference%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/synthesisReference>
+smiles String Canonical%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/smilesStringCanonical>
+msds Files%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/msdsFiles>
+swissprot Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotId>
+genbank Id Protein%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genbankIdProtein>
+creation Date%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/creationDate>
+hprd Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hprdId>
+pathway%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pathway>
+predicted Water Solubility%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/predictedWaterSolubility>
+pdrhealth Link%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdrhealthLink>
+kegg Drug Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId>
+interaction Drug2%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/interactionDrug2>
+chemical Iupac Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chemicalIupacName>
+label%<http://www.w3.org/2000/01/rdf-schema#label>
+brand Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandName>
+bio2rdf Symbol%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/bio2rdfSymbol>
+name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/name>
+equivalent Class%<http://www.w3.org/2002/07/owl#equivalentClass>
+page%<http://xmlns.com/foaf/0.1/page>
+pfam Domain Function%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunction>
+genatlas Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genatlasId>
+swissprot Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotName>
+primary Accession No%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/primaryAccessionNo>
+gene Sequence%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/geneSequence>
+pfam Domain Function Page%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pfamDomainFunctionPage>
+reference%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/reference>
+chemical Structure%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chemicalStructure>
+interaction Drug1%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/interactionDrug1>
+chemical Formula%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chemicalFormula>
+ahfs Code%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/ahfsCode>
+experimental Water Solubility%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/experimentalWaterSolubility>
+swissprot Page%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/swissprotPage>
+gene Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/geneName>
+transmembrane Regions%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/transmembraneRegions>
+enzyme%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/enzyme>
+specific Function%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/specificFunction>
+protein Sequence%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/proteinSequence>
+genbank Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genbankId>
+pdb Homology Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdbHomologyId>
+indication%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/indication>
+kegg Compound Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggCompoundId>
+patient Information Insert%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/patientInformationInsert>
+chromosome Location%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chromosomeLocation>
+drug Category%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugCategory>
+het Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/hetId>
+essentiality%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/essentiality>
+drug Type%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugType>
+dosage Form%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/dosageForm>
+molecular Weight%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/molecularWeight>
+mechanism Of Action%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/mechanismOfAction>
+reaction%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/reaction>
+biotransformation%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/biotransformation>
+genecard Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genecardId>
+cellular Location%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/cellularLocation>
+general Reference%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/generalReference>
+number Of Residues%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/numberOfResidues>
+experimental Caco2 Permeability%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/experimentalCaco2Permeability>
+x Enzyme%<http://bio2rdf.org/ns/kegg#xEnzyme>
+x Product%<http://bio2rdf.org/ns/kegg#xProduct>
+type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+formula%<http://bio2rdf.org/ns/bio2rdf#formula>
+x Substrate%<http://bio2rdf.org/ns/kegg#xSubstrate>
+synonym%<http://bio2rdf.org/ns/bio2rdf#synonym>
+is A%<http://bio2rdf.org/ns/bio2rdf#isA>
+same As%<http://www.w3.org/2002/07/owl#sameAs>
+equation%<http://bio2rdf.org/ns/kegg#equation>
+x Pathway%<http://bio2rdf.org/ns/kegg#xPathway>
+mass%<http://bio2rdf.org/ns/bio2rdf#mass>
+systematic Name%<http://bio2rdf.org/ns/kegg#systematicName>
+x Gene%<http://bio2rdf.org/ns/kegg#xGene>
+x Cofactor%<http://bio2rdf.org/ns/kegg#xCofactor>
+comment%<http://www.w3.org/2000/01/rdf-schema#comment>
+x Ref%<http://bio2rdf.org/ns/bio2rdf#xRef>
+title%<http://purl.org/dc/elements/1.1/title>
+identifier%<http://purl.org/dc/elements/1.1/identifier>
+label%<http://www.w3.org/2000/01/rdf-schema#label>
+url Image%<http://bio2rdf.org/ns/bio2rdf#urlImage>
+url%<http://bio2rdf.org/ns/bio2rdf#url>
