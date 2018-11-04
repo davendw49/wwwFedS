@@ -89,7 +89,6 @@ school%<http://dbpedia.org/ontology/school>
 aircraft Transport%<http://dbpedia.org/ontology/aircraftTransport>
 running Mate%<http://dbpedia.org/ontology/runningMate>
 width%<http://dbpedia.org/ontology/width>
-type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
 imdb Id%<http://dbpedia.org/ontology/imdbId>
 minimum Elevation%<http://dbpedia.org/ontology/minimumElevation>
 lowest Position%<http://dbpedia.org/ontology/lowestPosition>
@@ -118,7 +117,6 @@ shore Length%<http://dbpedia.org/ontology/shoreLength>
 former Callsign%<http://dbpedia.org/ontology/formerCallsign>
 foundation Person%<http://dbpedia.org/ontology/foundationPerson>
 average Speed%<http://dbpedia.org/ontology/averageSpeed>
-label%<http://www.w3.org/2000/01/rdf-schema#label>
 significant Project%<http://dbpedia.org/ontology/significantProject>
 leader%<http://dbpedia.org/ontology/leader>
 founding Person%<http://dbpedia.org/ontology/foundingPerson>
@@ -364,7 +362,6 @@ creative Director%<http://dbpedia.org/ontology/creativeDirector>
 manager Title%<http://dbpedia.org/ontology/managerTitle>
 varietals%<http://dbpedia.org/ontology/varietals>
 pubchem%<http://dbpedia.org/ontology/pubchem>
-comment%<http://www.w3.org/2000/01/rdf-schema#comment>
 country%<http://dbpedia.org/ontology/country>
 lowest Mountain%<http://dbpedia.org/ontology/lowestMountain>
 presenter%<http://dbpedia.org/ontology/presenter>
@@ -1132,13 +1129,11 @@ genbank Id Gene%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/genb
 pubchem Substance Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pubchemSubstanceId>
 state%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/state>
 mass Spec File%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/massSpecFile>
-type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
 brand Mixture%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandMixture>
 contraindication Insert%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/contraindicationInsert>
 possible Disease Target%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/possibleDiseaseTarget>
 signal%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/signal>
 drug Reference%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/drugReference>
-same As%<http://www.w3.org/2002/07/owl#sameAs>
 text%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/text>
 structure%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/structure>
 protein Binding%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/proteinBinding>
@@ -1164,7 +1159,6 @@ pdrhealth Link%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/pdrhe
 kegg Drug Id%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/keggDrugId>
 interaction Drug2%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/interactionDrug2>
 chemical Iupac Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/chemicalIupacName>
-label%<http://www.w3.org/2000/01/rdf-schema#label>
 brand Name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/brandName>
 bio2rdf Symbol%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/bio2rdfSymbol>
 name%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/name>
@@ -1210,22 +1204,12 @@ number Of Residues%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/n
 experimental Caco2 Permeability%<http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/experimentalCaco2Permeability>
 x Enzyme%<http://bio2rdf.org/ns/kegg#xEnzyme>
 x Product%<http://bio2rdf.org/ns/kegg#xProduct>
-type%<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
-formula%<http://bio2rdf.org/ns/bio2rdf#formula>
 x Substrate%<http://bio2rdf.org/ns/kegg#xSubstrate>
-synonym%<http://bio2rdf.org/ns/bio2rdf#synonym>
 is A%<http://bio2rdf.org/ns/bio2rdf#isA>
-same As%<http://www.w3.org/2002/07/owl#sameAs>
 equation%<http://bio2rdf.org/ns/kegg#equation>
 x Pathway%<http://bio2rdf.org/ns/kegg#xPathway>
 mass%<http://bio2rdf.org/ns/bio2rdf#mass>
 systematic Name%<http://bio2rdf.org/ns/kegg#systematicName>
 x Gene%<http://bio2rdf.org/ns/kegg#xGene>
 x Cofactor%<http://bio2rdf.org/ns/kegg#xCofactor>
-comment%<http://www.w3.org/2000/01/rdf-schema#comment>
-x Ref%<http://bio2rdf.org/ns/bio2rdf#xRef>
-title%<http://purl.org/dc/elements/1.1/title>
-identifier%<http://purl.org/dc/elements/1.1/identifier>
-label%<http://www.w3.org/2000/01/rdf-schema#label>
 url Image%<http://bio2rdf.org/ns/bio2rdf#urlImage>
-url%<http://bio2rdf.org/ns/bio2rdf#url>
