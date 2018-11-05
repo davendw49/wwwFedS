@@ -21,6 +21,8 @@ import org.openrdf.sail.lucene.LuceneSail;
 import org.openrdf.sail.lucene.LuceneSailSchema;
 import org.openrdf.sail.memory.MemoryStore;
 
+import wwwFedS.run.ResultList;
+
 public class lsQuery {
 
 	public static String toQuery(String kw) {
@@ -253,15 +255,14 @@ public class lsQuery {
 	}
 
 	// 对各个数据集最后一次查询
-	public static String dbpediaQuery(String qs) {
+	public static ResultList dbpediaQuery(String qs) {
 		String lastResult = "";
 
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
 
-		//if (queryString.length() > 15000)
-		//	return lastResult + "result: false \n";
+		ResultList curRes = new ResultList();
 
 		TupleQuery query;
 		try {
@@ -269,16 +270,21 @@ public class lsQuery {
 			query = new dbpediaConnection().getDbpediaConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result = query.evaluate();
 			System.out.println("结果  :  " + result.hasNext());
-			lastResult = lastResult + "result: " + result.hasNext() + "\n";
+
+			int count = 0;
 			while (result.hasNext()) {
 				BindingSet bindings = result.next();
-				// System.out.println("found match: ");
+
+				ArrayList<String> resList = new ArrayList<String>();
 				for (Binding binding : bindings) {
 					// System.out.println(" "+binding.getName()+": "+binding.getValue());
-
-					lastResult = lastResult + " " + binding.getName().toString() + ": " + binding.getValue().toString()
-							+ "\n";
+					if (count == 0) {
+						curRes.variables.add(binding.getName().toString());
+					}
+					resList.add(binding.getValue().toString());
 				}
+				curRes.mappings.add(resList);
+				count++;
 			}
 
 		} catch (MalformedQueryException e) {
@@ -292,19 +298,18 @@ public class lsQuery {
 			e.printStackTrace();
 		}
 
-		return lastResult;
+		return curRes;
 	}
 
 	// chebi最终查询
-	public static String chebiQuery(String qs) {
+	public static ResultList chebiQuery(String qs) {
 		String lastResult = "";
 
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
 
-		//if (queryString.length() > 15000)
-		//	return lastResult + "result: false \n";
+		ResultList curRes = new ResultList();
 
 		TupleQuery query;
 		try {
@@ -312,16 +317,21 @@ public class lsQuery {
 			query = new chebiConnection().getChebiConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result = query.evaluate();
 			System.out.println("结果  :  " + result.hasNext());
-			lastResult = lastResult + "result: " + result.hasNext() + "\n";
+
+			int count = 0;
 			while (result.hasNext()) {
 				BindingSet bindings = result.next();
-				// System.out.println("found match: ");
+
+				ArrayList<String> resList = new ArrayList<String>();
 				for (Binding binding : bindings) {
 					// System.out.println(" "+binding.getName()+": "+binding.getValue());
-
-					lastResult = lastResult + " " + binding.getName().toString() + ": " + binding.getValue().toString()
-							+ "\n";
+					if (count == 0) {
+						curRes.variables.add(binding.getName().toString());
+					}
+					resList.add(binding.getValue().toString());
 				}
+				curRes.mappings.add(resList);
+				count++;
 			}
 
 		} catch (MalformedQueryException e) {
@@ -335,19 +345,18 @@ public class lsQuery {
 			e.printStackTrace();
 		}
 
-		return lastResult;
+		return curRes;
 	}
 
 	// drugbank
-	public static String drugbankQuery(String qs) {
+	public static ResultList drugbankQuery(String qs) {
 		String lastResult = "";
 
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
 
-		//if (queryString.length() > 15000)
-		//	return lastResult + "result: false \n";
+		ResultList curRes = new ResultList();
 
 		TupleQuery query;
 		try {
@@ -355,16 +364,21 @@ public class lsQuery {
 			query = new drugbankConnection().getDrugbankConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result = query.evaluate();
 			System.out.println("结果  :  " + result.hasNext());
-			lastResult = lastResult + "result: " + result.hasNext() + "\n";
+
+			int count = 0;
 			while (result.hasNext()) {
 				BindingSet bindings = result.next();
-				// System.out.println("found match: ");
+
+				ArrayList<String> resList = new ArrayList<String>();
 				for (Binding binding : bindings) {
 					// System.out.println(" "+binding.getName()+": "+binding.getValue());
-
-					lastResult = lastResult + " " + binding.getName().toString() + ": " + binding.getValue().toString()
-							+ "\n";
+					if (count == 0) {
+						curRes.variables.add(binding.getName().toString());
+					}
+					resList.add(binding.getValue().toString());
 				}
+				curRes.mappings.add(resList);
+				count++;
 			}
 
 		} catch (MalformedQueryException e) {
@@ -378,19 +392,18 @@ public class lsQuery {
 			e.printStackTrace();
 		}
 
-		return lastResult;
+		return curRes;
 	}
 
 	// kegg
-	public static String keggQuery(String qs) {
+	public static ResultList keggQuery(String qs) {
 		String lastResult = "";
 
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n" + qs;
 
 		System.out.println("Running query: \n" + queryString);
 
-		//if (queryString.length() > 15000)
-		//	return lastResult + "result: false \n";
+		ResultList curRes = new ResultList();
 
 		TupleQuery query;
 		try {
@@ -398,16 +411,21 @@ public class lsQuery {
 			query = new keggConnection().getKeggConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result = query.evaluate();
 			System.out.println("结果  :  " + result.hasNext());
-			lastResult = lastResult + "result: " + result.hasNext() + "\n";
+
+			int count = 0;
 			while (result.hasNext()) {
 				BindingSet bindings = result.next();
-				// System.out.println("found match: ");
+
+				ArrayList<String> resList = new ArrayList<String>();
 				for (Binding binding : bindings) {
 					// System.out.println(" "+binding.getName()+": "+binding.getValue());
-
-					lastResult = lastResult + " " + binding.getName().toString() + ": " + binding.getValue().toString()
-							+ "\n";
+					if (count == 0) {
+						curRes.variables.add(binding.getName().toString());
+					}
+					resList.add(binding.getValue().toString());
 				}
+				curRes.mappings.add(resList);
+				count++;
 			}
 
 		} catch (MalformedQueryException e) {
@@ -421,7 +439,7 @@ public class lsQuery {
 			e.printStackTrace();
 		}
 
-		return lastResult;
+		return curRes;
 	}
 
 	public static HashMap<String, ArrayList<String>> lsProperty(String pro) {

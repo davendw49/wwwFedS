@@ -15,7 +15,7 @@ public class ServerThread extends Thread {
 
 	Socket s = null;
 
-// *****************************************************************************************************************//
+	// *****************************************************************************************************************//
 	// public static String basepath = "/home/daven/";
 	public static String basepath_ls = "/home/FedS_system/dict_a/";
 	public static String basepath_cd = "/home/FedS_system/dict_b/";
@@ -28,7 +28,7 @@ public class ServerThread extends Thread {
 	HashMap<String, String> keyword_is_property_ls = new HashMap<>();
 	HashMap<String, String> keyword_is_class_cd = new HashMap<>();
 	HashMap<String, String> keyword_is_property_cd = new HashMap<>();
-// *****************************************************************************************************************//
+	// *****************************************************************************************************************//
 
 	/*
 	 * time calculate
@@ -40,7 +40,7 @@ public class ServerThread extends Thread {
 	}
 
 	public void run() {
-// *****************************************************************************************************************//
+		// *****************************************************************************************************************//
 		try {
 			init_ls();
 			init_cd();
@@ -49,7 +49,7 @@ public class ServerThread extends Thread {
 			System.out.println("file system error");
 		}
 
-// *****************************************************************************************************************//
+		// *****************************************************************************************************************//
 
 		try {
 			InputStream is = s.getInputStream();
@@ -71,7 +71,7 @@ public class ServerThread extends Thread {
 				// list:keyword,type,x
 				HashMap<String, HashMap<String, ArrayList<String>>> list = new HashMap<>();
 				for (int i = 0; i < sa.length; i++) {
-// *****************************************************************************************************************//
+					// *****************************************************************************************************************//
 					if (keyword_is_class_ls.containsKey(sa[i].toLowerCase())) {
 						try {
 							if (!list.containsKey(sa[i])) {
@@ -97,7 +97,7 @@ public class ServerThread extends Thread {
 							e.printStackTrace();
 						}
 					}
-// *****************************************************************************************************************//
+					// *****************************************************************************************************************//
 					else {
 						try {
 							// list.add(new lsQuery().exExecute(sa[i]));
@@ -126,21 +126,26 @@ public class ServerThread extends Thread {
 					// 生成中间查询
 					new wwwFedS.LifeScience.mainAction();
 					slist = mainAction.doAction(list);
-					String result = "";
+
 					long endTime_for_structquery = System.currentTimeMillis();
 					timeCollection.put(0, new ArrayList<>());
 					timeCollection.put(1, new ArrayList<>());
 					timeCollection.put(2, new ArrayList<>());
 					timeCollection.put(3, new ArrayList<>());
+
+					ResultList finalResList = new ResultList();
 					// 查询最终结果
 					// for (int k = 0; k < slist.size(); k++) {
 					for (int j = 0; j < slist.size(); j++) {
+
+						ResultList tmpResList = new ResultList();
 
 						System.out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
 						for (int i = 0; i < 4; i++) {
 							System.out.println("repository " + i + " :");
 							ArrayList<String> qsList = slist.get(j).get(i);
+
 							for (String qs : qsList) {
 								String qs1 = qs;
 								qs1 = qs1.replace("SELECT", "");
@@ -154,45 +159,39 @@ public class ServerThread extends Thread {
 									if (i == 0) {
 										long chebi_start_time = System.currentTimeMillis();
 										new lsQuery();
-										result = result + lsQuery.chebiQuery(qs);
+										tmpResList = lsQuery.chebiQuery(qs);
 										long chebi_end_time = System.currentTimeMillis();
 										timeCollection.get(0).add(chebi_end_time - chebi_start_time);
 									}
 									if (i == 1) {
 										long kegg_start_time = System.currentTimeMillis();
 										new lsQuery();
-										result = result + lsQuery.keggQuery(qs);
+										tmpResList = lsQuery.keggQuery(qs);
 										long kegg_end_time = System.currentTimeMillis();
 										timeCollection.get(1).add(kegg_end_time - kegg_start_time);
 									}
 									if (i == 2) {
 										long drugbank_start_time = System.currentTimeMillis();
 										new lsQuery();
-										result = result + lsQuery.drugbankQuery(qs);
+										tmpResList = lsQuery.drugbankQuery(qs);
 										long drugbank_end_time = System.currentTimeMillis();
 										timeCollection.get(2).add(drugbank_end_time - drugbank_start_time);
 									}
 									if (i == 3) {
 										long dbpedia_start_time = System.currentTimeMillis();
 										new lsQuery();
-										result = result + lsQuery.dbpediaQuery(qs);
+										tmpResList = lsQuery.dbpediaQuery(qs);
 										long dbpedia_end_time = System.currentTimeMillis();
 										timeCollection.get(3).add(dbpedia_end_time - dbpedia_start_time);
 									}
 								}
 							}
 						}
+						finalResList.join(tmpResList);
 					}
-					// }
-					if (result.length() == 0) {
-						System.out.println("No final result!");
-						out.println("No final result!");
-					} else {
-						// System.out.println("final result:");
-						// System.out.println(result);
-						out.println("final result:");
-						out.println(result);
-					}
+
+					System.out.println("The final joining results are : " + finalResList.toString());
+
 					long endTime_for_sparql = System.currentTimeMillis();
 					System.out.println("fisrt ls: " + (endTime_for_fulltext - startTime) + "ms");
 					System.out.println("traversing: " + (endTime_for_structquery - endTime_for_fulltext) + "ms");
@@ -226,7 +225,7 @@ public class ServerThread extends Thread {
 				// list:keyword,type,x
 				HashMap<String, HashMap<String, ArrayList<String>>> list = new HashMap<>();
 				for (int i = 0; i < sa.length; i++) {
-// *****************************************************************************************************************//
+					// *****************************************************************************************************************//
 					if (keyword_is_class_cd.containsKey(sa[i].toLowerCase())) {
 						try {
 							if (!list.containsKey(sa[i])) {
@@ -252,7 +251,7 @@ public class ServerThread extends Thread {
 							e.printStackTrace();
 						}
 					}
-// *****************************************************************************************************************//
+					// *****************************************************************************************************************//
 					else {
 						try {
 							// list.add(new lsQuery().exExecute(sa[i]));
@@ -403,7 +402,7 @@ public class ServerThread extends Thread {
 
 	}
 
-// *****************************************************************************************************************//
+	// *****************************************************************************************************************//
 	// public ServerThread() {
 
 	// }
@@ -458,5 +457,5 @@ public class ServerThread extends Thread {
 	 * System.out.println(sThread.keyword_is_property_ls);
 	 * System.out.println(sThread.keyword_is_property_cd); }
 	 */
-// *****************************************************************************************************************//
+	// *****************************************************************************************************************//
 }
