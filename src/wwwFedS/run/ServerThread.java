@@ -133,13 +133,13 @@ public class ServerThread extends Thread {
 					timeCollection.put(2, new ArrayList<>());
 					timeCollection.put(3, new ArrayList<>());
 
-					ResultList finalResList = new ResultList();
+					ArrayList<ResultList> allResLists = new ArrayList<ResultList>();
 					// 查询最终结果
 					// for (int k = 0; k < slist.size(); k++) {
 					for (int j = 0; j < slist.size(); j++) {
+						ResultList finalResList = new ResultList();
 
 						ResultList tmpResList = new ResultList();
-
 						System.out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
 						for (int i = 0; i < 4; i++) {
@@ -186,12 +186,16 @@ public class ServerThread extends Thread {
 									}
 								}
 							}
+							finalResList.join(tmpResList);
 						}
-						finalResList.join(tmpResList);
+						allResLists.add(finalResList);
 					}
 
-					System.out.println("The final joining results are : " + finalResList.toString());
-
+					for (int i = 0; i < allResLists.size(); i++) {
+						if (allResLists.get(i).mappings.size() == 0)
+							System.out.println(
+									"The " + i + " final joining results are : " + allResLists.get(i).toString());
+					}
 					long endTime_for_sparql = System.currentTimeMillis();
 					System.out.println("fisrt ls: " + (endTime_for_fulltext - startTime) + "ms");
 					System.out.println("traversing: " + (endTime_for_structquery - endTime_for_fulltext) + "ms");
