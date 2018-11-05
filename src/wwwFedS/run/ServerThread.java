@@ -211,7 +211,7 @@ public class ServerThread extends Thread {
 					e.printStackTrace();
 				}
 
-			} else if (str.contains("cd")) {
+			} else if (str.contains("cm")) {
 
 				String s = br.readLine();
 				String[] sa = s.split(";");
@@ -266,9 +266,9 @@ public class ServerThread extends Thread {
 					}
 				}
 				System.out.println("keyword--type---x finished");
-				// System.out.println(list.keySet());
+				//System.out.println(list.keySet());
 				System.out.println("**************\n**************\n**************\n**************");
-				// System.out.println(list.values());
+				//System.out.println(list.values());
 				// out.println("keyword--type---x:");
 				// out.println(list);
 				out.println("Keyword->Entity->Class are Mapping");
@@ -283,8 +283,8 @@ public class ServerThread extends Thread {
 				HashMap<Integer, ArrayList<String>> slist;
 				try {
 					// 生成中间查询
-					new wwwFedS.LifeScience.mainAction();
-					slist = mainAction.doAction(list);
+					new wwwFedS.CrossDomain.mainAction();
+					slist = wwwFedS.CrossDomain.mainAction.doAction(list);
 					String result = "";
 					long endTime_for_structquery = System.currentTimeMillis();
 					// 查询最终结果
