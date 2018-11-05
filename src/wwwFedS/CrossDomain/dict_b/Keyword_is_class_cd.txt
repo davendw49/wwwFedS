@@ -1,0 +1,407 @@
+Album%<http://dbpedia.org/ontology/Album>
+Musical Work%<http://dbpedia.org/ontology/MusicalWork>
+Work%<http://dbpedia.org/ontology/Work>
+Thing%<http://www.w3.org/2002/07/owl#Thing>
+Place%<http://dbpedia.org/ontology/Place>
+Populated Place%<http://dbpedia.org/ontology/PopulatedPlace>
+Settlement%<http://dbpedia.org/ontology/Settlement>
+British Royalty%<http://dbpedia.org/ontology/BritishRoyalty>
+Person%<http://dbpedia.org/ontology/Person>
+Christian Bishop%<http://dbpedia.org/ontology/ChristianBishop>
+Cleric%<http://dbpedia.org/ontology/Cleric>
+Monarch%<http://dbpedia.org/ontology/Monarch>
+Administrative Region%<http://dbpedia.org/ontology/AdministrativeRegion>
+Politician%<http://dbpedia.org/ontology/Politician>
+President%<http://dbpedia.org/ontology/President>
+Educational Institution%<http://dbpedia.org/ontology/EducationalInstitution>
+Organisation%<http://dbpedia.org/ontology/Organisation>
+University%<http://dbpedia.org/ontology/University>
+Actor%<http://dbpedia.org/ontology/Actor>
+Artist%<http://dbpedia.org/ontology/Artist>
+Scientist%<http://dbpedia.org/ontology/Scientist>
+Writer%<http://dbpedia.org/ontology/Writer>
+Island%<http://dbpedia.org/ontology/Island>
+Company%<http://dbpedia.org/ontology/Company>
+Village%<http://dbpedia.org/ontology/Village>
+Military Person%<http://dbpedia.org/ontology/MilitaryPerson>
+Book%<http://dbpedia.org/ontology/Book>
+Event%<http://dbpedia.org/ontology/Event>
+Military Conflict%<http://dbpedia.org/ontology/MilitaryConflict>
+Film%<http://dbpedia.org/ontology/Film>
+Planet%<http://dbpedia.org/ontology/Planet>
+Olympics%<http://dbpedia.org/ontology/Olympics>
+Sports Event%<http://dbpedia.org/ontology/SportsEvent>
+Automobile%<http://dbpedia.org/ontology/Automobile>
+Mean Of Transportation%<http://dbpedia.org/ontology/MeanOfTransportation>
+Automobile Engine%<http://dbpedia.org/ontology/AutomobileEngine>
+Device%<http://dbpedia.org/ontology/Device>
+Television Show%<http://dbpedia.org/ontology/TelevisionShow>
+Magazine%<http://dbpedia.org/ontology/Magazine>
+Chemical Compound%<http://dbpedia.org/ontology/ChemicalCompound>
+Disease%<http://dbpedia.org/ontology/Disease>
+Beverage%<http://dbpedia.org/ontology/Beverage>
+Radio Station%<http://dbpedia.org/ontology/RadioStation>
+Soccer Club%<http://dbpedia.org/ontology/SoccerClub>
+Sports Team%<http://dbpedia.org/ontology/SportsTeam>
+Office Holder%<http://dbpedia.org/ontology/OfficeHolder>
+Aircraft%<http://dbpedia.org/ontology/Aircraft>
+Band%<http://dbpedia.org/ontology/Band>
+Software%<http://dbpedia.org/ontology/Software>
+Soccer League%<http://dbpedia.org/ontology/SoccerLeague>
+Sports League%<http://dbpedia.org/ontology/SportsLeague>
+Weapon%<http://dbpedia.org/ontology/Weapon>
+Ship%<http://dbpedia.org/ontology/Ship>
+Musical%<http://dbpedia.org/ontology/Musical>
+Town%<http://dbpedia.org/ontology/Town>
+Country%<http://dbpedia.org/ontology/Country>
+Musical Artist%<http://dbpedia.org/ontology/MusicalArtist>
+Animal%<http://dbpedia.org/ontology/Animal>
+Eukaryote%<http://dbpedia.org/ontology/Eukaryote>
+Mammal%<http://dbpedia.org/ontology/Mammal>
+Species%<http://dbpedia.org/ontology/Species>
+Plant%<http://dbpedia.org/ontology/Plant>
+City%<http://dbpedia.org/ontology/City>
+Mollusca%<http://dbpedia.org/ontology/Mollusca>
+Activity%<http://dbpedia.org/ontology/Activity>
+Game%<http://dbpedia.org/ontology/Game>
+World Heritage Site%<http://dbpedia.org/ontology/WorldHeritageSite>
+Person Function%<http://dbpedia.org/ontology/PersonFunction>
+Anatomical Structure%<http://dbpedia.org/ontology/AnatomicalStructure>
+Ethnic Group%<http://dbpedia.org/ontology/EthnicGroup>
+Website%<http://dbpedia.org/ontology/Website>
+Flowering Plant%<http://dbpedia.org/ontology/FloweringPlant>
+Award%<http://dbpedia.org/ontology/Award>
+Protected Area%<http://dbpedia.org/ontology/ProtectedArea>
+Fish%<http://dbpedia.org/ontology/Fish>
+Trade Union%<http://dbpedia.org/ontology/TradeUnion>
+Language%<http://dbpedia.org/ontology/Language>
+Saint%<http://dbpedia.org/ontology/Saint>
+Philosopher%<http://dbpedia.org/ontology/Philosopher>
+Mountain Range%<http://dbpedia.org/ontology/MountainRange>
+Ambassador%<http://dbpedia.org/ontology/Ambassador>
+Architect%<http://dbpedia.org/ontology/Architect>
+Protein%<http://dbpedia.org/ontology/Protein>
+Amphibian%<http://dbpedia.org/ontology/Amphibian>
+Television Episode%<http://dbpedia.org/ontology/TelevisionEpisode>
+Criminal%<http://dbpedia.org/ontology/Criminal>
+Body Of Water%<http://dbpedia.org/ontology/BodyOfWater>
+River%<http://dbpedia.org/ontology/River>
+Stream%<http://dbpedia.org/ontology/Stream>
+Athlete%<http://dbpedia.org/ontology/Athlete>
+Formula One Racer%<http://dbpedia.org/ontology/FormulaOneRacer>
+Soccer Manager%<http://dbpedia.org/ontology/SoccerManager>
+Astronaut%<http://dbpedia.org/ontology/Astronaut>
+Baseball Player%<http://dbpedia.org/ontology/BaseballPlayer>
+Reptile%<http://dbpedia.org/ontology/Reptile>
+Historic Place%<http://dbpedia.org/ontology/HistoricPlace>
+Prime Minister%<http://dbpedia.org/ontology/PrimeMinister>
+Fictional Character%<http://dbpedia.org/ontology/FictionalCharacter>
+Senator%<http://dbpedia.org/ontology/Senator>
+Drug%<http://dbpedia.org/ontology/Drug>
+Sport%<http://dbpedia.org/ontology/Sport>
+Fungus%<http://dbpedia.org/ontology/Fungus>
+Music Genre%<http://dbpedia.org/ontology/MusicGenre>
+Insect%<http://dbpedia.org/ontology/Insect>
+Song%<http://dbpedia.org/ontology/Song>
+Airline%<http://dbpedia.org/ontology/Airline>
+Basketball League%<http://dbpedia.org/ontology/BasketballLeague>
+Broadcast%<http://dbpedia.org/ontology/Broadcast>
+Bird%<http://dbpedia.org/ontology/Bird>
+Baseball League%<http://dbpedia.org/ontology/BaseballLeague>
+Single%<http://dbpedia.org/ontology/Single>
+Continent%<http://dbpedia.org/ontology/Continent>
+Airport%<http://dbpedia.org/ontology/Airport>
+Building%<http://dbpedia.org/ontology/Building>
+Hockey Team%<http://dbpedia.org/ontology/HockeyTeam>
+Wrestler%<http://dbpedia.org/ontology/Wrestler>
+Tennis Player%<http://dbpedia.org/ontology/TennisPlayer>
+Chancellor%<http://dbpedia.org/ontology/Chancellor>
+Playboy Playmate%<http://dbpedia.org/ontology/PlayboyPlaymate>
+Crustacean%<http://dbpedia.org/ontology/Crustacean>
+Soccer Player%<http://dbpedia.org/ontology/SoccerPlayer>
+Cardinal%<http://dbpedia.org/ontology/Cardinal>
+Skyscraper%<http://dbpedia.org/ontology/Skyscraper>
+Mountain%<http://dbpedia.org/ontology/Mountain>
+Non- Profit Organisation%<http://dbpedia.org/ontology/Non-ProfitOrganisation>
+Space Mission%<http://dbpedia.org/ontology/SpaceMission>
+Lake%<http://dbpedia.org/ontology/Lake>
+Rocket%<http://dbpedia.org/ontology/Rocket>
+American Football Team%<http://dbpedia.org/ontology/AmericanFootballTeam>
+Military Unit%<http://dbpedia.org/ontology/MilitaryUnit>
+Adult Actor%<http://dbpedia.org/ontology/AdultActor>
+Comics Character%<http://dbpedia.org/ontology/ComicsCharacter>
+Video Game%<http://dbpedia.org/ontology/VideoGame>
+Record Label%<http://dbpedia.org/ontology/RecordLabel>
+Bone%<http://dbpedia.org/ontology/Bone>
+Legislature%<http://dbpedia.org/ontology/Legislature>
+Bacteria%<http://dbpedia.org/ontology/Bacteria>
+Governor%<http://dbpedia.org/ontology/Governor>
+Ice Hockey Player%<http://dbpedia.org/ontology/IceHockeyPlayer>
+American Football Player%<http://dbpedia.org/ontology/AmericanFootballPlayer>
+Gridiron Football Player%<http://dbpedia.org/ontology/GridironFootballPlayer>
+Music Festival%<http://dbpedia.org/ontology/MusicFestival>
+Conifer%<http://dbpedia.org/ontology/Conifer>
+Comedian%<http://dbpedia.org/ontology/Comedian>
+Colour%<http://dbpedia.org/ontology/Colour>
+Bridge%<http://dbpedia.org/ontology/Bridge>
+College Coach%<http://dbpedia.org/ontology/CollegeCoach>
+Newspaper%<http://dbpedia.org/ontology/Newspaper>
+Sales%<http://dbpedia.org/ontology/Sales>
+Fern%<http://dbpedia.org/ontology/Fern>
+Figure Skater%<http://dbpedia.org/ontology/FigureSkater>
+Cricketer%<http://dbpedia.org/ontology/Cricketer>
+Brain%<http://dbpedia.org/ontology/Brain>
+Arachnid%<http://dbpedia.org/ontology/Arachnid>
+Supreme Court Of The United States Case%<http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>
+Judge%<http://dbpedia.org/ontology/Judge>
+Canadian Football League%<http://dbpedia.org/ontology/CanadianFootballLeague>
+Stadium%<http://dbpedia.org/ontology/Stadium>
+Comics Creator%<http://dbpedia.org/ontology/ComicsCreator>
+Congressman%<http://dbpedia.org/ontology/Congressman>
+Park%<http://dbpedia.org/ontology/Park>
+Green Alga%<http://dbpedia.org/ontology/GreenAlga>
+College%<http://dbpedia.org/ontology/College>
+Infrastructure%<http://dbpedia.org/ontology/Infrastructure>
+Road%<http://dbpedia.org/ontology/Road>
+Nerve%<http://dbpedia.org/ontology/Nerve>
+Nascar Driver%<http://dbpedia.org/ontology/NascarDriver>
+Currency%<http://dbpedia.org/ontology/Currency>
+Convention%<http://dbpedia.org/ontology/Convention>
+Canal%<http://dbpedia.org/ontology/Canal>
+School%<http://dbpedia.org/ontology/School>
+Journalist%<http://dbpedia.org/ontology/Journalist>
+Boxer%<http://dbpedia.org/ontology/Boxer>
+Model%<http://dbpedia.org/ontology/Model>
+Ginkgo%<http://dbpedia.org/ontology/Ginkgo>
+Member Of Parliament%<http://dbpedia.org/ontology/MemberOfParliament>
+Space Station%<http://dbpedia.org/ontology/SpaceStation>
+Club Moss%<http://dbpedia.org/ontology/ClubMoss>
+American Football League%<http://dbpedia.org/ontology/AmericanFootballLeague>
+Hospital%<http://dbpedia.org/ontology/Hospital>
+Lighthouse%<http://dbpedia.org/ontology/Lighthouse>
+Valley%<http://dbpedia.org/ontology/Valley>
+Site Of Special Scientific Interest%<http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>
+Embryology%<http://dbpedia.org/ontology/Embryology>
+Canadian Football Team%<http://dbpedia.org/ontology/CanadianFootballTeam>
+Ice Hockey League%<http://dbpedia.org/ontology/IceHockeyLeague>
+Pope%<http://dbpedia.org/ontology/Pope>
+Cyclist%<http://dbpedia.org/ontology/Cyclist>
+Mayor%<http://dbpedia.org/ontology/Mayor>
+Wine Region%<http://dbpedia.org/ontology/WineRegion>
+Rugby League%<http://dbpedia.org/ontology/RugbyLeague>
+Space Shuttle%<http://dbpedia.org/ontology/SpaceShuttle>
+Race%<http://dbpedia.org/ontology/Race>
+Film Festival%<http://dbpedia.org/ontology/FilmFestival>
+Gnetophytes%<http://dbpedia.org/ontology/Gnetophytes>
+Cave%<http://dbpedia.org/ontology/Cave>
+Grape%<http://dbpedia.org/ontology/Grape>
+Lunar Crater%<http://dbpedia.org/ontology/LunarCrater>
+Station%<http://dbpedia.org/ontology/Station>
+Lacrosse League%<http://dbpedia.org/ontology/LacrosseLeague>
+Voice Actor%<http://dbpedia.org/ontology/VoiceActor>
+Shopping Mall%<http://dbpedia.org/ontology/ShoppingMall>
+Basketball Player%<http://dbpedia.org/ontology/BasketballPlayer>
+Monument%<http://dbpedia.org/ontology/Monument>
+Moss%<http://dbpedia.org/ontology/Moss>
+Ski Area%<http://dbpedia.org/ontology/SkiArea>
+Muscle%<http://dbpedia.org/ontology/Muscle>
+Artery%<http://dbpedia.org/ontology/Artery>
+Poker Player%<http://dbpedia.org/ontology/PokerPlayer>
+Cycad%<http://dbpedia.org/ontology/Cycad>
+Volleyball League%<http://dbpedia.org/ontology/VolleyballLeague>
+Tennis League%<http://dbpedia.org/ontology/TennisLeague>
+Vein%<http://dbpedia.org/ontology/Vein>
+Archaea%<http://dbpedia.org/ontology/Archaea>
+Lymph%<http://dbpedia.org/ontology/Lymph>
+Rugby Player%<http://dbpedia.org/ontology/RugbyPlayer>
+Gaelic Games Player%<http://dbpedia.org/ontology/GaelicGamesPlayer>
+Wrestling Event%<http://dbpedia.org/ontology/WrestlingEvent>
+Badminton Player%<http://dbpedia.org/ontology/BadmintonPlayer>
+Grand Prix%<http://dbpedia.org/ontology/GrandPrix>
+Inline Hockey League%<http://dbpedia.org/ontology/InlineHockeyLeague>
+Eurovision Song Contest Entry%<http://dbpedia.org/ontology/EurovisionSongContestEntry>
+Cricket League%<http://dbpedia.org/ontology/CricketLeague>
+National Collegiate Athletic Association Athlete%<http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete>
+Field Hockey League%<http://dbpedia.org/ontology/FieldHockeyLeague>
+Olympic Result%<http://dbpedia.org/ontology/OlympicResult>
+Videogames League%<http://dbpedia.org/ontology/VideogamesLeague>
+Motorcycle Racing League%<http://dbpedia.org/ontology/MotorcycleRacingLeague>
+Womens Tennis Association Tournament%<http://dbpedia.org/ontology/WomensTennisAssociationTournament>
+Launch Pad%<http://dbpedia.org/ontology/LaunchPad>
+Handball League%<http://dbpedia.org/ontology/HandballLeague>
+Spacecraft%<http://dbpedia.org/ontology/Spacecraft>
+Auto Racing League%<http://dbpedia.org/ontology/AutoRacingLeague>
+Australian Football League%<http://dbpedia.org/ontology/AustralianFootballLeague>
+Mixed Martial Arts Event%<http://dbpedia.org/ontology/MixedMartialArtsEvent>
+Year In Spaceflight%<http://dbpedia.org/ontology/YearInSpaceflight>
+Mixed Martial Arts League%<http://dbpedia.org/ontology/MixedMartialArtsLeague>
+Speedway League%<http://dbpedia.org/ontology/SpeedwayLeague>
+Softball League%<http://dbpedia.org/ontology/SoftballLeague>
+Polo League%<http://dbpedia.org/ontology/PoloLeague>
+Person%<http://xmlns.com/foaf/0.1/Person>
+Concept%<http://www.w3.org/2004/02/skos/core#Concept>
+Ontology%<http://www.w3.org/2002/07/owl#Ontology>
+Class%<http://www.w3.org/2002/07/owl#Class>
+Datatype Property%<http://www.w3.org/2002/07/owl#DatatypeProperty>
+Object Property%<http://www.w3.org/2002/07/owl#ObjectProperty>
+Functional Property%<http://www.w3.org/2002/07/owl#FunctionalProperty>
+Feature%<http://www.opengis.net/gml/_Feature>
+Document%<http://xmlns.com/foaf/0.1/Document>
+Music Artist%<http://purl.org/ontology/mo/MusicArtist>
+Record%<http://purl.org/ontology/mo/Record>
+Torrent%<http://purl.org/ontology/mo/Torrent>
+E D2 K%<http://purl.org/ontology/mo/ED2K>
+Playlist%<http://purl.org/ontology/mo/Playlist>
+Track%<http://purl.org/ontology/mo/Track>
+Tag%<http://www.holygoat.co.uk/owl/redwood/0.1/tags/Tag>
+Interval%<http://www.w3.org/2006/time#Interval>
+Lyrics%<http://purl.org/ontology/mo/Lyrics>
+Signal%<http://purl.org/ontology/mo/Signal>
+performance%<http://data.linkedmdb.org/resource/movie/performance>
+actor%<http://data.linkedmdb.org/resource/movie/actor>
+film character%<http://data.linkedmdb.org/resource/movie/film_character>
+interlink%<http://data.linkedmdb.org/resource/oddlinker/interlink>
+linkage run%<http://data.linkedmdb.org/resource/oddlinker/linkage_run>
+country%<http://data.linkedmdb.org/resource/movie/country>
+film%<http://data.linkedmdb.org/resource/movie/film>
+writer%<http://data.linkedmdb.org/resource/movie/writer>
+director%<http://data.linkedmdb.org/resource/movie/director>
+film cut%<http://data.linkedmdb.org/resource/movie/film_cut>
+producer%<http://data.linkedmdb.org/resource/movie/producer>
+music contributor%<http://data.linkedmdb.org/resource/movie/music_contributor>
+film location%<http://data.linkedmdb.org/resource/movie/film_location>
+cinematographer%<http://data.linkedmdb.org/resource/movie/cinematographer>
+editor%<http://data.linkedmdb.org/resource/movie/editor>
+film subject%<http://data.linkedmdb.org/resource/movie/film_subject>
+film genre%<http://data.linkedmdb.org/resource/movie/film_genre>
+film format%<http://data.linkedmdb.org/resource/movie/film_format>
+production company%<http://data.linkedmdb.org/resource/movie/production_company>
+film story contributor%<http://data.linkedmdb.org/resource/movie/film_story_contributor>
+film art director%<http://data.linkedmdb.org/resource/movie/film_art_director>
+film production designer%<http://data.linkedmdb.org/resource/movie/film_production_designer>
+content rating%<http://data.linkedmdb.org/resource/movie/content_rating>
+content rating system%<http://data.linkedmdb.org/resource/movie/content_rating_system>
+film series%<http://data.linkedmdb.org/resource/movie/film_series>
+film featured song%<http://data.linkedmdb.org/resource/movie/film_featured_song>
+film set designer%<http://data.linkedmdb.org/resource/movie/film_set_designer>
+film casting director%<http://data.linkedmdb.org/resource/movie/film_casting_director>
+film collection%<http://data.linkedmdb.org/resource/movie/film_collection>
+film regional release date%<http://data.linkedmdb.org/resource/movie/film_regional_release_date>
+film film company relationship%<http://data.linkedmdb.org/resource/movie/film_film_company_relationship>
+Agent%<http://xmlns.com/foaf/0.1/Agent>
+film costume designer%<http://data.linkedmdb.org/resource/movie/film_costume_designer>
+personal film appearance%<http://data.linkedmdb.org/resource/movie/personal_film_appearance>
+personal film appearance type%<http://data.linkedmdb.org/resource/movie/personal_film_appearance_type>
+dubbing performance%<http://data.linkedmdb.org/resource/movie/dubbing_performance>
+film festival%<http://data.linkedmdb.org/resource/movie/film_festival>
+film festival event%<http://data.linkedmdb.org/resource/movie/film_festival_event>
+special film performance type%<http://data.linkedmdb.org/resource/movie/special_film_performance_type>
+film company%<http://data.linkedmdb.org/resource/movie/film_company>
+film film distributor relationship%<http://data.linkedmdb.org/resource/movie/film_film_distributor_relationship>
+film distribution medium%<http://data.linkedmdb.org/resource/movie/film_distribution_medium>
+film distributor%<http://data.linkedmdb.org/resource/movie/film_distributor>
+film crew gig%<http://data.linkedmdb.org/resource/movie/film_crew_gig>
+film crewmember%<http://data.linkedmdb.org/resource/movie/film_crewmember>
+film job%<http://data.linkedmdb.org/resource/movie/film_job>
+film screening venue%<http://data.linkedmdb.org/resource/movie/film_screening_venue>
+film awards ceremony%<http://data.linkedmdb.org/resource/movie/film_awards_ceremony>
+film festival focus%<http://data.linkedmdb.org/resource/movie/film_festival_focus>
+film critic%<http://data.linkedmdb.org/resource/movie/film_critic>
+film festival sponsor%<http://data.linkedmdb.org/resource/movie/film_festival_sponsor>
+film theorist%<http://data.linkedmdb.org/resource/movie/film_theorist>
+Feature%<http://www.geonames.org/ontology#Feature>
+Conference Event%<http://data.semanticweb.org/ns/swc/ontology#ConferenceEvent>
+Conference Venue Place%<http://data.semanticweb.org/ns/swc/ontology#ConferenceVenuePlace>
+Proceedings%<http://swrc.ontoware.org/ontology#Proceedings>
+Chair%<http://data.semanticweb.org/ns/swc/ontology#Chair>
+Delegate%<http://data.semanticweb.org/ns/swc/ontology#Delegate>
+Track Event%<http://data.semanticweb.org/ns/swc/ontology#TrackEvent>
+Workshop Event%<http://data.semanticweb.org/ns/swc/ontology#WorkshopEvent>
+In Proceedings%<http://swrc.ontoware.org/ontology#InProceedings>
+Session Event%<http://data.semanticweb.org/ns/swc/ontology#SessionEvent>
+Panel Event%<http://data.semanticweb.org/ns/swc/ontology#PanelEvent>
+Talk Event%<http://data.semanticweb.org/ns/swc/ontology#TalkEvent>
+Research Topic%<http://swrc.ontoware.org/ontology#ResearchTopic>
+Meeting Room Place%<http://data.semanticweb.org/ns/swc/ontology#MeetingRoomPlace>
+Poster%<http://data.semanticweb.org/ns/swc/ontology#Poster>
+Programme%<http://data.semanticweb.org/ns/swc/ontology#Programme>
+Presenter%<http://data.semanticweb.org/ns/swc/ontology#Presenter>
+Group%<http://xmlns.com/foaf/0.1/Group>
+Place%<http://data.semanticweb.org/ns/swc/ontology#Place>
+Paper Session%<http://data.semanticweb.org/ns/swc/ontology#PaperSession>
+Conference Opening Event%<http://data.semanticweb.org/ns/swc/ontology#ConferenceOpeningEvent>
+Conference Dinner%<http://data.semanticweb.org/ns/swc/ontology#ConferenceDinner>
+Reception%<http://data.semanticweb.org/ns/swc/ontology#Reception>
+Tutorial Event%<http://data.semanticweb.org/ns/swc/ontology#TutorialEvent>
+System Demonstration%<http://data.semanticweb.org/ns/swc/ontology#SystemDemonstration>
+Paper%<http://data.semanticweb.org/ns/swc/ontology#Paper>
+System Description%<http://data.semanticweb.org/ns/swc/ontology#SystemDescription>
+Keynote Talk%<http://data.semanticweb.org/ns/swc/ontology#KeynoteTalk>
+Paper Presentation%<http://data.semanticweb.org/ns/swc/ontology#PaperPresentation>
+Demo Chair%<http://data.semanticweb.org/ns/swc/ontology#DemoChair>
+General Chair%<http://data.semanticweb.org/ns/swc/ontology#GeneralChair>
+Local Organiser%<http://data.semanticweb.org/ns/swc/ontology#LocalOrganiser>
+Panel Chair%<http://data.semanticweb.org/ns/swc/ontology#PanelChair>
+Ph D Symposium Chair%<http://data.semanticweb.org/ns/swc/ontology#PhDSymposiumChair>
+Poster Chair%<http://data.semanticweb.org/ns/swc/ontology#PosterChair>
+Programme Chair%<http://data.semanticweb.org/ns/swc/ontology#ProgrammeChair>
+Semantic Web Technologies Coordinator%<http://data.semanticweb.org/ns/swc/ontology#SemanticWebTechnologiesCoordinator>
+Sponsor Chair%<http://data.semanticweb.org/ns/swc/ontology#SponsorChair>
+Tutorial Chair%<http://data.semanticweb.org/ns/swc/ontology#TutorialChair>
+Webmasterand Conference Administrator%<http://data.semanticweb.org/ns/swc/ontology#WebmasterandConferenceAdministrator>
+Workshop Chair%<http://data.semanticweb.org/ns/swc/ontology#WorkshopChair>
+Demoand Posters Chair%<http://data.semanticweb.org/ns/swc/ontology#DemoandPostersChair>
+Ph D Symposium%<http://data.semanticweb.org/ns/swc/ontology#PhDSymposium>
+Proceedings Chair%<http://data.semanticweb.org/ns/swc/ontology#ProceedingsChair>
+Semantic Webin Use Chairs%<http://data.semanticweb.org/ns/swc/ontology#SemanticWebinUseChairs>
+Semantic Web Technologies Co-ordinator%<http://data.semanticweb.org/ns/swc/ontology#SemanticWebTechnologiesCo-ordinator>
+Sponsorship Chair%<http://data.semanticweb.org/ns/swc/ontology#SponsorshipChair>
+Treasurer%<http://data.semanticweb.org/ns/swc/ontology#Treasurer>
+Programme Committee Member%<http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember>
+Seq%<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq>
+Role%<http://data.semanticweb.org/ns/swc/ontology#Role>
+Conference Chair%<http://data.semanticweb.org/ns/swc/ontology#ConferenceChair>
+Publicity Chair%<http://data.semanticweb.org/ns/swc/ontology#PublicityChair>
+Printed Proceedings Chair%<http://data.semanticweb.org/ns/swc/ontology#PrintedProceedingsChair>
+Dogfood Tsar%<http://data.semanticweb.org/ns/swc/ontology#DogfoodTsar>
+Exhibition Chair%<http://data.semanticweb.org/ns/swc/ontology#ExhibitionChair>
+Posters Chair%<http://data.semanticweb.org/ns/swc/ontology#PostersChair>
+Industry Chair%<http://data.semanticweb.org/ns/swc/ontology#IndustryChair>
+Workshops Chair%<http://data.semanticweb.org/ns/swc/ontology#WorkshopsChair>
+Tutorials Chair%<http://data.semanticweb.org/ns/swc/ontology#TutorialsChair>
+S W Challenge Chair%<http://data.semanticweb.org/ns/swc/ontology#SWChallengeChair>
+Poster Session%<http://data.semanticweb.org/ns/swc/ontology#PosterSession>
+Demo Session%<http://www.w3.org/2002/12/cal/ical#DemoSession>
+Organization%<http://xmlns.com/foaf/0.1/Organization>
+Point%<http://www.w3.org/2003/01/geo/wgs84_pos#Point>
+P C Member%<http://data.semanticweb.org/ns/swc/ontology#PCMember>
+Organising Committee Member%<http://data.semanticweb.org/ns/swc/ontology#OrganisingCommitteeMember>
+Session Chair%<http://data.semanticweb.org/ns/swc/ontology#SessionChair>
+Workshop Organiser%<http://data.semanticweb.org/ns/swc/ontology#WorkshopOrganiser>
+Posterand Demo Chair%<http://data.semanticweb.org/ns/swc/ontology#PosterandDemoChair>
+Doctoral Consortium Chair%<http://data.semanticweb.org/ns/swc/ontology#DoctoralConsortiumChair>
+Refereed Paper Track Chair%<http://data.semanticweb.org/ns/swc/ontology#RefereedPaperTrackChair>
+Local Organising Committee%<http://data.semanticweb.org/ns/swc/ontology#LocalOrganisingCommittee>
+I W3 C2 Liaison%<http://data.semanticweb.org/ns/swc/ontology#IW3C2Liaison>
+Semantic Web Challenge Chair%<http://data.semanticweb.org/ns/swc/ontology#SemanticWebChallengeChair>
+Fellowship Chair%<http://data.semanticweb.org/ns/swc/ontology#FellowshipChair>
+Metadata Chair%<http://data.semanticweb.org/ns/swc/ontology#MetadataChair>
+Semantic Web In- Use Chair%<http://data.semanticweb.org/ns/swc/ontology#SemanticWebIn-UseChair>
+Local Chair%<http://data.semanticweb.org/ns/swc/ontology#LocalChair>
+Proceedings%<http://data.semanticweb.org/ns/swc/ontology#Proceedings>
+Conference Event%<http://swrc.ontoware.org/ontology#ConferenceEvent>
+Break Event%<http://data.semanticweb.org/ns/swc/ontology#BreakEvent>
+Meal Event%<http://data.semanticweb.org/ns/swc/ontology#MealEvent>
+Site%<http://rdfs.org/sioc/ns#Site>
+Image%<http://xmlns.com/foaf/0.1/Image>
+Volunteers Chair%<http://data.semanticweb.org/ns/swc/ontology#VolunteersChair>
+channel%<http://purl.org/rss/1.0/channel>
+Social Event%<http://data.semanticweb.org/ns/swc/ontology#SocialEvent>
+Academic Event%<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent>
+Sponsorship%<http://data.semanticweb.org/ns/swc/ontology#Sponsorship>
+Conference P C O%<http://data.semanticweb.org/ns/swc/ontology#ConferencePCO>
+Developers Track Chair%<http://data.semanticweb.org/ns/swc/ontology#DevelopersTrackChair>
+General Vice Chair%<http://data.semanticweb.org/ns/swc/ontology#GeneralViceChair>
+Panels Chair%<http://data.semanticweb.org/ns/swc/ontology#PanelsChair>
+Sponsorship Managers%<http://data.semanticweb.org/ns/swc/ontology#SponsorshipManagers>
+Call For Papers%<http://sw.deri.org/2005/08/conf/cfp.owl#CallForPapers>

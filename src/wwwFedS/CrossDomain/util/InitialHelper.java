@@ -25,8 +25,8 @@ public class InitialHelper {
 	private BufferedReader bufferedReader;
 
 	//public static String basepath = "/home/daven/";
-	//public static String basepath = "/home/FedS_system/dict_b/";
-	public static String basepath = "src/wwwFedS/CrossDomain/dict_b/";
+	public static String basepath = "/home/FedS_system/dict_b/";
+	//public static String basepath = "src/wwwFedS/CrossDomain/dict_b/";
 	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	public void init() throws IOException {
 		FileInputStream inputStream = new FileInputStream(basepath + "SchemaGraph/Schema.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S

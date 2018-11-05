@@ -1,14 +1,64 @@
-package wwwFedS.LifeScience;
+package wwwFedS.CrossDomain.query;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import wwwFedS.LifeScience.parse.ParsingUnit;
-import wwwFedS.LifeScience.query.SPARQL;
-import wwwFedS.LifeScience.travel.traverseAction;
-import wwwFedS.LifeScience.util.InitialHelper;
+import wwwFedS.CrossDomain.parse.ParsingUnit;
+import wwwFedS.CrossDomain.travel.traverseAction;
+import wwwFedS.CrossDomain.util.InitialHelper;
 
-public class mainAction {
+
+
+public class SPARQL {
+
+	public HashMap<Integer, ArrayList<String>> execList = new HashMap<>();
+
+	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray, String modeName) {
+		//System.out.println(plusArray);
+		System.out.println("Start Query In Federated RDF System.");
+		// 生成合理的sparql查询语句
+		
+		execList.put(0, new ArrayList<>());
+		execList.put(1, new ArrayList<>());
+		execList.put(2, new ArrayList<>());
+		execList.put(3, new ArrayList<>());
+		execList.put(4, new ArrayList<>());
+		execList.put(5, new ArrayList<>());
+		
+		if (queryArray.size() == plusArray.size()) System.out.println("number is correct, sparql query is under making");
+		
+		for (int i = 0; i < queryArray.size(); i++) {
+			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
+			// System.out.println(i + " situation: ");
+			for (int j = 0; j < 6; j++) {
+				
+				if (qlist.get(j).size() > 0) {
+					for (String str : qlist.get(j)) {
+						//生成附加filter或者union的sparql语句：
+						String plus = generatePlus(str, plusArray.get(i), modeName);
+						String tmp = "SELECT * WHERE{\n" + str + plus + "}";
+						if (!plus.equals("")) execList.get(j).add(tmp);
+					}
+				}
+				//execList.put(j, oneBaseQuery);
+			}
+		}
+	}
+	
+	public String generatePlus(String origin, HashMap<String, HashMap<Integer, String>> modePlus, String modeName) {
+		HashMap<Integer, String> mode = modePlus.get(modeName);
+		ArrayList<Integer> kwnum = new ArrayList<>();
+		kwnum.addAll(mode.keySet());
+		//System.out.println(kwnum);
+		String plusSPARQL = "";
+		for (Integer kn : kwnum) {
+			if (origin.indexOf("k"+String.valueOf(kn))!=-1) {
+				plusSPARQL+=mode.get(kn);
+			}
+		}
+		return plusSPARQL;
+	}
+
 	public static void main(String[] args) throws Exception {
 
 		ParsingUnit pUnit = new ParsingUnit();
@@ -48,8 +98,8 @@ public class mainAction {
 		tAction.start(pUnit, iHelper);
 		System.out.println(pUnit.toString());
 		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
-
-		for (int i = 0; i < 4; i++) {
+		
+		for (int i=0;i<6;i++) {
 			System.out.println("this is a query for database" + i + ": ");
 			ArrayList<String> tmp = sparql.execList.get(i);
 			for (String string : tmp) {
@@ -57,33 +107,4 @@ public class mainAction {
 			}
 		}
 	}
-
-	public static HashMap<Integer, ArrayList<String>> doAction(
-			HashMap<String, HashMap<String, ArrayList<String>>> query) throws Exception {
-
-		ParsingUnit pUnit = new ParsingUnit();
-		InitialHelper iHelper = new InitialHelper();
-		traverseAction tAction = new traverseAction();
-		SPARQL sparql = new SPARQL();
-		iHelper.init();
-		
-		// manufactured query input which can be seen over this method.
-
-		pUnit.Parse(query, iHelper);
-		tAction.start(pUnit, iHelper);
-		System.out.println(pUnit.toString());
-		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
-
-		/*for (int i = 0; i < 4; i++) {
-			System.out.println("this is a query for database" + i + ": ");
-			ArrayList<String> tmp = sparql.execList.get(i);
-			for (String string : tmp) {
-				System.out.println(string);
-			}
-		}*/
-
-		return sparql.execList;
-
-	}
-
 }

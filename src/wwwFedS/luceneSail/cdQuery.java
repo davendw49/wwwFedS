@@ -229,7 +229,7 @@ public class cdQuery {
 				}
 
 			}
-			
+
 			query = new geonamesConnection().getGeonamesConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result4 = query.evaluate();
 			System.out.println("结果  :  " + result3.hasNext());
@@ -274,7 +274,7 @@ public class cdQuery {
 				}
 
 			}
-			
+
 			query = new linkedmdbConnection().getLinkedmdbConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result5 = query.evaluate();
 			System.out.println("结果  :  " + result3.hasNext());
@@ -319,7 +319,6 @@ public class cdQuery {
 				}
 
 			}
-			
 
 		} catch (MalformedQueryException e) {
 			// TODO Auto-generated catch block
@@ -335,8 +334,6 @@ public class cdQuery {
 		return sMap;
 
 	}
-
-	
 
 	// 对各个数据集最后一次查询
 	public static String dbpediaQuery(String qs) {
@@ -594,6 +591,301 @@ public class cdQuery {
 		}
 
 		return lastResult;
+	}
+
+	public static HashMap<String, ArrayList<String>> cdProperty(String pro) {
+		HashMap<String, ArrayList<String>> sMap = new HashMap<String, ArrayList<String>>();
+		String property = pro;
+		String queryString = propertyQuery(property);
+
+		System.out.println("Running query: \n" + queryString);
+
+		TupleQuery query;
+		try {
+
+			query = new dbpediaConnection().getDbpediaConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result = query.evaluate();
+			System.out.println("结果  :  " + result.hasNext());
+			while (result.hasNext()) {
+
+				BindingSet bindings = result.next();
+				String t1 = "";
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("t1")) {
+						t1 = "<" + binding.getValue().toString() + ">";
+					}
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(t1)) {
+					sMap.put(t1, new ArrayList<>());
+				}
+				if (!sMap.get(t1).contains(x))
+					sMap.get(t1).add(x);
+			}
+
+			query = new jamendoConnection().getJamendoConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result1 = query.evaluate();
+			System.out.println("结果  :  " + result1.hasNext());
+			while (result1.hasNext()) {
+
+				BindingSet bindings = result1.next();
+				String t1 = "";
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("t1")) {
+						t1 = "<" + binding.getValue().toString() + ">";
+					}
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(t1)) {
+					sMap.put(t1, new ArrayList<>());
+				}
+				if (!sMap.get(t1).contains(x))
+					sMap.get(t1).add(x);
+			}
+
+			query = new linkedmdbConnection().getLinkedmdbConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result2 = query.evaluate();
+			System.out.println("结果  :  " + result2.hasNext());
+			while (result2.hasNext()) {
+				BindingSet bindings = result2.next();
+				String t1 = "";
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("t1")) {
+						t1 = "<" + binding.getValue().toString() + ">";
+					}
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(t1)) {
+					sMap.put(t1, new ArrayList<>());
+				}
+				if (!sMap.get(t1).contains(x))
+					sMap.get(t1).add(x);
+			}
+
+			query = new geonamesConnection().getGeonamesConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result3 = query.evaluate();
+			System.out.println("结果  :  " + result3.hasNext());
+			while (result3.hasNext()) {
+				BindingSet bindings = result3.next();
+				String t1 = "";
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("t1")) {
+						t1 = "<" + binding.getValue().toString() + ">";
+					}
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(t1)) {
+					sMap.put(t1, new ArrayList<>());
+				}
+				if (!sMap.get(t1).contains(x))
+					sMap.get(t1).add(x);
+			}
+			
+			
+			query = new swdfoodConnection().getSwdfoodConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result4 = query.evaluate();
+			System.out.println("结果  :  " + result4.hasNext());
+			while (result4.hasNext()) {
+				BindingSet bindings = result4.next();
+				String t1 = "";
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("t1")) {
+						t1 = "<" + binding.getValue().toString() + ">";
+					}
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(t1)) {
+					sMap.put(t1, new ArrayList<>());
+				}
+				if (!sMap.get(t1).contains(x))
+					sMap.get(t1).add(x);
+			}
+			
+			
+			query = new nytConnection().getNytConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result5 = query.evaluate();
+			System.out.println("结果  :  " + result5.hasNext());
+			while (result5.hasNext()) {
+				BindingSet bindings = result5.next();
+				String t1 = "";
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("t1")) {
+						t1 = "<" + binding.getValue().toString() + ">";
+					}
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(t1)) {
+					sMap.put(t1, new ArrayList<>());
+				}
+				if (!sMap.get(t1).contains(x))
+					sMap.get(t1).add(x);
+			}
+
+		} catch (MalformedQueryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (RepositoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (QueryEvaluationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return sMap;
+	}
+
+	public static HashMap<String, ArrayList<String>> cdClass(String cName) {
+		HashMap<String, ArrayList<String>> sMap = new HashMap<String, ArrayList<String>>();
+		String className = cName;
+		String queryString = classQuery(className);
+
+		System.out.println("Running query: \n" + queryString);
+
+		TupleQuery query;
+		try {
+
+			query = new dbpediaConnection().getDbpediaConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result = query.evaluate();
+			System.out.println("结果  :  " + result.hasNext());
+			while (result.hasNext()) {
+				BindingSet bindings = result.next();
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(cName)) {
+					sMap.put(cName, new ArrayList<>());
+				}
+				if (!sMap.get(cName).contains(x))
+					sMap.get(cName).add(x);
+			}
+
+			query = new jamendoConnection().getJamendoConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result1 = query.evaluate();
+			System.out.println("结果  :  " + result1.hasNext());
+			while (result1.hasNext()) {
+				BindingSet bindings = result1.next();
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(cName)) {
+					sMap.put(cName, new ArrayList<>());
+				}
+				if (!sMap.get(cName).contains(x))
+					sMap.get(cName).add(x);
+			}
+
+			query = new linkedmdbConnection().getLinkedmdbConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result2 = query.evaluate();
+			System.out.println("结果  :  " + result2.hasNext());
+			while (result2.hasNext()) {
+				BindingSet bindings = result2.next();
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(cName)) {
+					sMap.put(cName, new ArrayList<>());
+				}
+				if (!sMap.get(cName).contains(x))
+					sMap.get(cName).add(x);
+			}
+
+			query = new geonamesConnection().getGeonamesConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result3 = query.evaluate();
+			System.out.println("结果  :  " + result3.hasNext());
+			while (result3.hasNext()) {
+				BindingSet bindings = result3.next();
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(cName)) {
+					sMap.put(cName, new ArrayList<>());
+				}
+				if (!sMap.get(cName).contains(x))
+					sMap.get(cName).add(x);
+			}
+			
+			
+			query = new swdfoodConnection().getSwdfoodConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result4 = query.evaluate();
+			System.out.println("结果  :  " + result4.hasNext());
+			while (result4.hasNext()) {
+				BindingSet bindings = result4.next();
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(cName)) {
+					sMap.put(cName, new ArrayList<>());
+				}
+				if (!sMap.get(cName).contains(x))
+					sMap.get(cName).add(x);
+			}
+			
+			
+			
+			query = new nytConnection().getNytConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+			TupleQueryResult result5 = query.evaluate();
+			System.out.println("结果  :  " + result5.hasNext());
+			while (result5.hasNext()) {
+				BindingSet bindings = result5.next();
+				String x = "";
+				for (Binding binding : bindings) {
+					if (binding.getName().contains("x")) {
+						x = "<" + binding.getValue().toString() + ">";
+					}
+				}
+				if (!sMap.containsKey(cName)) {
+					sMap.put(cName, new ArrayList<>());
+				}
+				if (!sMap.get(cName).contains(x))
+					sMap.get(cName).add(x);
+			}
+
+		} catch (MalformedQueryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (RepositoryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (QueryEvaluationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return sMap;
 	}
 
 }
