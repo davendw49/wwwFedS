@@ -1,4 +1,4 @@
-﻿package wwwFedS.LifeScience.util;
+﻿package wwwFedS.CrossDomain.parse;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -9,9 +9,9 @@ import java.util.HashMap;
 
 public class InitialHelper {
 
-	public int graph[][] = new int[420][420];
-	public int graph_value[][] = new int[420][420];
-	public int graph_path[][] = new int[420][420];
+	public int graph[][] = new int[404][404];
+	public int graph_value[][] = new int[404][404];
+	public int graph_path[][] = new int[404][404];
 	public int nodenum;
 	public int edgenum;
 	public HashMap<Integer, HashMap<Integer, ArrayList<Integer>>> preSetPair = new HashMap<>();
