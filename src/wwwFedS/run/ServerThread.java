@@ -113,9 +113,9 @@ public class ServerThread extends Thread {
 					}
 				}
 				System.out.println("keyword--type---x finished");
-				// System.out.println(list.keySet());
-				System.out.println("**************\n*************************\n******************\n***************");
-				// System.out.println(list.values());
+				//System.out.println(list.keySet());
+				System.out.println("**************\n**************\n**************\n**************");
+				//System.out.println(list.values());
 				// out.println("keyword--type---x:");
 				// out.println(list);
 				out.println("Keyword->Entity->Class are Mapping");

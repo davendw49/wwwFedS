@@ -36,9 +36,8 @@ public class lsQuery {
 	public static String propertyQuery(String property) {
 
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n"
-				+ "SELECT DISTINCT ?t1 ?t2 WHERE { \n" + "?x " + property + " ?y. \n"
-				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. \n"
-				+ "?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t2. \n" + "}";
+				+ "SELECT DISTINCT ?t1 ?x WHERE { \n" + "?x " + property + " ?y. \n"
+				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. \n" + "}";
 		return queryString;
 	}
 
@@ -261,8 +260,8 @@ public class lsQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		//if (queryString.length() > 15000)
+		//	return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -304,8 +303,8 @@ public class lsQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		//if (queryString.length() > 15000)
+		//	return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -347,8 +346,8 @@ public class lsQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		//if (queryString.length() > 15000)
+		//	return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -390,8 +389,8 @@ public class lsQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		//if (queryString.length() > 15000)
+		//	return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -442,34 +441,20 @@ public class lsQuery {
 
 				BindingSet bindings = result.next();
 				String t1 = "";
-				String t2 = "";
 				String x = "";
-				String y = "";
 				for (Binding binding : bindings) {
 					if (binding.getName().contains("t1")) {
 						t1 = "<" + binding.getValue().toString() + ">";
 					}
-					if (binding.getName().contains("t2")) {
-						t2 = "<" + binding.getValue().toString() + ">";
-					}
 					if (binding.getName().contains("x")) {
 						x = "<" + binding.getValue().toString() + ">";
-					}
-					if (binding.getName().contains("y")) {
-						y = "<" + binding.getValue().toString() + ">";
 					}
 				}
 				if (!sMap.containsKey(t1)) {
 					sMap.put(t1, new ArrayList<>());
 				}
-				if (!sMap.containsKey(t2)) {
-					sMap.put(t2, new ArrayList<>());
-				}
 				if (!sMap.get(t1).contains(x))
 					sMap.get(t1).add(x);
-				if (!sMap.get(t2).contains(y))
-					sMap.get(t2).add(y);
-
 			}
 
 			query = new keggConnection().getKeggConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
@@ -479,108 +464,64 @@ public class lsQuery {
 
 				BindingSet bindings = result1.next();
 				String t1 = "";
-				String t2 = "";
 				String x = "";
-				String y = "";
 				for (Binding binding : bindings) {
 					if (binding.getName().contains("t1")) {
 						t1 = "<" + binding.getValue().toString() + ">";
 					}
-					if (binding.getName().contains("t2")) {
-						t2 = "<" + binding.getValue().toString() + ">";
-					}
 					if (binding.getName().contains("x")) {
 						x = "<" + binding.getValue().toString() + ">";
-					}
-					if (binding.getName().contains("y")) {
-						y = "<" + binding.getValue().toString() + ">";
 					}
 				}
 				if (!sMap.containsKey(t1)) {
 					sMap.put(t1, new ArrayList<>());
 				}
-				if (!sMap.containsKey(t2)) {
-					sMap.put(t2, new ArrayList<>());
-				}
 				if (!sMap.get(t1).contains(x))
 					sMap.get(t1).add(x);
-				if (!sMap.get(t2).contains(y))
-					sMap.get(t2).add(y);
-
 			}
 
 			query = new chebiConnection().getChebiConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result2 = query.evaluate();
 			System.out.println("结果  :  " + result2.hasNext());
 			while (result2.hasNext()) {
-
 				BindingSet bindings = result2.next();
 				String t1 = "";
-				String t2 = "";
 				String x = "";
-				String y = "";
 				for (Binding binding : bindings) {
 					if (binding.getName().contains("t1")) {
 						t1 = "<" + binding.getValue().toString() + ">";
 					}
-					if (binding.getName().contains("t2")) {
-						t2 = "<" + binding.getValue().toString() + ">";
-					}
 					if (binding.getName().contains("x")) {
 						x = "<" + binding.getValue().toString() + ">";
-					}
-					if (binding.getName().contains("y")) {
-						y = "<" + binding.getValue().toString() + ">";
 					}
 				}
 				if (!sMap.containsKey(t1)) {
 					sMap.put(t1, new ArrayList<>());
 				}
-				if (!sMap.containsKey(t2)) {
-					sMap.put(t2, new ArrayList<>());
-				}
 				if (!sMap.get(t1).contains(x))
 					sMap.get(t1).add(x);
-				if (!sMap.get(t2).contains(y))
-					sMap.get(t2).add(y);
-
 			}
 
 			query = new drugbankConnection().getDrugbankConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result3 = query.evaluate();
 			System.out.println("结果  :  " + result3.hasNext());
 			while (result3.hasNext()) {
-
 				BindingSet bindings = result3.next();
 				String t1 = "";
-				String t2 = "";
 				String x = "";
-				String y = "";
 				for (Binding binding : bindings) {
 					if (binding.getName().contains("t1")) {
 						t1 = "<" + binding.getValue().toString() + ">";
 					}
-					if (binding.getName().contains("t2")) {
-						t2 = "<" + binding.getValue().toString() + ">";
-					}
 					if (binding.getName().contains("x")) {
 						x = "<" + binding.getValue().toString() + ">";
-					}
-					if (binding.getName().contains("y")) {
-						y = "<" + binding.getValue().toString() + ">";
 					}
 				}
 				if (!sMap.containsKey(t1)) {
 					sMap.put(t1, new ArrayList<>());
 				}
-				if (!sMap.containsKey(t2)) {
-					sMap.put(t2, new ArrayList<>());
-				}
 				if (!sMap.get(t1).contains(x))
 					sMap.get(t1).add(x);
-				if (!sMap.get(t2).contains(y))
-					sMap.get(t2).add(y);
-
 			}
 
 		} catch (MalformedQueryException e) {

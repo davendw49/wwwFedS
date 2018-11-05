@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-
 import wwwFedS.LifeScience.parse.ParsingUnit;
 import wwwFedS.LifeScience.parse.calComb;
 import wwwFedS.LifeScience.travel.DataStructure.SGraphEdge;
@@ -13,12 +12,12 @@ import wwwFedS.LifeScience.util.InitialHelper;
 public class traverseAction {
 
 	public HashMap<Integer, ArrayList<SGraphEdge>> multiQueryUtil = new HashMap<>();
-	
+
 	public ArrayList<HashMap<Integer, ArrayList<String>>> queryArray = new ArrayList<>();// this is what i need
-	public ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray = new ArrayList<>();// this is what we want to plus
-	
+	public ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray = new ArrayList<>();// this is what we want to
+																								// plus
+
 	public ArrayList<ArrayList<String>> KeywordPoint = new ArrayList<>();
-	
 
 	public traverseAction() {
 		// TODO Auto-generated constructor stub
@@ -43,14 +42,14 @@ public class traverseAction {
 		// ArrayList<Integer> sp = new ArrayList<>();
 		for (int index = 0; index < possibleQuery; index++) {
 			System.out.print(index + "***");
-			
+
 			/**
-			 * this keyword list plus query 
+			 * this keyword list plus query
 			 */
-			
+
 			gSubgraph.done(iHelper, StartPoint.get(index));
 			HashMap<String, HashMap<Integer, String>> onePlus = generatePlus(StartPoint.get(index), pUnit, iHelper);
-			
+
 			/**
 			 * SGraphEdge ed = new SGraphEdge(); ed.first = 220; ed.second = 1;
 			 * gSubgraph.TheSubGraph.add(ed);
@@ -119,7 +118,6 @@ public class traverseAction {
 				} else {
 					querylist.put(i, new ArrayList<>());
 				}
-				
 
 			}
 
@@ -132,23 +130,21 @@ public class traverseAction {
 				queryArray.add(querylist);
 				plusArray.add(onePlus);
 			}
-				
+
 		}
 
 		// System.out.println("**************************************************");
 		// System.out.println("test output");
 		// System.out.println(queryArray.size());
 		// System.out.println(KeywordPoint);
-		/*System.out.println("**************************************************");
-		for (int i = 0; i < queryArray.size(); i++) {
-			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
-			System.out.println(i + " situation: ");
-			for (int j = 0; j < 4; j++) {
-				System.out.println(qlist.get(j));
-			}
-		}
-		System.out.println("**************************************************");
-		System.out.println(filterMode);*/
+		/*
+		 * System.out.println("**************************************************"); for
+		 * (int i = 0; i < queryArray.size(); i++) { HashMap<Integer, ArrayList<String>>
+		 * qlist = queryArray.get(i); System.out.println(i + " situation: "); for (int j
+		 * = 0; j < 4; j++) { System.out.println(qlist.get(j)); } }
+		 * System.out.println("**************************************************");
+		 * System.out.println(filterMode);
+		 */
 		System.out.println("SPARQL Query:Established.");
 	}
 
@@ -240,7 +236,8 @@ public class traverseAction {
 		}
 	}
 
-	private HashMap<String, HashMap<Integer, String>> generatePlus(ArrayList<Integer> kw, ParsingUnit pUnit, InitialHelper iHelper) throws Exception {
+	private HashMap<String, HashMap<Integer, String>> generatePlus(ArrayList<Integer> kw, ParsingUnit pUnit,
+			InitialHelper iHelper) throws Exception {
 		HashMap<Integer, String> unionMode = new HashMap<>();
 		HashMap<Integer, String> filterMode = new HashMap<>();
 		String plus = "";
@@ -250,13 +247,21 @@ public class traverseAction {
 			int onekw = kw.get(i);
 			// System.out.println(pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)));
 			// 获取该类的对应实体应该组成的filter和union语句
+			int sum = 0;
 			for (int j = 0; j < pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).size(); j++) {
+
 				if (j == 0)
 					onePlus += "?k" + String.valueOf(i) + "="
 							+ pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).get(j);
-				else
+				else {
 					onePlus += " || ?k" + String.valueOf(i) + "="
 							+ pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).get(j);
+					sum++;
+				}
+				if (sum > 499) {
+					System.out.println(sum);
+					break;
+				}
 			}
 			onePlus += ")\n";
 			// System.out.println(onePlus);
@@ -265,8 +270,8 @@ public class traverseAction {
 		}
 		System.out.println("unionMode:finished.");
 		// return plus;
-		//unionMode = plus;
-		//plus = "";
+		// unionMode = plus;
+		// plus = "";
 		for (int i = 0; i < kw.size(); i++) {
 			plus = "";
 			String keyword = pUnit.Query.get(i).KeyName;
@@ -276,14 +281,14 @@ public class traverseAction {
 			plus += onePlus;
 			filterMode.put(i, plus);
 		}
-		//System.out.println("unionMode:\n"+unionMode);
-		//System.out.println("filterMode:\n"+filterMode);
+		// System.out.println("unionMode:\n"+unionMode);
+		// System.out.println("filterMode:\n"+filterMode);
 		System.out.println("filterMode:finished.");
-		
+
 		HashMap<String, HashMap<Integer, String>> onePlus = new HashMap<>();
 		onePlus.put("unionMode", unionMode);
 		onePlus.put("filterMode", filterMode);
-		
+
 		return onePlus;
 	}
 }
