@@ -296,6 +296,7 @@ public class ServerThread extends Thread {
 					System.out.println(slist.size());
 					String result = "";
 					long endTime_for_structquery = System.currentTimeMillis();
+					
 					timeCollection.put(0, new ArrayList<>());
 					timeCollection.put(1, new ArrayList<>());
 					timeCollection.put(2, new ArrayList<>());
