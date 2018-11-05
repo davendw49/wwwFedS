@@ -64,7 +64,7 @@ public class mainAction {
 
 		pUnit.Parse(query, iHelper);
 		tAction.start(pUnit, iHelper);
-		System.out.println(pUnit.toString());
+		// System.out.println(pUnit.toString());
 		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");// "filterMode"
 
 		/*

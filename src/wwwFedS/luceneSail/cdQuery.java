@@ -28,9 +28,8 @@ public class cdQuery {
 	public static String propertyQuery(String property) {
 
 		String queryString = "PREFIX search: <" + LuceneSailSchema.NAMESPACE + "> \n"
-				+ "SELECT DISTINCT ?t1 ?t2 WHERE { \n" + "?x " + property + " ?y. \n"
-				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. \n"
-				+ "?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t2. \n" + "}";
+				+ "SELECT DISTINCT ?t1 ?x WHERE { \n" + "?x " + property + " ?y. \n"
+				+ "?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. \n" + "}";
 		return queryString;
 	}
 
@@ -343,8 +342,8 @@ public class cdQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		// if (queryString.length() > 15000)
+		// return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -386,8 +385,8 @@ public class cdQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		// if (queryString.length() > 15000)
+		// return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -429,8 +428,8 @@ public class cdQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		// if (queryString.length() > 15000)
+		// return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -472,8 +471,8 @@ public class cdQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		// if (queryString.length() > 15000)
+		// return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -515,8 +514,8 @@ public class cdQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		// if (queryString.length() > 15000)
+		// return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -558,8 +557,8 @@ public class cdQuery {
 
 		System.out.println("Running query: \n" + queryString);
 
-		if (queryString.length() > 15000)
-			return lastResult + "result: false \n";
+		// if (queryString.length() > 15000)
+		// return lastResult + "result: false \n";
 
 		TupleQuery query;
 		try {
@@ -692,8 +691,7 @@ public class cdQuery {
 				if (!sMap.get(t1).contains(x))
 					sMap.get(t1).add(x);
 			}
-			
-			
+
 			query = new swdfoodConnection().getSwdfoodConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result4 = query.evaluate();
 			System.out.println("结果  :  " + result4.hasNext());
@@ -715,8 +713,7 @@ public class cdQuery {
 				if (!sMap.get(t1).contains(x))
 					sMap.get(t1).add(x);
 			}
-			
-			
+
 			query = new nytConnection().getNytConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result5 = query.evaluate();
 			System.out.println("结果  :  " + result5.hasNext());
@@ -834,8 +831,7 @@ public class cdQuery {
 				if (!sMap.get(cName).contains(x))
 					sMap.get(cName).add(x);
 			}
-			
-			
+
 			query = new swdfoodConnection().getSwdfoodConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result4 = query.evaluate();
 			System.out.println("结果  :  " + result4.hasNext());
@@ -853,9 +849,7 @@ public class cdQuery {
 				if (!sMap.get(cName).contains(x))
 					sMap.get(cName).add(x);
 			}
-			
-			
-			
+
 			query = new nytConnection().getNytConn().prepareTupleQuery(QueryLanguage.SPARQL, queryString);
 			TupleQueryResult result5 = query.evaluate();
 			System.out.println("结果  :  " + result5.hasNext());

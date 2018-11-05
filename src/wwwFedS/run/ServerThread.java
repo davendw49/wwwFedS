@@ -113,9 +113,9 @@ public class ServerThread extends Thread {
 					}
 				}
 				System.out.println("keyword--type---x finished");
-				System.out.println(list.keySet());
+				// System.out.println(list.keySet());
 				System.out.println("**************\n**************\n**************\n**************");
-				System.out.println(list.values());
+				// System.out.println(list.values());
 				// out.println("keyword--type---x:");
 				// out.println(list);
 				out.println("Keyword->Entity->Class are Mapping");
@@ -137,9 +137,11 @@ public class ServerThread extends Thread {
 					for (int j = 0; j < slist.size(); j++) {
 
 						System.out.println("this is the no. " + j + " query");
+						out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
 						for (int i = 0; i < 4; i++) {
 							System.out.println("repository " + i + " :");
+							out.println("repository " + i + " :");
 							ArrayList<String> qsList = slist.get(j).get(i);
 							for (String qs : qsList) {
 								String qs1 = qs;
@@ -293,14 +295,18 @@ public class ServerThread extends Thread {
 					timeCollection.put(1, new ArrayList<>());
 					timeCollection.put(2, new ArrayList<>());
 					timeCollection.put(3, new ArrayList<>());
+					timeCollection.put(4, new ArrayList<>());
+					timeCollection.put(5, new ArrayList<>());
 					// 查询最终结果
 					// for (int k = 0; k < slist.size(); k++) {
 					for (int j = 0; j < slist.size(); j++) {
 
 						System.out.println("this is the no. " + j + " query");
+						out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
-						for (int i = 0; i < 4; i++) {
+						for (int i = 0; i < 6; i++) {
 							System.out.println("repository " + i + " :");
+							out.println("repository " + i + " :");
 							ArrayList<String> qsList = slist.get(j).get(i);
 							for (String qs : qsList) {
 								String qs1 = qs;

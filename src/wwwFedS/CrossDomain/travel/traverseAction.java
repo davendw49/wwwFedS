@@ -274,7 +274,7 @@ public class traverseAction {
 							+ pUnit.Query.get(i).EntityMapping.get(iHelper.getClassR(onekw)).get(j);
 					sum++;
 				}
-				if (sum > 499) {
+				if (sum > 699) {
 					System.out.println(sum);
 					break;
 				}
