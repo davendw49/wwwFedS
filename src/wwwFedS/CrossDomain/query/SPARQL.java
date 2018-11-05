@@ -24,7 +24,7 @@ public class SPARQL {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
 			HashMap<Integer, ArrayList<String>> execList_in = new HashMap<>();
 			// System.out.println(i + " situation: ");
-			for (int j = 0; j < 4; j++) {
+			for (int j = 0; j < 6; j++) {
 				execList_in.put(j, new ArrayList<>());
 				if (qlist.get(j).size() > 0) {
 					for (String str : qlist.get(j)) {
