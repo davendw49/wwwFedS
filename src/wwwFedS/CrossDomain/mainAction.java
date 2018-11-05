@@ -11,7 +11,7 @@ import wwwFedS.CrossDomain.util.InitialHelper;
 
 public class mainAction {
 
-	public static HashMap<Integer, ArrayList<String>> doAction(
+	public static ArrayList<HashMap<Integer, ArrayList<String>>> doAction(
 			HashMap<String, HashMap<String, ArrayList<String>>> query) throws Exception {
 
 		ParsingUnit pUnit = new ParsingUnit();

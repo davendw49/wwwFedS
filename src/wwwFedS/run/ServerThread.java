@@ -135,11 +135,11 @@ public class ServerThread extends Thread {
 					// 查询最终结果
 					// for (int k = 0; k < slist.size(); k++) {
 					for (int j = 0; j < slist.size(); j++) {
-						
+
 						System.out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
 						for (int i = 0; i < 4; i++) {
-							System.out.println("repository " + i +" :");
+							System.out.println("repository " + i + " :");
 							ArrayList<String> qsList = slist.get(j).get(i);
 							for (String qs : qsList) {
 								String qs1 = qs;
@@ -150,7 +150,7 @@ public class ServerThread extends Thread {
 								qs1 = qs1.replace("}", "");
 								qs1 = qs1.trim();
 								if (!qs1.equals("")) {
-									
+
 									if (i == 0) {
 										long chebi_start_time = System.currentTimeMillis();
 										new lsQuery();
@@ -282,70 +282,77 @@ public class ServerThread extends Thread {
 				 * return; } } }
 				 */
 				long endTime_for_fulltext = System.currentTimeMillis();
-				HashMap<Integer, ArrayList<String>> slist;
+				ArrayList<HashMap<Integer, ArrayList<String>>> slist;
 				try {
 					// 生成中间查询
 					new wwwFedS.CrossDomain.mainAction();
 					slist = wwwFedS.CrossDomain.mainAction.doAction(list);
 					String result = "";
 					long endTime_for_structquery = System.currentTimeMillis();
+					timeCollection.put(0, new ArrayList<>());
+					timeCollection.put(1, new ArrayList<>());
+					timeCollection.put(2, new ArrayList<>());
+					timeCollection.put(3, new ArrayList<>());
 					// 查询最终结果
 					// for (int k = 0; k < slist.size(); k++) {
-					for (int j = 0; j < 6; j++) {
-						timeCollection.put(j, new ArrayList<>());
-						System.out.println(j + " slist.get(j).size(): " + slist.get(j).size());
+					for (int j = 0; j < slist.size(); j++) {
+
+						System.out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
-						for (int i = 0; i < slist.get(j).size(); i++) {
-							String qs = slist.get(j).get(i);
-							String qs1 = qs;
-							qs1 = qs1.replace("SELECT", "");
-							qs1 = qs1.replace("*", "");
-							qs1 = qs1.replace("WHERE", "");
-							qs1 = qs1.replace("{", "");
-							qs1 = qs1.replace("}", "");
-							qs1 = qs1.trim();
-							if (!qs1.equals("")) {
-								if (j == 0) {
-									long dbpedia_start_time = System.currentTimeMillis();
-									new cdQuery();
-									result = result + cdQuery.dbpediaQuery(qs);
-									long dbpedia_end_time = System.currentTimeMillis();
-									timeCollection.get(0).add(dbpedia_end_time - dbpedia_start_time);
-								}
-								if (j == 1) {
-									long jamendo_start_time = System.currentTimeMillis();
-									new cdQuery();
-									result = result + cdQuery.jamendoQuery(qs);
-									long jamendo_end_time = System.currentTimeMillis();
-									timeCollection.get(1).add(jamendo_end_time - jamendo_start_time);
-								}
-								if (j == 2) {
-									long lmdb_start_time = System.currentTimeMillis();
-									new cdQuery();
-									result = result + cdQuery.linkedmdbQuery(qs);
-									long lmdb_end_time = System.currentTimeMillis();
-									timeCollection.get(2).add(lmdb_end_time - lmdb_start_time);
-								}
-								if (j == 3) {
-									long geonamess_start_time = System.currentTimeMillis();
-									new cdQuery();
-									result = result + cdQuery.geonamesQuery(qs);
-									long geonames_end_time = System.currentTimeMillis();
-									timeCollection.get(3).add(geonames_end_time - geonamess_start_time);
-								}
-								if (j == 4) {
-									long swdf_start_time = System.currentTimeMillis();
-									new cdQuery();
-									result = result + cdQuery.swdfoodQuery(qs);
-									long swdf_end_time = System.currentTimeMillis();
-									timeCollection.get(4).add(swdf_end_time - swdf_start_time);
-								}
-								if (j == 5) {
-									long nyt_start_time = System.currentTimeMillis();
-									new cdQuery();
-									result = result + cdQuery.nytQuery(qs);
-									long nyt_end_time = System.currentTimeMillis();
-									timeCollection.get(5).add(nyt_end_time - nyt_start_time);
+						for (int i = 0; i < 4; i++) {
+							System.out.println("repository " + i + " :");
+							ArrayList<String> qsList = slist.get(j).get(i);
+							for (String qs : qsList) {
+								String qs1 = qs;
+								qs1 = qs1.replace("SELECT", "");
+								qs1 = qs1.replace("*", "");
+								qs1 = qs1.replace("WHERE", "");
+								qs1 = qs1.replace("{", "");
+								qs1 = qs1.replace("}", "");
+								qs1 = qs1.trim();
+								if (!qs1.equals("")) {
+									if (j == 0) {
+										long dbpedia_start_time = System.currentTimeMillis();
+										new cdQuery();
+										result = result + cdQuery.dbpediaQuery(qs);
+										long dbpedia_end_time = System.currentTimeMillis();
+										timeCollection.get(0).add(dbpedia_end_time - dbpedia_start_time);
+									}
+									if (j == 1) {
+										long jamendo_start_time = System.currentTimeMillis();
+										new cdQuery();
+										result = result + cdQuery.jamendoQuery(qs);
+										long jamendo_end_time = System.currentTimeMillis();
+										timeCollection.get(1).add(jamendo_end_time - jamendo_start_time);
+									}
+									if (j == 2) {
+										long lmdb_start_time = System.currentTimeMillis();
+										new cdQuery();
+										result = result + cdQuery.linkedmdbQuery(qs);
+										long lmdb_end_time = System.currentTimeMillis();
+										timeCollection.get(2).add(lmdb_end_time - lmdb_start_time);
+									}
+									if (j == 3) {
+										long geonamess_start_time = System.currentTimeMillis();
+										new cdQuery();
+										result = result + cdQuery.geonamesQuery(qs);
+										long geonames_end_time = System.currentTimeMillis();
+										timeCollection.get(3).add(geonames_end_time - geonamess_start_time);
+									}
+									if (j == 4) {
+										long swdf_start_time = System.currentTimeMillis();
+										new cdQuery();
+										result = result + cdQuery.swdfoodQuery(qs);
+										long swdf_end_time = System.currentTimeMillis();
+										timeCollection.get(4).add(swdf_end_time - swdf_start_time);
+									}
+									if (j == 5) {
+										long nyt_start_time = System.currentTimeMillis();
+										new cdQuery();
+										result = result + cdQuery.nytQuery(qs);
+										long nyt_end_time = System.currentTimeMillis();
+										timeCollection.get(5).add(nyt_end_time - nyt_start_time);
+									}
 								}
 							}
 						}

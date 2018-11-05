@@ -11,37 +11,32 @@ import wwwFedS.CrossDomain.util.InitialHelper;
 
 public class SPARQL {
 
-	public HashMap<Integer, ArrayList<String>> execList = new HashMap<>();
+	public ArrayList<HashMap<Integer, ArrayList<String>>> execList = new ArrayList<>();
 
 	public void generateExeclist(ArrayList<HashMap<Integer, ArrayList<String>>> queryArray, ArrayList<HashMap<String, HashMap<Integer, String>>> plusArray, String modeName) {
 		//System.out.println(plusArray);
 		System.out.println("Start Query In Federated RDF System.");
 		// 生成合理的sparql查询语句
 		
-		execList.put(0, new ArrayList<>());
-		execList.put(1, new ArrayList<>());
-		execList.put(2, new ArrayList<>());
-		execList.put(3, new ArrayList<>());
-		execList.put(4, new ArrayList<>());
-		execList.put(5, new ArrayList<>());
-		
 		if (queryArray.size() == plusArray.size()) System.out.println("number is correct, sparql query is under making");
 		
 		for (int i = 0; i < queryArray.size(); i++) {
 			HashMap<Integer, ArrayList<String>> qlist = queryArray.get(i);
+			HashMap<Integer, ArrayList<String>> execList_in = new HashMap<>();
 			// System.out.println(i + " situation: ");
-			for (int j = 0; j < 6; j++) {
-				
+			for (int j = 0; j < 4; j++) {
+				execList_in.put(j, new ArrayList<>());
 				if (qlist.get(j).size() > 0) {
 					for (String str : qlist.get(j)) {
 						//生成附加filter或者union的sparql语句：
 						String plus = generatePlus(str, plusArray.get(i), modeName);
 						String tmp = "SELECT * WHERE{\n" + str + plus + "}";
-						if (!plus.equals("")) execList.get(j).add(tmp);
+						if (!plus.equals("")) execList_in.get(j).add(tmp);
 					}
 				}
-				//execList.put(j, oneBaseQuery);
+				execList.add(execList_in);
 			}
+			
 		}
 	}
 	
@@ -99,12 +94,6 @@ public class SPARQL {
 		System.out.println(pUnit.toString());
 		sparql.generateExeclist(tAction.queryArray, tAction.plusArray, "unionMode");//"filterMode"
 		
-		for (int i=0;i<6;i++) {
-			System.out.println("this is a query for database" + i + ": ");
-			ArrayList<String> tmp = sparql.execList.get(i);
-			for (String string : tmp) {
-				System.out.println(string);
-			}
-		}
+		
 	}
 }
