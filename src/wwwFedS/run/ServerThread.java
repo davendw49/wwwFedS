@@ -188,6 +188,10 @@ public class ServerThread extends Thread {
 									}
 								}
 							}
+							if (finalResList.mappings.size() != 0 && tmpResList.mappings.size() != 0) {
+								System.out.println("++++++++++++++" + finalResList.toString());
+								System.out.println("--------------" + tmpResList.toString());
+							}
 							finalResList.join(tmpResList);
 						}
 						allResLists.add(finalResList);
@@ -198,6 +202,7 @@ public class ServerThread extends Thread {
 							System.out.println(
 									"The " + i + " final joining results are : " + allResLists.get(i).toString());
 					}
+
 					long endTime_for_sparql = System.currentTimeMillis();
 					System.out.println("fisrt ls: " + (endTime_for_fulltext - startTime) + "ms");
 					System.out.println("traversing: " + (endTime_for_structquery - endTime_for_fulltext) + "ms");

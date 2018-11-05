@@ -23,8 +23,8 @@ public class ResultList {
 		}
 
 		if (this.mappings.size() == 0) {
-			this.variables = tmpResList.variables;
-			this.mappings = tmpResList.mappings;
+			this.variables.addAll(tmpResList.variables);
+			this.mappings.addAll(tmpResList.mappings);
 			return;
 		}
 
