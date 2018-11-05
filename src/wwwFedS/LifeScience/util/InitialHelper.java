@@ -9,9 +9,9 @@ import java.util.HashMap;
 
 public class InitialHelper {
 
-	public int graph[][] = new int[420][420];
-	public int graph_value[][] = new int[420][420];
-	public int graph_path[][] = new int[420][420];
+	public int graph[][] = new int[410][410];
+	public int graph_value[][] = new int[410][410];
+	public int graph_path[][] = new int[410][410];
 	public int nodenum;
 	public int edgenum;
 	public HashMap<Integer, HashMap<Integer, ArrayList<Integer>>> preSetPair = new HashMap<>();
@@ -25,11 +25,11 @@ public class InitialHelper {
 	private BufferedReader bufferedReader;
 
 	//public static String basepath = "/home/daven/";
-	public static String basepath = "/home/FedS_system/";
-	//public static String basepath = "src/wwwFedS/LifeScience/";
+	//public static String basepath = "/home/FedS_system/dict_a/";
+	public static String basepath = "src/wwwFedS/LifeScience/dict_a/";
 	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	public void init() throws IOException {
-		FileInputStream inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
+		FileInputStream inputStream = new FileInputStream(basepath + "SchemaGraph/Schema.txt"); //
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		String str = null;
 		int start=0, end;
@@ -47,7 +47,7 @@ public class InitialHelper {
 		}
 
 		nodenum = start+1;
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_path.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
+		inputStream = new FileInputStream(basepath + "SchemaGraph/Schema_path.txt"); // 
 
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		str = null;
@@ -61,7 +61,7 @@ public class InitialHelper {
 			pos++;
 		}
 
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_Dir.txt");
+		inputStream = new FileInputStream(basepath + "SchemaGraph/Schema_Dir.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		str = null;
 
@@ -84,7 +84,7 @@ public class InitialHelper {
 			}
 		}
 
-		inputStream = new FileInputStream(basepath + "dict_a/class_info.txt");
+		inputStream = new FileInputStream(basepath + "class_info.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 		str = null;
@@ -100,7 +100,7 @@ public class InitialHelper {
 		/**
 		 * GetPreReal
 		 */
-		inputStream = new FileInputStream(basepath + "dict_a/pre_dict.txt");
+		inputStream = new FileInputStream(basepath + "pre_dict.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 		str = null;
@@ -109,7 +109,7 @@ public class InitialHelper {
 			MapOfPreR.put(Integer.valueOf(strArr[1]), strArr[0]);
 		}
 
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_Dir.txt");
+		inputStream = new FileInputStream(basepath + "SchemaGraph/Schema_Dir.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 		str = null;

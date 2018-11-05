@@ -1,4 +1,4 @@
-package wwwFedS.CrossDomain.parse;
+package wwwFedS.CrossDomain.util;
 
 /**
  * test the utilities construction
@@ -10,7 +10,7 @@ public class TestUtils {
 	public static void main(String[] args) throws Exception {
 		InitialHelper iHelper = new InitialHelper();
 		iHelper.init();
-		System.out.println(iHelper.getClassN("<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>"));
+		System.out.println(iHelper.getClassN("<http://dbpedia.org/ontology/SportsLeague>"));
 		System.out.println(iHelper.getDN(1));
 		/*
 		 * PrintStream ps = new PrintStream("z://matrix.txt"); PrintStream out =

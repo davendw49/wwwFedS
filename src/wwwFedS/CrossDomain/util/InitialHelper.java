@@ -1,4 +1,4 @@
-﻿package wwwFedS.CrossDomain.parse;
+﻿package wwwFedS.CrossDomain.util;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -9,9 +9,9 @@ import java.util.HashMap;
 
 public class InitialHelper {
 
-	public int graph[][] = new int[404][404];
-	public int graph_value[][] = new int[404][404];
-	public int graph_path[][] = new int[404][404];
+	public int graph[][] = new int[410][410];
+	public int graph_value[][] = new int[410][410];
+	public int graph_path[][] = new int[410][410];
 	public int nodenum;
 	public int edgenum;
 	public HashMap<Integer, HashMap<Integer, ArrayList<Integer>>> preSetPair = new HashMap<>();
@@ -25,16 +25,17 @@ public class InitialHelper {
 	private BufferedReader bufferedReader;
 
 	//public static String basepath = "/home/daven/";
-	public static String basepath = "/home/FedS_system/";
-	//public static String basepath = "src/wwwFedS/LifeScience/";
+	//public static String basepath = "/home/FedS_system/dict_b/";
+	public static String basepath = "src/wwwFedS/CrossDomain/dict_b/";
 	//public static String basepath = "/Users/daven/eclipse-workspace/wwwFedS/src/wwwFedS/LifeScience/";
 	public void init() throws IOException {
-		FileInputStream inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
+		FileInputStream inputStream = new FileInputStream(basepath + "SchemaGraph/Schema.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		String str = null;
 		int start=0, end;
 		while ((str = bufferedReader.readLine()) != null) {
 			String[] stringArr = str.split(" ");
+			//System.out.println(str);
 			start = Integer.valueOf(stringArr[1]);
 			end = Integer.valueOf(stringArr[3]);
 			graph[start][end] = 0;
@@ -47,7 +48,7 @@ public class InitialHelper {
 		}
 
 		nodenum = start+1;
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_path.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
+		inputStream = new FileInputStream(basepath + "SchemaGraph/Schema_path.txt"); // 缁濆璺緞鎴栫浉瀵硅矾寰勯兘鍙互锛岃繖閲屾槸缁濆璺緞锛屽啓鍏ユ枃浠舵椂婕旂ず鐩稿璺緞S
 
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		str = null;
@@ -61,11 +62,11 @@ public class InitialHelper {
 			pos++;
 		}
 
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_Dir.txt");
+		inputStream = new FileInputStream(basepath + "SchemaGraph/Schema_Dir.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		str = null;
 
-		for (int i = 0; i < 261; i++) {
+		for (int i = 0; i < 414; i++) {
 			HashMap<Integer, ArrayList<Integer>> pPair = new HashMap<>();
 			preSetPair.put(i, pPair);
 		}
@@ -84,13 +85,19 @@ public class InitialHelper {
 			}
 		}
 
-		inputStream = new FileInputStream(basepath + "dict_a/class_info.txt");
+		inputStream = new FileInputStream(basepath + "class_info.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 		str = null;
 		while ((str = bufferedReader.readLine()) != null) {
 			String[] strArr = str.split(" ");
 			MapOfId2Name.put(Integer.valueOf(strArr[0]), strArr[1]);
+			
+			if (strArr[2].length() >= 2) {
+				String tinyArr[] = strArr[2].split("/");
+				int go = (int)(1+Math.random()*(tinyArr.length-1+1));
+				strArr[2] = tinyArr[go-1];
+			}
 			MapOfId2Num.put(Integer.valueOf(strArr[0]), Integer.valueOf(strArr[2]));
 			MapOfId2Pri.put(Integer.valueOf(strArr[0]), Integer.valueOf(strArr[3]));
 			MapOfId2Rank.put(Integer.valueOf(strArr[0]), Integer.valueOf(strArr[4]));
@@ -100,7 +107,7 @@ public class InitialHelper {
 		/**
 		 * GetPreReal
 		 */
-		inputStream = new FileInputStream(basepath + "dict_a/pre_dict.txt");
+		inputStream = new FileInputStream(basepath + "pre_dict.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 		str = null;
@@ -109,11 +116,11 @@ public class InitialHelper {
 			MapOfPreR.put(Integer.valueOf(strArr[1]), strArr[0]);
 		}
 
-		inputStream = new FileInputStream(basepath + "dict_a/SchemaGraph/Schema_Dir.txt");
+		inputStream = new FileInputStream(basepath + "SchemaGraph/Schema_Dir.txt");
 		bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
 		str = null;
-		for (int i = 0; i < 261; i++) {
+		for (int i = 0; i < 407; i++) {
 			ArrayList<Integer> arrayList = new ArrayList<>();
 			predicateMap.put(i, arrayList);
 		}
