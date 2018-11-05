@@ -189,8 +189,8 @@ public class ServerThread extends Thread {
 								}
 							}
 							if (finalResList.mappings.size() != 0 && tmpResList.mappings.size() != 0) {
-								System.out.println("++++++++++++++" + finalResList.toString());
-								System.out.println("--------------" + tmpResList.toString());
+								System.out.println("+++++++++++++++" + finalResList.toString());
+								System.out.println("---------------" + tmpResList.toString());
 							}
 							finalResList.join(tmpResList);
 						}
