@@ -113,70 +113,72 @@ public class ServerThread extends Thread {
 					}
 				}
 				System.out.println("keyword--type---x finished");
-				// System.out.println(list.keySet());
+				System.out.println(list.keySet());
 				System.out.println("**************\n**************\n**************\n**************");
-				// System.out.println(list.values());
+				System.out.println(list.values());
 				// out.println("keyword--type---x:");
 				// out.println(list);
 				out.println("Keyword->Entity->Class are Mapping");
-				/*
-				 * if (list.size() == 0) { System.out.println("No final result!");
-				 * out.println("No final result!"); return; } else { for (int i = 0; i <
-				 * list.size(); i++) { if (list.get(i).isEmpty()) {
-				 * System.out.println("No final result!"); out.println("No final result!");
-				 * return; } } }
-				 */
+
 				long endTime_for_fulltext = System.currentTimeMillis();
-				HashMap<Integer, ArrayList<String>> slist;
+				ArrayList<HashMap<Integer, ArrayList<String>>> slist;
 				try {
 					// 生成中间查询
 					new wwwFedS.LifeScience.mainAction();
 					slist = mainAction.doAction(list);
 					String result = "";
 					long endTime_for_structquery = System.currentTimeMillis();
+					timeCollection.put(0, new ArrayList<>());
+					timeCollection.put(1, new ArrayList<>());
+					timeCollection.put(2, new ArrayList<>());
+					timeCollection.put(3, new ArrayList<>());
 					// 查询最终结果
 					// for (int k = 0; k < slist.size(); k++) {
-					for (int j = 0; j < 4; j++) {
-						timeCollection.put(j, new ArrayList<>());
-						System.out.println(j + " slist.get(j).size(): " + slist.get(j).size());
+					for (int j = 0; j < slist.size(); j++) {
+						
+						System.out.println("this is the no. " + j + " query");
 						// System.out.println(slist.get(j));
-						for (int i = 0; i < slist.get(j).size(); i++) {
-							String qs = slist.get(j).get(i);
-							String qs1 = qs;
-							qs1 = qs1.replace("SELECT", "");
-							qs1 = qs1.replace("*", "");
-							qs1 = qs1.replace("WHERE", "");
-							qs1 = qs1.replace("{", "");
-							qs1 = qs1.replace("}", "");
-							qs1 = qs1.trim();
-							if (!qs1.equals("")) {
-								if (j == 0) {
-									long chebi_start_time = System.currentTimeMillis();
-									new lsQuery();
-									result = result + lsQuery.chebiQuery(qs);
-									long chebi_end_time = System.currentTimeMillis();
-									timeCollection.get(0).add(chebi_end_time - chebi_start_time);
-								}
-								if (j == 1) {
-									long kegg_start_time = System.currentTimeMillis();
-									new lsQuery();
-									result = result + lsQuery.keggQuery(qs);
-									long kegg_end_time = System.currentTimeMillis();
-									timeCollection.get(1).add(kegg_end_time - kegg_start_time);
-								}
-								if (j == 2) {
-									long drugbank_start_time = System.currentTimeMillis();
-									new lsQuery();
-									result = result + lsQuery.drugbankQuery(qs);
-									long drugbank_end_time = System.currentTimeMillis();
-									timeCollection.get(2).add(drugbank_end_time - drugbank_start_time);
-								}
-								if (j == 3) {
-									long dbpedia_start_time = System.currentTimeMillis();
-									new lsQuery();
-									result = result + lsQuery.dbpediaQuery(qs);
-									long dbpedia_end_time = System.currentTimeMillis();
-									timeCollection.get(3).add(dbpedia_end_time - dbpedia_start_time);
+						for (int i = 0; i < 4; i++) {
+							System.out.println("repository " + i +" :");
+							ArrayList<String> qsList = slist.get(j).get(i);
+							for (String qs : qsList) {
+								String qs1 = qs;
+								qs1 = qs1.replace("SELECT", "");
+								qs1 = qs1.replace("*", "");
+								qs1 = qs1.replace("WHERE", "");
+								qs1 = qs1.replace("{", "");
+								qs1 = qs1.replace("}", "");
+								qs1 = qs1.trim();
+								if (!qs1.equals("")) {
+									
+									if (i == 0) {
+										long chebi_start_time = System.currentTimeMillis();
+										new lsQuery();
+										result = result + lsQuery.chebiQuery(qs);
+										long chebi_end_time = System.currentTimeMillis();
+										timeCollection.get(0).add(chebi_end_time - chebi_start_time);
+									}
+									if (i == 1) {
+										long kegg_start_time = System.currentTimeMillis();
+										new lsQuery();
+										result = result + lsQuery.keggQuery(qs);
+										long kegg_end_time = System.currentTimeMillis();
+										timeCollection.get(1).add(kegg_end_time - kegg_start_time);
+									}
+									if (i == 2) {
+										long drugbank_start_time = System.currentTimeMillis();
+										new lsQuery();
+										result = result + lsQuery.drugbankQuery(qs);
+										long drugbank_end_time = System.currentTimeMillis();
+										timeCollection.get(2).add(drugbank_end_time - drugbank_start_time);
+									}
+									if (i == 3) {
+										long dbpedia_start_time = System.currentTimeMillis();
+										new lsQuery();
+										result = result + lsQuery.dbpediaQuery(qs);
+										long dbpedia_end_time = System.currentTimeMillis();
+										timeCollection.get(3).add(dbpedia_end_time - dbpedia_start_time);
+									}
 								}
 							}
 						}
@@ -266,9 +268,9 @@ public class ServerThread extends Thread {
 					}
 				}
 				System.out.println("keyword--type---x finished");
-				//System.out.println(list.keySet());
+				// System.out.println(list.keySet());
 				System.out.println("**************\n**************\n**************\n**************");
-				//System.out.println(list.values());
+				// System.out.println(list.values());
 				// out.println("keyword--type---x:");
 				// out.println(list);
 				out.println("Keyword->Entity->Class are Mapping");

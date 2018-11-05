@@ -106,6 +106,14 @@ public class traverseAction {
 						oneSant += "?" + String.valueOf(returnNodename(edgeset.get(k).second, StartPoint.get(index)));
 						oneSant += ". \n";
 						preSet.add(oneSant);
+						oneSant = "";
+						oneSant += "?" + String.valueOf(returnNodename(edgeset.get(k).second, StartPoint.get(index)));
+						oneSant += " ";
+						oneSant += iHelper.getPreR(onList.get(p));
+						oneSant += " ";
+						oneSant += "?" + String.valueOf(returnNodename(edgeset.get(k).first, StartPoint.get(index)));
+						oneSant += ". \n";
+						preSet.add(oneSant);
 						// System.out.println(oneSant);
 					}
 					multiEdge.add(preSet);
