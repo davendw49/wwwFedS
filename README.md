@@ -5,7 +5,7 @@ The implementation source code for the paper [Federated Keyword Search over Web 
 ```
  @inproceedings{peng18federated,
    title={Federated Keyword Search over Web of Linked Data},
-   author={Peng Peng, Cheng Deng, Runyu	Guan, Yuyan	Yang, Lei	Zou, Zheng	Qin},
+   author={Peng Peng, Cheng Deng, Runyu Guan, Yuyan Yang, Lei Zou, Zheng Qin},
    year={2018}
  }
 ```
